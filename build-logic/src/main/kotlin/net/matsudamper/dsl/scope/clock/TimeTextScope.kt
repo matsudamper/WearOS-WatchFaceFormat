@@ -23,7 +23,7 @@ class TimeTextScope(
     val pivotX: Float?,
     val pivotY: Float?,
     val angle: Float?,
-    val alpha: Int,
+    val alpha: Int?,
     val tintColor: String?,
 ) : WatchFaceElement {
     override val elementName: String = "TimeText"
@@ -38,7 +38,7 @@ class TimeTextScope(
         "pivotX" to pivotX?.toString(),
         "pivotY" to pivotY?.toString(),
         "angle" to angle?.toString(),
-        "alpha" to alpha.toString(),
+        "alpha" to alpha?.toString(),
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
@@ -47,9 +47,9 @@ class TimeTextScope(
         family: FontFamily = FontFamily.SyncToDevice,
         size: Float,
         color: String,
-        slant: FontSlant = FontSlant.NORMAL,
+        slant: FontSlant? = null,
         letterSpacing: Float = 0f,
-        width: FontWidth = FontWidth.NORMAL,
+        width: FontWidth? = null,
         weight: FontWeight = FontWeight.NORMAL,
     ) {
         children.add(

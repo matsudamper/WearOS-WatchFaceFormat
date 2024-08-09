@@ -51,7 +51,7 @@ class DigitalClockScope(
         pivotX: Float? = null,
         pivotY: Float? = null,
         angle: Float? = null,
-        alpha: Int = 255,
+        alpha: Int? = null,
         tintColor: String? = null,
         block: TimeTextScope.() -> Unit,
     ) {

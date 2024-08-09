@@ -13,9 +13,9 @@ class FontScope(
     val family: FontFamily?,
     val size: Float,
     val color: String,
-    val slant: FontSlant,
+    val slant: FontSlant?,
     val letterSpacing: Float,
-    val width: FontWidth,
+    val width: FontWidth?,
     val weight: FontWeight,
 ) : WatchFaceElement {
     override val elementName: String = "Font"
@@ -23,9 +23,9 @@ class FontScope(
         "family" to family?.value,
         "size" to size.toString(),
         "color" to color,
-        "slant" to slant.value,
+        "slant" to slant?.value,
         "letterSpacing" to letterSpacing.toString(),
-        "width" to width.value,
+        "width" to width?.value,
         "weight" to weight.value,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
