@@ -1,57 +1,48 @@
 <WatchFace
-clipShape="CIRCLE"
-height="450"
-width="450"
->
+    clipShape="CIRCLE"
+    height="450"
+    width="450">
 <Metadata
-key="CLOCK_TYPE"
-value="ANALOG"
-/>
-<Scene
->
+    key="CLOCK_TYPE"
+    value="ANALOG" />
+<Scene>
 <PartDraw
-x="0"
-y="0"
-width="450"
-height="450"
-angle="0.0"
-pivotX="0.5"
-pivotY="0.5"
-alpha="255"
-renderMode="ALL"
->
+    x="0"
+    y="0"
+    width="450"
+    height="450"
+    angle="0.0"
+    pivotX="0.5"
+    pivotY="0.5"
+    alpha="255"
+    renderMode="ALL">
 <Arc
-centerX="225.0"
-centerY="225.0"
-height="440.0"
-width="440.0"
-startAngle="0.0"
-endAngle="359.999"
-direction="CLOCKWISE"
->
+    centerX="225.0"
+    centerY="225.0"
+    height="440.0"
+    width="440.0"
+    startAngle="0.0"
+    endAngle="359.999"
+    direction="CLOCKWISE">
 <Stroke
-cap="ROUND"
-color="#4d408bf4"
-thickness="10"
-/>
+    cap="ROUND"
+    color="#4d408bf4"
+    thickness="10" />
 </Arc>
 <Arc
-centerX="225.0"
-centerY="225.0"
-height="440.0"
-width="440.0"
-startAngle="0.0"
-direction="CLOCKWISE"
->
+    centerX="225.0"
+    centerY="225.0"
+    height="440.0"
+    width="440.0"
+    startAngle="0.0"
+    direction="CLOCKWISE">
 <Transform
-target="endAngle"
-value="6 * [SECOND_MILLISECOND]"
-/>
+    target="endAngle"
+    value="6 * [SECOND_MILLISECOND]" />
 <Stroke
-cap="ROUND"
-color="#ff408bf4"
-thickness="10"
-/>
+    cap="ROUND"
+    color="#ff408bf4"
+    thickness="10" />
 </Arc>
 </PartDraw>
 </Scene>

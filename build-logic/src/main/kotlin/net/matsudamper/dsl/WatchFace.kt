@@ -29,16 +29,20 @@ private fun generateXml(element: WatchFaceElement): String {
         }
 
     return buildString {
-        appendLine("<${element.elementName}")
-
+        append("<${element.elementName}")
         if (attributes.isNotEmpty()) {
-            attributes.forEach {
-                appendLine("$it")
+            appendLine()
+            // 最後は開業しない
+            for ((index, item) in attributes.withIndex()) {
+                append("    $item")
+                if (index != attributes.size - 1) {
+                    appendLine()
+                }
             }
         }
 
         if (element.children.isEmpty()) {
-            appendLine("/>")
+            appendLine(" />")
         } else {
             appendLine(">")
             element.children.forEach {
