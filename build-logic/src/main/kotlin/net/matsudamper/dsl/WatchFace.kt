@@ -45,8 +45,18 @@ private fun generateXml(element: WatchFaceElement): String {
             appendLine(" />")
         } else {
             appendLine(">")
-            element.children.forEach {
-                append(generateXml(it))
+            element.children.forEach { child ->
+                append(
+                    generateXml(child)
+                        .split("\n")
+                        .joinToString("\n") {
+                            if (it.isBlank()) {
+                                it
+                            } else {
+                                "    $it"
+                            }
+                        }
+                )
             }
             appendLine("</${element.elementName}>")
         }
