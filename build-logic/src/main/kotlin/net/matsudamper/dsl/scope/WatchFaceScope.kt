@@ -4,6 +4,7 @@ import net.matsudamper.dsl.element.ClipShape
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.metadata.MetadataKey
 import net.matsudamper.dsl.metadata.MetadataValue
+import net.matsudamper.dsl.scope.configuration.UserConfigurationScope
 
 @Suppress("FunctionName")
 @WatchFaceDSLMarker
@@ -22,6 +23,14 @@ class WatchFaceScope(
 
     fun <T : MetadataValue> Metadata(key: MetadataKey<T>, value: T) {
         children.add(MetaData(key.name, value.value))
+    }
+
+    fun UserConfiguration(
+        block: UserConfigurationScope.() -> Unit,
+    ) {
+        val scope = UserConfigurationScope()
+        block(scope)
+        children.add(scope)
     }
 
     fun Scene(

@@ -5,6 +5,29 @@
     <Metadata
         key="CLOCK_TYPE"
         value="ANALOG" />
+    <UserConfigurations>
+        <ColorConfiguration
+            id="contentColor"
+            displayName="content"
+            screenReaderText="content"
+            defaultValue="#E57373" >
+            <ColorOption
+                id="Red"
+                displayName="Red"
+                screenReaderText="Red"
+                colors="#E57373" />
+            <ColorOption
+                id="Pink"
+                displayName="Pink"
+                screenReaderText="Pink"
+                colors="#F06292" />
+            <ColorOption
+                id="Green"
+                displayName="Green"
+                screenReaderText="Green"
+                colors="#66BB6A" />
+        </ColorConfiguration>
+    </UserConfigurations>
     <Scene>
         <PartDraw
             x="0"
@@ -41,7 +64,7 @@
                     value="6 * [SECOND_MILLISECOND]" />
                 <Stroke
                     cap="ROUND"
-                    color="#ff408bf4"
+                    color="[CONFIGURATION.contentColor.0]"
                     thickness="10" />
             </Arc>
         </PartDraw>

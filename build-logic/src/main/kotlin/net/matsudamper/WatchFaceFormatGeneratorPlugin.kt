@@ -29,6 +29,34 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
 }
 
 
+enum class ContentColor {
+    Red {
+        override val id: String = "Red"
+        override val colors: List<String> = listOf("#E57373")
+    },
+    Pink {
+        override val id: String = "Pink"
+        override val colors: List<String> = listOf("#F06292")
+    },
+    Green {
+        override val id: String = "Green"
+        override val colors: List<String> = listOf("#66BB6A")
+    }
+    ;
+
+    abstract val id: String
+    abstract val colors: List<String>
+
+    companion object {
+        const val ID = "contentColor"
+
+        fun getColorSymbol(): String {
+            return "[CONFIGURATION.$ID.0]"
+        }
+    }
+}
+
+
 private fun generate(): String {
     return createWatchFace(
         width = 450,
@@ -39,6 +67,21 @@ private fun generate(): String {
             key = ClockType,
             value = ClockTypeValue.ANALOG
         )
+        UserConfiguration {
+            UserConfigurations(
+                id = ContentColor.ID,
+                displayName = "content",
+                defaultValue = "#E57373",
+            ) {
+                ContentColor.values().forEach {
+                    ColorOption(
+                        id = it.id,
+                        displayName = it.id,
+                        colors = it.colors,
+                    )
+                }
+            }
+        }
         Scene {
             SecondHand(
                 width = this@createWatchFace.width,
@@ -87,7 +130,7 @@ private fun SceneScope.SecondHand(
             )
             Stroke(
                 cap = Cap.ROUND,
-                color = "#ff408bf4",
+                color = ContentColor.getColorSymbol(),
                 thickness = strokeSize,
             )
         }
