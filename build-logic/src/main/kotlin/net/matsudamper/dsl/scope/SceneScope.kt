@@ -2,14 +2,17 @@ package net.matsudamper.dsl.scope
 
 import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.WatchFaceElement
-import net.matsudamper.dsl.scope.toXmlAttribute
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
 class SceneScope(
     val backgroundColor: String?,
 ) : WatchFaceElement {
-    private val partDraws: MutableList<PartDrawScope> = mutableListOf()
+    override val elementName: String = "Scene"
+    override val attributes: Map<String, String?> = mapOf(
+        "backgroundColor" to backgroundColor,
+    )
+    override val children: MutableList<WatchFaceElement> = mutableListOf()
     fun PartDraw(
         x: Int,
         y: Int,
@@ -38,16 +41,6 @@ class SceneScope(
             tintColor = tintColor,
         )
         block(scope)
-        partDraws.add(scope)
-    }
-
-    override fun getXml(): String {
-        return buildString {
-            appendLine("<Scene")
-            appendLine(Pair("backgroundColor", backgroundColor).toXmlAttribute())
-            appendLine(">")
-            append(partDraws.joinToString("\n") { it.getXml() })
-            appendLine("</Scene>")
-        }
+        children.add(scope)
     }
 }

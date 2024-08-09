@@ -3,6 +3,7 @@
 package net.matsudamper.dsl
 
 import net.matsudamper.dsl.element.ClipShape
+import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceScope
 
 fun createWatchFace(
@@ -17,5 +18,33 @@ fun createWatchFace(
         width = width,
     )
     block(scope)
-    return scope.getXml()
+    return generateXml(scope)
+}
+
+private fun generateXml(element: WatchFaceElement): String {
+    val attributes = element.attributes
+        .mapNotNull { (key, value) ->
+            value ?: return@mapNotNull null
+            """$key="$value""""
+        }
+
+    return buildString {
+        appendLine("<${element.elementName}")
+
+        if (attributes.isNotEmpty()) {
+            attributes.forEach {
+                appendLine("$it")
+            }
+        }
+
+        if (element.children.isEmpty()) {
+            appendLine("/>")
+        } else {
+            appendLine(">")
+            element.children.forEach {
+                append(generateXml(it))
+            }
+            appendLine("</${element.elementName}>")
+        }
+    }
 }

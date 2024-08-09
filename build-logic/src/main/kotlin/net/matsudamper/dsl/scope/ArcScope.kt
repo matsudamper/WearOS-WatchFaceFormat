@@ -3,7 +3,6 @@ package net.matsudamper.dsl.scope
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.Direction
 import net.matsudamper.dsl.element.WatchFaceElement
-import net.matsudamper.dsl.scope.toXmlAttribute
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
@@ -16,12 +15,22 @@ class ArcScope(
     val endAngle: Float?,
     val direction: Direction,
 ) : WatchFaceElement {
-    private val transforms: MutableList<TransformElement> = mutableListOf()
+    override val elementName: String = "Arc"
+    override val attributes: Map<String, String?> = mapOf(
+        "centerX" to centerX.toString(),
+        "centerY" to centerY.toString(),
+        "height" to height.toString(),
+        "width" to width.toString(),
+        "startAngle" to startAngle?.toString(),
+        "endAngle" to endAngle?.toString(),
+        "direction" to direction.toString(),
+    )
+    override val children: MutableList<WatchFaceElement> = mutableListOf()
     fun Transform(
         target: String,
         value: String,
     ) {
-        transforms.add(
+        children.add(
             TransformElement(
                 target = target,
                 value = value,
@@ -29,13 +38,12 @@ class ArcScope(
         )
     }
 
-    private val strokes: MutableList<StrokeElement> = mutableListOf()
     fun Stroke(
         cap: Cap,
         color: String,
         thickness: Int,
     ) {
-        strokes.add(
+        children.add(
             StrokeElement(
                 cap = cap,
                 color = color,
@@ -44,68 +52,30 @@ class ArcScope(
         )
     }
 
-    override fun getXml(): String {
-        return buildString {
-            appendLine("<Arc")
-            append(
-                listOf(
-                    Pair("centerX", centerX.toString()),
-                    Pair("centerY", centerY.toString()),
-                    Pair("height", height.toString()),
-                    Pair("width", width.toString()),
-                    Pair("startAngle", startAngle?.toString()),
-                    Pair("endAngle", endAngle?.toString()),
-                    Pair("direction", direction.toString()),
-                ).map { it.toXmlAttribute() }
-                    .filter { it.isNotEmpty() }
-                    .joinToString("\n")
-            )
-            appendLine(">")
-            append(transforms.joinToString("\n") { it.getXml() })
-            append(strokes.joinToString("\n") { it.getXml() })
-            appendLine("</Arc>")
-        }
-    }
 
     private class TransformElement(
-        private val target: String,
-        private val value: String,
+        target: String,
+        value: String,
     ) : WatchFaceElement {
-        override fun getXml(): String {
-            return buildString {
-                appendLine("<Transform")
-                append(
-                    listOf(
-                        Pair("target", target),
-                        Pair("value", value),
-                    ).map { it.toXmlAttribute() }
-                        .filter { it.isNotEmpty() }
-                        .joinToString("\n")
-                )
-                appendLine("/>")
-            }
-        }
+        override val elementName: String = "Transform"
+        override val attributes: Map<String, String?> = mapOf(
+            "target" to target,
+            "value" to value,
+        )
+        override val children: List<WatchFaceElement> = listOf()
     }
 
     private class StrokeElement(
-        private val cap: Cap,
-        private val color: String,
-        private val thickness: Int,
+        cap: Cap,
+        color: String,
+        thickness: Int,
     ) : WatchFaceElement {
-        override fun getXml(): String {
-            return buildString {
-                appendLine("<Stroke")
-                append(
-                    listOf(
-                        Pair("cap", cap.value),
-                        Pair("color", color),
-                        Pair("thickness", thickness.toString()),
-                    ).map { it.toXmlAttribute() }
-                        .filter { it.isNotEmpty() }
-                        .joinToString("\n")
-                )
-                appendLine("/>")
-            }
-        }
+        override val elementName: String = "Stroke"
+        override val attributes: Map<String, String?> = mapOf(
+            "cap" to cap.value,
+            "color" to color,
+            "thickness" to thickness.toString(),
+        )
+        override val children: List<WatchFaceElement> = listOf()
     }
 }

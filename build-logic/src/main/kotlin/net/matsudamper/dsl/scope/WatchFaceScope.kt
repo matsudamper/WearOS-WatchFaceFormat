@@ -4,7 +4,6 @@ import net.matsudamper.dsl.element.ClipShape
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.metadata.MetadataKey
 import net.matsudamper.dsl.metadata.MetadataValue
-import net.matsudamper.dsl.scope.toXmlAttribute
 
 @Suppress("FunctionName")
 @WatchFaceDSLMarker
@@ -13,12 +12,18 @@ class WatchFaceScope(
     val height: Int,
     val width: Int,
 ) : WatchFaceElement {
-    private val metadata: MutableList<MetaData> = mutableListOf()
+    override val elementName: String = "WatchFace"
+    override val attributes: Map<String, String?> = mapOf(
+        "clipShape" to clipShape.value,
+        "height" to height.toString(),
+        "width" to width.toString(),
+    )
+    override val children: MutableList<WatchFaceElement> = mutableListOf()
+
     fun <T : MetadataValue> Metadata(key: MetadataKey<T>, value: T) {
-        metadata.add(MetaData(key.name, value.value))
+        children.add(MetaData(key.name, value.value))
     }
 
-    private val screens: MutableList<SceneScope> = mutableListOf()
     fun Scene(
         backgroundColor: String? = null,
         block: SceneScope.() -> Unit,
@@ -27,36 +32,15 @@ class WatchFaceScope(
             backgroundColor = backgroundColor,
         )
         block(scope)
-        screens.add(scope)
-    }
-
-    override fun getXml(): String {
-        return buildString {
-            appendLine("<WatchFace")
-            append(
-                listOf(
-                    Pair("clipShape", clipShape.value),
-                    Pair("height", height.toString()),
-                    Pair("width", width.toString()),
-                ).map { it.toXmlAttribute() }
-                    .filter { it.isNotEmpty() }
-                    .joinToString("\n")
-            )
-            appendLine(">")
-            append(metadata.joinToString("\n") { it.getXml() })
-            append(screens.joinToString("\n") { it.getXml() })
-            appendLine("</WatchFace>")
-        }
+        children.add(scope)
     }
 
     private data class MetaData(val key: String, val value: String) : WatchFaceElement {
-        override fun getXml(): String {
-            return buildString {
-                appendLine("<Metadata")
-                appendLine(Pair("key", key).toXmlAttribute())
-                appendLine(Pair("value", value).toXmlAttribute())
-                appendLine("/>")
-            }
-        }
+        override val elementName: String = "Metadata"
+        override val children: List<WatchFaceElement> = listOf()
+        override val attributes: Map<String, String?> = mapOf(
+            "key" to key,
+            "value" to value,
+        )
     }
 }

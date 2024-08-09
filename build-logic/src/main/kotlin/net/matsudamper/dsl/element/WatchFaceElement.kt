@@ -1,5 +1,7 @@
 package net.matsudamper.dsl.element
 
 interface WatchFaceElement {
-    fun getXml(): String
+    val elementName: String
+    val attributes: Map<String, String?>
+    val children: List<WatchFaceElement>
 }
