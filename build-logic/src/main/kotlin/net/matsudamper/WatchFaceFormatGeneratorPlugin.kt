@@ -76,7 +76,7 @@ private fun SceneScope.CenterDigitalClock(
     width: Int,
     height: Int,
 ) {
-    val fontHeight = height / 2
+    val fontHeight = height / 8
     DigitalClock(
         x = 0,
         y = (height - fontHeight) / 2,

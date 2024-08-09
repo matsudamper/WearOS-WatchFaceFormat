@@ -153,9 +153,9 @@
         </PartDraw>
         <DigitalClock
             x="0"
-            y="112"
+            y="197"
             width="450"
-            height="225"
+            height="56"
             alpha="255" >
             <TimeText
                 format="hh:mm"
@@ -163,10 +163,10 @@
                 x="0"
                 y="0"
                 width="450"
-                height="225" >
+                height="56" >
                 <Font
                     family="SYNC_TO_DEVICE"
-                    size="225"
+                    size="56"
                     color="[CONFIGURATION.contentColor.0]"
                     letterSpacing="0.0"
                     weight="NORMAL" />
