@@ -1,0 +1,15 @@
+[versions]
+compileSdk = "35"
+buildToolsVersion = "35.0.0"
+minSdk = "30"
+targetSdk = "35"
+androidGradlePlugin = "8.5.2"
+kotlin = "2.0.10"
+
+[plugins]
+androidGradlePlugin = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlinGradlePlugin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+[libraries]
+androidGradlePlugin = { module = "com.android.application:com.android.application.gradle.plugin", version.ref = "androidGradlePlugin" }
+kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

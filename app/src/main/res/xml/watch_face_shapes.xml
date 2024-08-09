@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFaces xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <WatchFace
+        file="@raw/watchface"
+        height="300"
+        shape="CIRCLE"
+        width="300" />
+
+</WatchFaces>
