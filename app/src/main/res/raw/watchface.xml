@@ -5,7 +5,7 @@
     <Metadata
         key="CLOCK_TYPE"
         value="ANALOG" />
-    <Scene >
+    <Scene>
         <PartDraw
             x="0"
             y="0"
