@@ -1,8 +1,9 @@
-package net.matsudamper.dsl.scope
+package net.matsudamper.dsl.scope.draw
 
 import net.matsudamper.dsl.element.Direction
 import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.WatchFaceElement
+import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")

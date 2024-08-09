@@ -3,6 +3,7 @@ package net.matsudamper.dsl.scope
 import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.clock.DigitalClockScope
+import net.matsudamper.dsl.scope.draw.PartDrawScope
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
