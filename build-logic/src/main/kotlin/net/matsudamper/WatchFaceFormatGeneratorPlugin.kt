@@ -1,9 +1,9 @@
 package net.matsudamper
 
-import net.matsudamper.dsl.Cap
-import net.matsudamper.dsl.ClipShape
-import net.matsudamper.dsl.SceneScope
-import net.matsudamper.dsl.SourceType
+import net.matsudamper.dsl.element.Cap
+import net.matsudamper.dsl.element.ClipShape
+import net.matsudamper.dsl.scope.SceneScope
+import net.matsudamper.dsl.element.SourceType
 import net.matsudamper.dsl.createWatchFace
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue

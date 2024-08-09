@@ -1,4 +1,4 @@
-package net.matsudamper.dsl
+package net.matsudamper.dsl.element
 
 /**
  * https://developer.android.com/training/wearables/wff/common/attributes/source-type
