@@ -32,7 +32,6 @@ private fun generateXml(element: WatchFaceElement): String {
         append("<${element.elementName}")
         if (attributes.isNotEmpty()) {
             appendLine()
-            // 最後は開業しない
             for ((index, item) in attributes.withIndex()) {
                 append("    $item")
                 if (index != attributes.size - 1) {
