@@ -67,6 +67,10 @@ private fun generate(): String {
             key = ClockType,
             value = ClockTypeValue.ANALOG
         )
+        Metadata(
+            key = "PREVIEW_TIME",
+            value = "10:08:32",
+        )
         UserConfiguration {
             UserConfigurations(
                 id = ContentColor.ID,

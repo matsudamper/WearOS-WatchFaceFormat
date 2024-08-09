@@ -5,6 +5,9 @@
     <Metadata
         key="CLOCK_TYPE"
         value="ANALOG" />
+    <Metadata
+        key="PREVIEW_TIME"
+        value="10:08:32" />
     <UserConfigurations>
         <ColorConfiguration
             id="contentColor"
