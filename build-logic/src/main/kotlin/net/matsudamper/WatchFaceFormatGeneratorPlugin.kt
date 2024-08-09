@@ -5,8 +5,10 @@ import net.matsudamper.dsl.element.ClipShape
 import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.element.SourceType
 import net.matsudamper.dsl.createWatchFace
+import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
+import net.matsudamper.dsl.scope.clock.DigitalClockScope
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -62,6 +64,25 @@ private fun generate(): String {
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
             )
+            DigitalClock(
+                x = 0,
+                y = this@createWatchFace.height / 2,
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height / 5,
+            ) {
+                TimeText(
+                    x = 0,
+                    y = 0,
+                    width = width,
+                    height = height,
+                    align = TextAlign.CENTER,
+                ) {
+                    Font(
+                        color = ContentColor.getColorSymbol(),
+                        size = height.toFloat(),
+                    )
+                }
+            }
         }
     }
 }

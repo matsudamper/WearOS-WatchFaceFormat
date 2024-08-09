@@ -151,5 +151,29 @@
                     thickness="10" />
             </Arc>
         </PartDraw>
+        <DigitalClock
+            x="0"
+            y="225"
+            width="450"
+            height="90"
+            alpha="255" >
+            <TimeText
+                format="hh:mm"
+                align="CENTER"
+                x="0"
+                y="0"
+                width="450"
+                height="90"
+                alpha="255" >
+                <Font
+                    family="SYNC_TO_DEVICE"
+                    size="90.0"
+                    color="[CONFIGURATION.contentColor.0]"
+                    slant="NORMAL"
+                    letterSpacing="0.0"
+                    width="NORMAL"
+                    weight="NORMAL" />
+            </TimeText>
+        </DigitalClock>
     </Scene>
 </WatchFace>
