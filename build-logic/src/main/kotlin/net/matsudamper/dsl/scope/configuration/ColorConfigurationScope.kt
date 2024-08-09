@@ -35,7 +35,8 @@ class ColorConfigurationScope(
                 displayName = displayName,
                 screenReaderText = screenReaderText,
                 icon = icon,
-                colors = colors
+                // 要素が1つだけの時、リアルタイムに色が反映されない為、末尾に追加している
+                colors = colors.plus("#")
             )
         )
     }
