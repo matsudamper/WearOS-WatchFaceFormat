@@ -23,7 +23,7 @@ class SceneScope(
         pivotX: Float = 0.5f,
         pivotY: Float = 0.5f,
         alpha: Int = 255,
-        renderMode: RenderMode = RenderMode.ALL,
+        renderMode: RenderMode = RenderMode.SOURCE,
         tintColor: String? = null,
         block: PartDrawScope.() -> Unit,
     ) {
