@@ -18,7 +18,10 @@ fun createWatchFace(
         width = width,
     )
     block(scope)
-    return generateXml(scope)
+    return buildString {
+        appendLine("""<?xml version="1.0"?>""")
+        append(generateXml(scope))
+    }
 }
 
 private fun generateXml(element: WatchFaceElement): String {
