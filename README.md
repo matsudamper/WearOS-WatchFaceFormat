@@ -1,6 +1,13 @@
 # My Watchface
 <img width="400" src="README/face.png">
 
+# 仕組み
+DSLを通して[Watch Face Format](https://developer.android.com/training/wearables/wff)形式のXMLを出力する。  
+Sassのようなもの。  
+
+記述部分  
+https://github.com/matsudamper/WearOS-WatchFaceFormat/blob/main/build-logic/src/main/kotlin/net/matsudamper/WatchFaceFormatGeneratorPlugin.kt  
+
 # インストール方法
 ```shell
 ./gradlew assembleDebug
