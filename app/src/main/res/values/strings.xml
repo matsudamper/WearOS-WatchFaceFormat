@@ -9,4 +9,8 @@
     <string name="title_activity_presentation._main">presentation.MainActivity</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="complication_label">Example complication</string>
+
+    <string name="color_red">Red</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_green">Green</string>
 </resources>

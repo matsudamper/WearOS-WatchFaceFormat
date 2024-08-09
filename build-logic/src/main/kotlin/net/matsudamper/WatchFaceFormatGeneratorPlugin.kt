@@ -31,15 +31,15 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
 
 enum class ContentColor {
     Red {
-        override val id: String = "Red"
+        override val id: String = "color_red"
         override val colors: List<String> = listOf("#E57373")
     },
     Pink {
-        override val id: String = "Pink"
+        override val id: String = "color_pink"
         override val colors: List<String> = listOf("#F06292")
     },
     Green {
-        override val id: String = "Green"
+        override val id: String = "color_green"
         override val colors: List<String> = listOf("#66BB6A")
     }
     ;
@@ -71,13 +71,13 @@ private fun generate(): String {
             UserConfigurations(
                 id = ContentColor.ID,
                 displayName = "content",
-                defaultValue = "#E57373",
+                defaultValue = ContentColor.Red.id,
             ) {
-                ContentColor.values().forEach {
+                ContentColor.values().forEach { color ->
                     ColorOption(
-                        id = it.id,
-                        displayName = it.id,
-                        colors = it.colors,
+                        id = color.id,
+                        displayName = color.id,
+                        colors = color.colors,
                     )
                 }
             }

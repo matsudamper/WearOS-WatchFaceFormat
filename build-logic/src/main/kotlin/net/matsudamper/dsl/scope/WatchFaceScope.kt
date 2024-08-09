@@ -25,6 +25,10 @@ class WatchFaceScope(
         children.add(MetaData(key.name, value.value))
     }
 
+    fun Metadata(key: String, value: String) {
+        children.add(MetaData(key, value))
+    }
+
     fun UserConfiguration(
         block: UserConfigurationScope.() -> Unit,
     ) {

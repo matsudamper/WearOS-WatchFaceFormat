@@ -10,21 +10,21 @@
             id="contentColor"
             displayName="content"
             screenReaderText="content"
-            defaultValue="#E57373" >
+            defaultValue="color_red" >
             <ColorOption
-                id="Red"
-                displayName="Red"
-                screenReaderText="Red"
+                id="color_red"
+                displayName="color_red"
+                screenReaderText="color_red"
                 colors="#E57373" />
             <ColorOption
-                id="Pink"
-                displayName="Pink"
-                screenReaderText="Pink"
+                id="color_pink"
+                displayName="color_pink"
+                screenReaderText="color_pink"
                 colors="#F06292" />
             <ColorOption
-                id="Green"
-                displayName="Green"
-                screenReaderText="Green"
+                id="color_green"
+                displayName="color_green"
+                screenReaderText="color_green"
                 colors="#66BB6A" />
         </ColorConfiguration>
     </UserConfigurations>
