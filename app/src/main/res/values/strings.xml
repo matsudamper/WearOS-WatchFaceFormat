@@ -10,6 +10,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="complication_label">Example complication</string>
 
+    <string name="theme">テーマ</string>
+
     <string name="color_red">Red</string>
     <string name="color_pink">Pink</string>
     <string name="color_green">Green</string>

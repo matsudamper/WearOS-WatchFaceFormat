@@ -9,7 +9,7 @@ class ColorConfigurationScope(
     val id: String?,
     val displayName: String,
     val icon: String?,
-    val screenReaderText: String,
+    val screenReaderText: String?,
     val defaultValue: String
 ) : WatchFaceElement {
     override val elementName: String = "ColorConfiguration"
@@ -25,7 +25,7 @@ class ColorConfigurationScope(
     fun ColorOption(
         id: String? = null,
         displayName: String,
-        screenReaderText: String = displayName,
+        screenReaderText: String? = displayName,
         icon: String? = null,
         colors: List<String>
     ) {
@@ -43,7 +43,7 @@ class ColorConfigurationScope(
     class ColorOptionData(
         id: String?,
         displayName: String,
-        screenReaderText: String,
+        screenReaderText: String?,
         icon: String?,
         colors: List<String>
     ) : WatchFaceElement {

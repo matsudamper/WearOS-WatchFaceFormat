@@ -12,7 +12,7 @@ class UserConfigurationScope : WatchFaceElement {
         id: String? = null,
         displayName: String,
         icon: String? = null,
-        screenReaderText: String = displayName,
+        screenReaderText: String? = null,
         defaultValue: String,
         block: ColorConfigurationScope.() -> Unit
     ) {
