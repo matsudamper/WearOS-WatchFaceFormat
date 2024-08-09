@@ -45,7 +45,7 @@ class TimeTextScope(
 
     fun Font(
         family: FontFamily = FontFamily.SyncToDevice,
-        size: Float,
+        size: Int,
         color: String,
         slant: FontSlant? = null,
         letterSpacing: Float = 0f,

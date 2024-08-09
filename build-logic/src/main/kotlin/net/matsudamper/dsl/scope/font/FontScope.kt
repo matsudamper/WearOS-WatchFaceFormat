@@ -11,7 +11,7 @@ import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 @Suppress("FunctionName")
 class FontScope(
     val family: FontFamily?,
-    val size: Float,
+    val size: Int,
     val color: String,
     val slant: FontSlant?,
     val letterSpacing: Float,

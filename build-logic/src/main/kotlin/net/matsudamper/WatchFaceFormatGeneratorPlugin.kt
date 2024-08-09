@@ -92,7 +92,7 @@ private fun SceneScope.CenterDigitalClock(
         ) {
             Font(
                 color = ContentColor.getColorSymbol(),
-                size = fontHeight.toFloat(),
+                size = fontHeight,
             )
         }
     }

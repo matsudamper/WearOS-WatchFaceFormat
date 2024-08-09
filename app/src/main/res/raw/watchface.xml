@@ -166,7 +166,7 @@
                 height="225" >
                 <Font
                     family="SYNC_TO_DEVICE"
-                    size="225.0"
+                    size="225"
                     color="[CONFIGURATION.contentColor.0]"
                     letterSpacing="0.0"
                     weight="NORMAL" />
