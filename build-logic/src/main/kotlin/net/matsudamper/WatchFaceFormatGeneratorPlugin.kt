@@ -15,6 +15,7 @@ import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.scope.clock.DigitalClock
 import net.matsudamper.dsl.scope.complication.ComplicationSlot
 import net.matsudamper.dsl.scope.condition.Condition
+import net.matsudamper.dsl.scope.condition.DefaultScope
 import net.matsudamper.dsl.scope.draw.PartDraw
 import net.matsudamper.dsl.scope.text.Font
 import org.gradle.api.Plugin
@@ -125,59 +126,68 @@ private fun SceneScope.Slots(
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
                 Condition {
                     Default {
-                        Group(
-                            x = 0,
-                            y = 0,
-                            width = slotSize,
-                            height = slotSize,
-                        ) {
-                            PartDraw(
-                                x = 0,
-                                y = 0,
-                                width = slotSize,
-                                height = slotSize,
-                            ) {
-                                val strokeSize = 2
-                                Arc(
-                                    centerX = this@PartDraw.width / 2f,
-                                    centerY = this@PartDraw.height / 2f,
-                                    width = this@PartDraw.width.toFloat() - strokeSize,
-                                    height = this@PartDraw.height.toFloat() - strokeSize,
-                                    startAngle = 0f,
-                                    endAngle = 359.999f,
-                                ) {
-                                    Stroke(
-                                        cap = Cap.ROUND,
-                                        color = ContentColor.getColorSymbol(),
-                                        thickness = strokeSize,
-                                    )
-                                }
-                            }
-                            PartText(
-                                x = 0,
-                                y = 0,
-                                width = slotSize,
-                                height = slotSize,
-                                alpha = 255,
-                            ) {
-                                Text(
-                                    align = TextAlign.CENTER,
-                                    ellipsis = true,
-                                ) {
-                                    Font(
-                                        color = ContentColor.getColorSymbol(),
-                                        size = slotSize / 4,
-                                    ) {
-                                        Template {
-                                            addRawText("%s")
-                                            Parameter(
-                                                expression = "[COMPLICATION.TEXT]",
-                                            )
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        DefaultCompression(
+                            slotSize = slotSize,
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Suppress("FunctionName")
+private fun DefaultScope.DefaultCompression(
+    slotSize: Int,
+) {
+    Group(
+        x = 0,
+        y = 0,
+        width = slotSize,
+        height = slotSize,
+    ) {
+        PartDraw(
+            x = 0,
+            y = 0,
+            width = slotSize,
+            height = slotSize,
+        ) {
+            val strokeSize = 2
+            Arc(
+                centerX = this@PartDraw.width / 2f,
+                centerY = this@PartDraw.height / 2f,
+                width = this@PartDraw.width.toFloat() - strokeSize,
+                height = this@PartDraw.height.toFloat() - strokeSize,
+                startAngle = 0f,
+                endAngle = 359.999f,
+            ) {
+                Stroke(
+                    cap = Cap.ROUND,
+                    color = ContentColor.getColorSymbol(),
+                    thickness = strokeSize,
+                )
+            }
+        }
+        PartText(
+            x = 0,
+            y = 0,
+            width = slotSize,
+            height = slotSize,
+            alpha = 255,
+        ) {
+            Text(
+                align = TextAlign.CENTER,
+                ellipsis = true,
+            ) {
+                Font(
+                    color = ContentColor.getColorSymbol(),
+                    size = slotSize / 4,
+                ) {
+                    Template {
+                        addRawText("%s")
+                        Parameter(
+                            expression = "[COMPLICATION.TEXT]",
+                        )
                     }
                 }
             }
