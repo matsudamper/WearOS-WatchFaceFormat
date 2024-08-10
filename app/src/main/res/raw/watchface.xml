@@ -149,10 +149,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>
@@ -198,10 +197,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>
@@ -247,10 +245,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>
@@ -296,10 +293,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>
@@ -345,10 +341,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>
@@ -394,10 +389,9 @@
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
-                                    <Template>
-                                        %s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
+                                    <Template>%s
+                                    <Parameter
+                                        expression="[COMPLICATION.TEXT]" />
                                     </Template>
                                 </Font>
                             </Text>

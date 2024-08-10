@@ -55,23 +55,33 @@ private fun generateXml(element: WatchFaceElement): String {
         if (element.children.isEmpty()) {
             appendLine(" />")
         } else {
+            val containText = element.children.any { it is WatchFaceTextElement }
             if (attributes.isEmpty()) {
-                appendLine(">")
+                append(">")
             } else {
-                appendLine(" >")
+                append(" >")
             }
+            if (containText.not()) {
+                appendLine()
+            }
+
             element.children.forEach { child ->
-                append(
-                    generateXml(child)
-                        .split("\n")
-                        .joinToString("\n") {
-                            if (it.isBlank()) {
-                                it
-                            } else {
-                                "    $it"
+                val childXml = generateXml(child)
+                if (containText) {
+                    append(childXml)
+                } else {
+                    append(
+                        childXml
+                            .split("\n")
+                            .joinToString("\n") {
+                                if (it.isBlank()) {
+                                    it
+                                } else {
+                                    "    $it"
+                                }
                             }
-                        }
-                )
+                    )
+                }
             }
             appendLine("</${element.elementName}>")
         }
