@@ -11,6 +11,7 @@ import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.element.VariantMode
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
+import net.matsudamper.dsl.scope.Group
 import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.scope.Variant
@@ -127,26 +128,55 @@ private fun SceneScope.Slots(
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
                 Condition {
                     Default {
-                        PartText(
+                        Group(
                             x = 0,
                             y = 0,
                             width = slotSize,
                             height = slotSize,
-                            alpha = 255,
                         ) {
-                            Text(
-                                align = TextAlign.CENTER,
-                                ellipsis = true,
+                            PartDraw(
+                                x = 0,
+                                y = 0,
+                                width = slotSize,
+                                height = slotSize,
                             ) {
-                                Font(
-                                    color = ContentColor.getColorSymbol(),
-                                    size = slotSize / 4,
+                                val strokeSize = 2
+                                Arc(
+                                    centerX = this@PartDraw.width / 2f,
+                                    centerY = this@PartDraw.height / 2f,
+                                    width = this@PartDraw.width.toFloat() - strokeSize,
+                                    height = this@PartDraw.height.toFloat() - strokeSize,
+                                    startAngle = 0f,
+                                    endAngle = 359.999f,
                                 ) {
-                                    Template {
-                                        addRawText("%s")
-                                        Parameter(
-                                            expression = "[COMPLICATION.TEXT]",
-                                        )
+                                    Stroke(
+                                        cap = Cap.ROUND,
+                                        color = ContentColor.getColorSymbol(),
+                                        thickness = strokeSize,
+                                    )
+                                }
+                            }
+                            PartText(
+                                x = 0,
+                                y = 0,
+                                width = slotSize,
+                                height = slotSize,
+                                alpha = 255,
+                            ) {
+                                Text(
+                                    align = TextAlign.CENTER,
+                                    ellipsis = true,
+                                ) {
+                                    Font(
+                                        color = ContentColor.getColorSymbol(),
+                                        size = slotSize / 4,
+                                    ) {
+                                        Template {
+                                            addRawText("%s")
+                                            Parameter(
+                                                expression = "[COMPLICATION.TEXT]",
+                                            )
+                                        }
                                     }
                                 }
                             }

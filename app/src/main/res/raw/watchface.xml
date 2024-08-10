@@ -134,28 +134,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>
@@ -182,28 +212,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>
@@ -230,28 +290,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>
@@ -278,28 +368,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>
@@ -326,28 +446,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>
@@ -374,28 +524,58 @@
                 type="SHORT_TEXT" >
                 <Condition>
                     <Default>
-                        <PartText
+                        <Group
                             x="0"
                             y="0"
                             width="135"
-                            height="135"
-                            alpha="255" >
-                            <Text
-                                align="CENTER"
-                                ellipsis="true" >
-                                <Font
-                                    family="SYNC_TO_DEVICE"
-                                    size="33"
-                                    color="[CONFIGURATION.contentColor.0]"
-                                    letterSpacing="0.0"
-                                    weight="NORMAL" >
-                                    <Template>%s
-                                    <Parameter
-                                        expression="[COMPLICATION.TEXT]" />
-                                    </Template>
-                                </Font>
-                            </Text>
-                        </PartText>
+                            height="135" >
+                            <PartDraw
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                angle="0.0"
+                                pivotX="0.5"
+                                pivotY="0.5"
+                                alpha="255"
+                                renderMode="SOURCE" >
+                                <Arc
+                                    centerX="67.5"
+                                    centerY="67.5"
+                                    height="133.0"
+                                    width="133.0"
+                                    startAngle="0.0"
+                                    endAngle="359.999"
+                                    direction="CLOCKWISE" >
+                                    <Stroke
+                                        cap="ROUND"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        thickness="2" />
+                                </Arc>
+                            </PartDraw>
+                            <PartText
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                alpha="255" >
+                                <Text
+                                    align="CENTER"
+                                    ellipsis="true" >
+                                    <Font
+                                        family="SYNC_TO_DEVICE"
+                                        size="33"
+                                        color="[CONFIGURATION.contentColor.0]"
+                                        letterSpacing="0.0"
+                                        weight="NORMAL" >
+                                        <Template>%s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
                     </Default>
                 </Condition>
             </Complication>

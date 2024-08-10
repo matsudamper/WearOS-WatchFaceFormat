@@ -42,3 +42,34 @@ fun WatchFaceHasChildLayoutReceiveScope.PartText(
         ).apply(block)
     )
 }
+
+fun WatchFaceHasChildLayoutReceiveScope.Group(
+    x: Int,
+    y: Int,
+    width: Int,
+    height: Int,
+    pivotX: Float? = null,
+    pivotY: Float? = null,
+    angle: Float? = null,
+    alpha: Int? = null,
+    name: String? = null,
+    renderMode: RenderMode? = null,
+    tintColor: String? = null,
+    block: GroupScope.() -> Unit
+) {
+    addChild(
+        GroupScope(
+            x = x,
+            y = y,
+            width = width,
+            height = height,
+            pivotX = pivotX,
+            pivotY = pivotY,
+            angle = angle,
+            alpha = alpha,
+            name = name,
+            renderMode = renderMode,
+            tintColor = tintColor
+        ).apply(block)
+    )
+}
