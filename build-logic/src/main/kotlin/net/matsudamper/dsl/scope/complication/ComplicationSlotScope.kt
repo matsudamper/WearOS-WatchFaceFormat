@@ -83,6 +83,24 @@ class ComplicationSlotScope(
         )
     }
 
+    fun BoundingRoundBox(
+        x: Int,
+        y: Int,
+        width: Int,
+        height: Int,
+        outlinePadding: Int,
+    ) {
+        children.add(
+            BoundingRoundBoxScope(
+                x = x,
+                y = y,
+                width = width,
+                height = height,
+                outlinePadding = outlinePadding,
+            )
+        )
+    }
+
     fun Complication(
         type: ComplicationSlotSupportedType,
         block: ComplicationScope.() -> Unit
