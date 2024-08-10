@@ -1,5 +1,6 @@
 package net.matsudamper.dsl.scope.text
 
+import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
@@ -19,7 +20,7 @@ class PartTextScope(
     val name: String?,
     val scaleX: Float?,
     val scaleY: Float?,
-    val renderMode: String?,
+    val renderMode: RenderMode?,
     val tintColor: String?,
 ) : HasWatchFaceLayoutElement {
     override val elementName: String = "PartText"
@@ -35,7 +36,7 @@ class PartTextScope(
         "name" to name,
         "scaleX" to scaleX?.toString(),
         "scaleY" to scaleY?.toString(),
-        "renderMode" to renderMode,
+        "renderMode" to renderMode?.value,
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()

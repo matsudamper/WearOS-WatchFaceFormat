@@ -2,6 +2,7 @@ package net.matsudamper.dsl.scope.complication
 
 import net.matsudamper.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.dsl.element.DefaultProvider
+import net.matsudamper.dsl.element.VariantMode
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
@@ -24,7 +25,7 @@ class ComplicationSlotScope(
     val scaleY: Float?,
     val supportedTypes: List<ComplicationSlotSupportedType>,
     val isCustomizable: Boolean,
-    val tintColor: String,
+    val tintColor: String?,
 ) : WatchFaceHasChildElement {
     override val elementName: String = "ComplicationSlot"
     override val attributes: Map<String, String?> = mapOf(

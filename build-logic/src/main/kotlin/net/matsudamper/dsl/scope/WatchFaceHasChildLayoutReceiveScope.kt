@@ -1,5 +1,6 @@
 package net.matsudamper.dsl.scope
 
+import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.text.PartTextScope
@@ -19,7 +20,7 @@ fun WatchFaceHasChildLayoutReceiveScope.PartText(
     name: String? = null,
     scaleX: Float? = null,
     scaleY: Float? = null,
-    renderMode: String? = null,
+    renderMode: RenderMode? = null,
     tintColor: String? = null,
     block: PartTextScope.() -> Unit
 ) {

@@ -15,7 +15,7 @@ interface HasFontElement: WatchFaceHasChildElement
 fun HasFontElement.Font(
     family: FontFamily = FontFamily.SyncToDevice,
     size: Int,
-    color: String,
+    color: String? = null,
     slant: FontSlant? = null,
     letterSpacing: Float = 0f,
     width: FontWidth? = null,

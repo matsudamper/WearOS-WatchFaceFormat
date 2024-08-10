@@ -20,7 +20,7 @@ fun WatchFaceHasChildLayoutReceiveScope.ComplicationSlot(
     scaleY: Float? = null,
     supportedTypes: List<ComplicationSlotSupportedType>,
     isCustomizable: Boolean,
-    tintColor: String,
+    tintColor: String? = null,
     block: ComplicationSlotScope.() -> Unit,
 ) {
     val scope = ComplicationSlotScope(
