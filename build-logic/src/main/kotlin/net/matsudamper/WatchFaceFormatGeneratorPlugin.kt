@@ -5,16 +5,13 @@ import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.ClipShape
 import net.matsudamper.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.dsl.element.DefaultProvider
-import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.SourceType
 import net.matsudamper.dsl.element.TextAlign
-import net.matsudamper.dsl.element.VariantMode
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
 import net.matsudamper.dsl.scope.Group
 import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.SceneScope
-import net.matsudamper.dsl.scope.Variant
 import net.matsudamper.dsl.scope.clock.DigitalClock
 import net.matsudamper.dsl.scope.complication.ComplicationSlot
 import net.matsudamper.dsl.scope.condition.Condition
