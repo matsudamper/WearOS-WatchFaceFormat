@@ -9,11 +9,13 @@ import net.matsudamper.dsl.element.SourceType
 import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
+import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.scope.clock.DigitalClock
 import net.matsudamper.dsl.scope.complication.ComplicationSlot
 import net.matsudamper.dsl.scope.condition.Condition
 import net.matsudamper.dsl.scope.draw.PartDraw
+import net.matsudamper.dsl.scope.text.Font
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import kotlin.math.cos
@@ -120,15 +122,33 @@ private fun SceneScope.Slots(
                 height = slotSize,
                 outlinePadding = 2,
             )
-            Condition {
-                Expressions {
-                    Expression(
-                        name = "name",
-                        value = "<![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] == null]]>",
-                    )
-                }
-                Compare(expression = "") {
-
+            Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
+                Condition {
+                    Default {
+                        PartText(
+                            x = 0,
+                            y = 0,
+                            width = slotSize,
+                            height = slotSize,
+                        ) {
+                            Text(
+                                align = TextAlign.CENTER,
+                                ellipsis = true,
+                            ) {
+                                Font(
+                                    color = ContentColor.getColorSymbol(),
+                                    size = slotSize / 2,
+                                ) {
+                                    Template {
+                                        addRawText("%s")
+                                        Parameter(
+                                            expression = "[COMPLICATION.TEXT]",
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

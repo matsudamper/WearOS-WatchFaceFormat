@@ -6,12 +6,11 @@ import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 import net.matsudamper.dsl.scope.WatchFaceHasChildLayoutReceiveScope
 
 @WatchFaceDSLMarker
-@Suppress("FunctionName")
 class DefaultScope : WatchFaceHasChildElement, WatchFaceHasChildLayoutReceiveScope {
     override val elementName: String = "Default"
     override val attributes: Map<String, String?> = mapOf()
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
-        TODO()
+        children.add(child)
     }
 }

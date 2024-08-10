@@ -1,4 +1,4 @@
-package net.matsudamper.dsl.scope.font
+package net.matsudamper.dsl.scope.text
 
 import net.matsudamper.dsl.element.FontFamily
 import net.matsudamper.dsl.element.FontSlant
@@ -34,7 +34,11 @@ class FontScope(
         children.add(child)
     }
 
-    fun Lower() {
-        TODO()
+    fun Template(
+        block: TemplateScope.() -> Unit,
+    ) {
+        val scope = TemplateScope()
+        scope.block()
+        children.add(scope)
     }
 }

@@ -131,16 +131,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <ComplicationSlot
             x="224"
@@ -161,16 +180,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <ComplicationSlot
             x="90"
@@ -191,16 +229,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <ComplicationSlot
             x="22"
@@ -221,16 +278,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <ComplicationSlot
             x="90"
@@ -251,16 +327,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <ComplicationSlot
             x="224"
@@ -281,16 +376,35 @@
                 width="135"
                 height="135"
                 outlinePadding="2" />
-            <Condition>
-                <Expressions>
-                    <Expression
-                        name="true" >
-                        true
-                    </Expression>
-                </Expressions>
-                <Compare
-                    expression="" />
-            </Condition>
+            <Complication
+                type="SHORT_TEXT" >
+                <Condition>
+                    <Default>
+                        <PartText
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <Text
+                                align="CENTER"
+                                ellipsis="true" >
+                                <Font
+                                    family="SYNC_TO_DEVICE"
+                                    size="67"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    letterSpacing="0.0"
+                                    weight="NORMAL" >
+                                    <Template>
+                                        %s
+                                        <Parameter
+                                            expression="[COMPLICATION.TEXT]" />
+                                    </Template>
+                                </Font>
+                            </Text>
+                        </PartText>
+                    </Default>
+                </Condition>
+            </Complication>
         </ComplicationSlot>
         <PartDraw
             x="0"

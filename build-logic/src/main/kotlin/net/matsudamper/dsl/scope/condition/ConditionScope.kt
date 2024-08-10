@@ -3,13 +3,13 @@ package net.matsudamper.dsl.scope.condition
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
-import net.matsudamper.dsl.scope.WatchFaceLayoutHasChildElement
+import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
 import net.matsudamper.dsl.scope.WatchFaceHasChildLayoutReceiveScope
 
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
-class ConditionScope : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement {
+class ConditionScope : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
     override val elementName: String = "Condition"
     override val attributes: Map<String, String?> = mapOf()
     override val children: MutableList<WatchFaceElement> = mutableListOf()
@@ -35,7 +35,7 @@ class ConditionScope : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement 
     }
 
     fun Default(
-        block: WatchFaceHasChildLayoutReceiveScope.() -> Unit
+        block: DefaultScope.() -> Unit
     ) {
         children.add(DefaultScope().apply(block))
     }

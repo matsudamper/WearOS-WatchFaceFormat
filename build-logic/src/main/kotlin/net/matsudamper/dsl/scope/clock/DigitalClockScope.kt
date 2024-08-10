@@ -6,7 +6,8 @@ import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
-import net.matsudamper.dsl.scope.WatchFaceLayoutHasChildElement
+import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
+import net.matsudamper.dsl.scope.text.HasFontElement
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
@@ -23,12 +24,13 @@ class DigitalClockScope(
     val scaleY: Float?,
     val renderMode: RenderMode?,
     val tintColor: String? = null,
-) : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement {
+) : WatchFaceHasChildElement, HasWatchFaceLayoutElement, HasFontElement {
     override val elementName: String = "DigitalClock"
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
         children.add(child)
     }
+
     override val attributes: Map<String, String?>
         get() = mapOf(
             "x" to x.toString(),

@@ -1,23 +1,13 @@
-package net.matsudamper.dsl.scope.clock
+package net.matsudamper.dsl.scope.text
 
-import net.matsudamper.dsl.element.FontFamily
-import net.matsudamper.dsl.element.FontSlant
-import net.matsudamper.dsl.element.FontWeight
-import net.matsudamper.dsl.element.FontWidth
-import net.matsudamper.dsl.element.HourFormat
 import net.matsudamper.dsl.element.TextAlign
-import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
-import net.matsudamper.dsl.scope.text.FontScope
-import net.matsudamper.dsl.scope.text.HasFontElement
+import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
-class TimeTextScope(
-    val format: String,
-    val hourFormat: HourFormat?,
-    val align: TextAlign,
+class PartTextScope(
     val x: Int,
     val y: Int,
     val width: Int,
@@ -26,13 +16,14 @@ class TimeTextScope(
     val pivotY: Float?,
     val angle: Float?,
     val alpha: Int?,
+    val name: String?,
+    val scaleX: Float?,
+    val scaleY: Float?,
+    val renderMode: String?,
     val tintColor: String?,
-) : WatchFaceHasChildElement, HasFontElement {
-    override val elementName: String = "TimeText"
+) : HasWatchFaceLayoutElement {
+    override val elementName: String = "PartText"
     override val attributes: Map<String, String?> = mapOf(
-        "format" to format,
-        "hourFormat" to hourFormat?.value,
-        "align" to align.value,
         "x" to x.toString(),
         "y" to y.toString(),
         "width" to width.toString(),
@@ -41,6 +32,10 @@ class TimeTextScope(
         "pivotY" to pivotY?.toString(),
         "angle" to angle?.toString(),
         "alpha" to alpha?.toString(),
+        "name" to name,
+        "scaleX" to scaleX?.toString(),
+        "scaleY" to scaleY?.toString(),
+        "renderMode" to renderMode,
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
@@ -48,4 +43,18 @@ class TimeTextScope(
         children.add(child)
     }
 
+    fun Text(
+        align: TextAlign? = null,
+        ellipsis: Boolean = true,
+        maxLines: Int? = null,
+        block: TextScope.() -> Unit
+    ) {
+        val text = TextScope(
+            align = align,
+            ellipsis = ellipsis,
+            maxLines = maxLines
+        )
+        text.block()
+        children.add(text)
+    }
 }

@@ -81,4 +81,15 @@ class ComplicationSlotScope(
             )
         )
     }
+
+    fun Complication(
+        type: ComplicationSlotSupportedType,
+        block: ComplicationScope.() -> Unit
+    ) {
+        val scope = ComplicationScope(
+            type = type,
+        )
+        scope.block()
+        children.add(scope)
+    }
 }

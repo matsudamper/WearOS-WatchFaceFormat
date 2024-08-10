@@ -5,7 +5,7 @@ import net.matsudamper.dsl.element.RenderMode
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
-import net.matsudamper.dsl.scope.WatchFaceLayoutHasChildElement
+import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
@@ -21,7 +21,7 @@ class PartDrawScope(
     val alpha: Int,
     val renderMode: RenderMode,
     val tintColor: String?,
-) : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement {
+) : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
     override val elementName: String = "PartDraw"
     override val attributes: Map<String, String?> = mapOf(
         "x" to x.toString(),

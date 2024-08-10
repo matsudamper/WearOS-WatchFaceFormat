@@ -1,14 +1,13 @@
 package net.matsudamper.dsl.scope
 
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
-import net.matsudamper.dsl.element.WatchFaceElement
 
 /**
- *
+ * レイアウトに関する子を持てる
+ * TODO一覧
  *         <Group ... />
- *         <PartText ... />
  *         <PartImage ... />
  *         <PartAnimatedImage ... />
  *         <AnalogClock ... />
  */
-interface WatchFaceLayoutHasChildElement : WatchFaceHasChildElement
+interface HasWatchFaceLayoutElement : WatchFaceHasChildElement
