@@ -11,4 +11,7 @@ class DefaultScope : WatchFaceHasChildElement, WatchFaceHasChildLayoutReceiveSco
     override val elementName: String = "Default"
     override val attributes: Map<String, String?> = mapOf()
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        TODO()
+    }
 }

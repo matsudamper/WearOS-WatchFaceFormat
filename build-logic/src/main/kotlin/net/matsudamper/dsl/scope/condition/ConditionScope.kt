@@ -13,6 +13,9 @@ class ConditionScope : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement 
     override val elementName: String = "Condition"
     override val attributes: Map<String, String?> = mapOf()
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun Expressions(
         block: ExpressionsScope.() -> Unit

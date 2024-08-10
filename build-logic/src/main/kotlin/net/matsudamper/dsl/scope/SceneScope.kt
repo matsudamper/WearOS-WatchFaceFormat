@@ -12,4 +12,7 @@ class SceneScope(
         "backgroundColor" to backgroundColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 }

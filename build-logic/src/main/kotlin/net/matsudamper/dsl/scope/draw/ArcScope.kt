@@ -28,6 +28,9 @@ class ArcScope(
         "direction" to direction.toString(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
     fun Transform(
         target: String,
         value: String,
@@ -65,6 +68,9 @@ class ArcScope(
             "value" to value,
         )
         override val children: MutableList<WatchFaceElement> = mutableListOf()
+        override fun addChild(child: WatchFaceElement) {
+            throw UnsupportedOperationException()
+        }
     }
 
     private class StrokeHasChildElement(
@@ -79,5 +85,8 @@ class ArcScope(
             "thickness" to thickness.toString(),
         )
         override val children: MutableList<WatchFaceElement> = mutableListOf()
+        override fun addChild(child: WatchFaceElement) {
+            throw UnsupportedOperationException()
+        }
     }
 }

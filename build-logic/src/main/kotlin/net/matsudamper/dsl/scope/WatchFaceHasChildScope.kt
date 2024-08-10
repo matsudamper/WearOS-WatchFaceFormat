@@ -21,6 +21,9 @@ class WatchFaceHasChildScope(
         "width" to width.toString(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun <T : MetadataValue> Metadata(key: MetadataKey<T>, value: T) {
         children.add(MetaData(key.name, value.value))
@@ -56,5 +59,8 @@ class WatchFaceHasChildScope(
             "key" to key,
             "value" to value,
         )
+        override fun addChild(child: WatchFaceElement) {
+            throw UnsupportedOperationException()
+        }
     }
 }

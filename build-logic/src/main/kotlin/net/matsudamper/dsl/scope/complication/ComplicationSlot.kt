@@ -42,5 +42,5 @@ fun WatchFaceHasChildLayoutReceiveScope.ComplicationSlot(
         tintColor = tintColor,
     )
     block(scope)
-    children.add(scope)
+    addChild(scope)
 }

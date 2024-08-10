@@ -32,5 +32,5 @@ fun WatchFaceHasChildLayoutReceiveScope.PartDraw(
         tintColor = tintColor,
     )
     block(scope)
-    children.add(scope)
+    addChild(scope)
 }

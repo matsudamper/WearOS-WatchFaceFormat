@@ -21,4 +21,7 @@ class BoundingOvalScope(
         "outlinePadding" to outlinePadding.toString(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        throw UnsupportedOperationException()
+    }
 }

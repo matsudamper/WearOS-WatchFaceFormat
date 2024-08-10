@@ -19,4 +19,7 @@ class DefaultProviderPolicyScope(
         "primaryProvider" to primaryProvider,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        throw UnsupportedOperationException()
+    }
 }

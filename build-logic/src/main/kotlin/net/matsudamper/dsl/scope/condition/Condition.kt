@@ -7,5 +7,5 @@ import net.matsudamper.dsl.element.WatchFaceElement
 fun WatchFaceHasChildElement.Condition(
     block: ConditionScope.() -> Unit
 ) {
-    children.add(ConditionScope().apply(block))
+    addChild(ConditionScope().apply(block))
 }

@@ -12,10 +12,7 @@ import net.matsudamper.dsl.metadata.ClockTypeValue
 import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.scope.clock.DigitalClock
 import net.matsudamper.dsl.scope.complication.ComplicationSlot
-import net.matsudamper.dsl.scope.condition.CompareScope
 import net.matsudamper.dsl.scope.condition.Condition
-import net.matsudamper.dsl.scope.condition.ConditionScope
-import net.matsudamper.dsl.scope.condition.ExpressionScope
 import net.matsudamper.dsl.scope.draw.PartDraw
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -27,9 +24,13 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
         with(target) {
             val generateFormat = tasks.register("generateFormat") {
                 doLast {
-                    val xml = generate()
-                    layout.projectDirectory.asFile.resolve("src/main/res/raw/watchface.xml")
-                        .writeText(xml)
+                    runCatching {
+                        val xml = generate()
+                        layout.projectDirectory.asFile.resolve("src/main/res/raw/watchface.xml")
+                            .writeText(xml)
+                    }.onFailure {
+                        it.printStackTrace()
+                    }.getOrThrow()
                 }
             }
 

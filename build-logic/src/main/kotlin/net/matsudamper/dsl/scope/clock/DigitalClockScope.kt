@@ -26,6 +26,9 @@ class DigitalClockScope(
 ) : WatchFaceHasChildElement, WatchFaceLayoutHasChildElement {
     override val elementName: String = "DigitalClock"
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
     override val attributes: Map<String, String?>
         get() = mapOf(
             "x" to x.toString(),

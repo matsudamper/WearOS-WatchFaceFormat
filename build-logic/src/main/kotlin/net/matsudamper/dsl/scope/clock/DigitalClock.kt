@@ -34,5 +34,5 @@ fun WatchFaceHasChildLayoutReceiveScope.DigitalClock(
         tintColor = tintColor,
     )
     block(scope)
-    children.add(scope)
+    addChild(scope)
 }

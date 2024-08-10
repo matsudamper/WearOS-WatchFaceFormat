@@ -43,6 +43,9 @@ class TimeTextScope(
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun Font(
         family: FontFamily = FontFamily.SyncToDevice,

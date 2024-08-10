@@ -17,4 +17,7 @@ class ExpressionScope(
     override val children: MutableList<WatchFaceElement> = mutableListOf(
         WatchFaceTextElement(value)
     )
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 }

@@ -30,6 +30,9 @@ class FontScope(
         "weight" to weight.value,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun Lower() {
         TODO()

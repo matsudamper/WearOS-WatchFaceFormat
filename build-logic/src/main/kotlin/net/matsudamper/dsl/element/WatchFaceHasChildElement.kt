@@ -5,7 +5,9 @@ sealed interface WatchFaceElement
 interface WatchFaceHasChildElement : WatchFaceElement {
     val elementName: String
     val attributes: Map<String, String?>
-    val children: MutableList<WatchFaceElement>
+    val children: List<WatchFaceElement>
+
+    fun addChild(child: WatchFaceElement)
 }
 
 data class WatchFaceTextElement(

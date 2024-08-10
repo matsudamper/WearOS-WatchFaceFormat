@@ -10,7 +10,9 @@ class ExpressionsScope : WatchFaceHasChildElement {
     override val elementName: String = "Expressions"
     override val attributes: Map<String, String?> = mapOf()
     override val children: MutableList<WatchFaceElement> = mutableListOf()
-
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
     fun Expression(
         name: String,
         value: String,

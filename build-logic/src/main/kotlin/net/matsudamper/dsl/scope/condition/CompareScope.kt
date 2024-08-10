@@ -14,4 +14,7 @@ class CompareScope(
         "expression" to expression,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        throw UnsupportedOperationException()
+    }
 }

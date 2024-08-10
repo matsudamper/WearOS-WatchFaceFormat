@@ -8,6 +8,9 @@ class UserConfigurationScope : WatchFaceHasChildElement {
     override val elementName: String = "UserConfigurations"
     override val attributes: Map<String, String?> = mapOf()
     override val children:MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun UserConfigurations(
         id: String? = null,

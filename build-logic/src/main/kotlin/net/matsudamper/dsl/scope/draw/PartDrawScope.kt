@@ -37,6 +37,9 @@ class PartDrawScope(
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun Arc(
         centerX: Float,

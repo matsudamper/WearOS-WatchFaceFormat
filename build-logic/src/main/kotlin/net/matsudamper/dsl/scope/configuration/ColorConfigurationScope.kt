@@ -22,6 +22,9 @@ class ColorConfigurationScope(
         "defaultValue" to defaultValue
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 
     fun ColorOption(
         id: String? = null,
@@ -58,5 +61,8 @@ class ColorConfigurationScope(
             "colors" to colors.joinToString(" ")
         )
         override val children: MutableList<WatchFaceElement> = mutableListOf()
+        override fun addChild(child: WatchFaceElement) {
+            throw UnsupportedOperationException()
+        }
     }
 }
