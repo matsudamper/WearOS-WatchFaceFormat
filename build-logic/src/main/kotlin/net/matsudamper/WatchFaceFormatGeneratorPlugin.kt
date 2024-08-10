@@ -137,7 +137,7 @@ private fun SceneScope.Slots(
                             ) {
                                 Font(
                                     color = ContentColor.getColorSymbol(),
-                                    size = slotSize / 2,
+                                    size = slotSize / 4,
                                 ) {
                                     Template {
                                         addRawText("%s")

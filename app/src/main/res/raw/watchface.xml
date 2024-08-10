@@ -145,7 +145,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
@@ -193,7 +193,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
@@ -241,7 +241,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
@@ -289,7 +289,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
@@ -337,7 +337,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
@@ -385,7 +385,7 @@
                                 ellipsis="true" >
                                 <Font
                                     family="SYNC_TO_DEVICE"
-                                    size="67"
+                                    size="33"
                                     color="[CONFIGURATION.contentColor.0]"
                                     letterSpacing="0.0"
                                     weight="NORMAL" >
