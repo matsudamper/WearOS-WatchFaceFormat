@@ -1,15 +1,26 @@
 package net.matsudamper
 
+import net.matsudamper.dsl.createWatchFace
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.ClipShape
-import net.matsudamper.dsl.scope.SceneScope
+import net.matsudamper.dsl.element.ComplicationSlotSupportedType
+import net.matsudamper.dsl.element.DefaultProvider
 import net.matsudamper.dsl.element.SourceType
-import net.matsudamper.dsl.createWatchFace
 import net.matsudamper.dsl.element.TextAlign
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
+import net.matsudamper.dsl.scope.SceneScope
+import net.matsudamper.dsl.scope.clock.DigitalClock
+import net.matsudamper.dsl.scope.complication.ComplicationSlot
+import net.matsudamper.dsl.scope.condition.CompareScope
+import net.matsudamper.dsl.scope.condition.Condition
+import net.matsudamper.dsl.scope.condition.ConditionScope
+import net.matsudamper.dsl.scope.condition.ExpressionScope
+import net.matsudamper.dsl.scope.draw.PartDraw
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import kotlin.math.cos
+import kotlin.math.sin
 
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -59,6 +70,10 @@ private fun generate(): String {
             }
         }
         Scene {
+            Slots(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+            )
             SecondHand(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
@@ -67,6 +82,54 @@ private fun generate(): String {
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
             )
+        }
+    }
+}
+
+@Suppress("FunctionName")
+private fun SceneScope.Slots(
+    width: Int,
+    height: Int,
+) {
+    val slotCount = 6
+    val slotSize = (width * height) / 1500
+    val slotMargin = slotSize
+
+    for (i in 0 until slotCount) {
+        val angle = i * (360 / slotCount)
+        ComplicationSlot(
+            x = ((width - slotSize) / 2) + (cos(Math.toRadians(angle.toDouble())) * slotMargin).toInt(),
+            y = ((height - slotSize) / 2) + (sin(Math.toRadians(angle.toDouble())) * slotMargin).toInt(),
+            width = slotSize,
+            height = slotSize,
+            slotId = i,
+            supportedTypes = ComplicationSlotSupportedType.values().toList(),
+            tintColor = ContentColor.getColorSymbol(),
+            isCustomizable = true,
+        ) {
+            DefaultProviderPolicy(
+                primaryProvider = "com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService",
+                defaultSystemProviderType = ComplicationSlotSupportedType.SHORT_TEXT,
+                defaultSystemProvider = DefaultProvider.STEP_COUNT,
+            )
+            BoundingOval(
+                x = 0,
+                y = 0,
+                width = slotSize,
+                height = slotSize,
+                outlinePadding = 2,
+            )
+            Condition {
+                Expressions {
+                    Expression(
+                        name = "name",
+                        value = "<![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] == null]]>",
+                    )
+                }
+                Compare(expression = "") {
+
+                }
+            }
         }
     }
 }

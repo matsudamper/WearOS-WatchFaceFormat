@@ -1,6 +1,7 @@
 package net.matsudamper.dsl.scope
 
 import net.matsudamper.dsl.element.ClipShape
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.metadata.MetadataKey
 import net.matsudamper.dsl.metadata.MetadataValue
@@ -8,11 +9,11 @@ import net.matsudamper.dsl.scope.configuration.UserConfigurationScope
 
 @Suppress("FunctionName")
 @WatchFaceDSLMarker
-class WatchFaceScope(
+class WatchFaceHasChildScope(
     val clipShape: ClipShape,
     val height: Int,
     val width: Int,
-) : WatchFaceElement {
+) : WatchFaceHasChildElement {
     override val elementName: String = "WatchFace"
     override val attributes: Map<String, String?> = mapOf(
         "clipShape" to clipShape.value,
@@ -48,9 +49,9 @@ class WatchFaceScope(
         children.add(scope)
     }
 
-    private data class MetaData(val key: String, val value: String) : WatchFaceElement {
+    private data class MetaData(val key: String, val value: String) : WatchFaceHasChildElement {
         override val elementName: String = "Metadata"
-        override val children: List<WatchFaceElement> = listOf()
+        override val children: MutableList<WatchFaceElement> = mutableListOf()
         override val attributes: Map<String, String?> = mapOf(
             "key" to key,
             "value" to value,

@@ -1,5 +1,6 @@
 package net.matsudamper.dsl.scope.configuration
 
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 
@@ -11,7 +12,7 @@ class ColorConfigurationScope(
     val icon: String?,
     val screenReaderText: String?,
     val defaultValue: String
-) : WatchFaceElement {
+) : WatchFaceHasChildElement {
     override val elementName: String = "ColorConfiguration"
     override val attributes: Map<String, String?> = mapOf(
         "id" to id,
@@ -47,7 +48,7 @@ class ColorConfigurationScope(
         screenReaderText: String?,
         icon: String?,
         colors: List<String>
-    ) : WatchFaceElement {
+    ) : WatchFaceHasChildElement {
         override val elementName: String = "ColorOption"
         override val attributes: Map<String, String?> = mapOf(
             "id" to id,
@@ -56,6 +57,6 @@ class ColorConfigurationScope(
             "icon" to icon,
             "colors" to colors.joinToString(" ")
         )
-        override val children: List<WatchFaceElement> = listOf()
+        override val children: MutableList<WatchFaceElement> = mutableListOf()
     }
 }

@@ -2,6 +2,7 @@ package net.matsudamper.dsl.scope.draw
 
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.Direction
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 
@@ -15,7 +16,7 @@ class ArcScope(
     val startAngle: Float?,
     val endAngle: Float?,
     val direction: Direction,
-) : WatchFaceElement {
+) : WatchFaceHasChildElement {
     override val elementName: String = "Arc"
     override val attributes: Map<String, String?> = mapOf(
         "centerX" to centerX.toString(),
@@ -32,7 +33,7 @@ class ArcScope(
         value: String,
     ) {
         children.add(
-            TransformElement(
+            TransformHasChildElement(
                 target = target,
                 value = value,
             )
@@ -45,7 +46,7 @@ class ArcScope(
         thickness: Int,
     ) {
         children.add(
-            StrokeElement(
+            StrokeHasChildElement(
                 cap = cap,
                 color = color,
                 thickness = thickness,
@@ -54,29 +55,29 @@ class ArcScope(
     }
 
 
-    private class TransformElement(
+    private class TransformHasChildElement(
         target: String,
         value: String,
-    ) : WatchFaceElement {
+    ) : WatchFaceHasChildElement {
         override val elementName: String = "Transform"
         override val attributes: Map<String, String?> = mapOf(
             "target" to target,
             "value" to value,
         )
-        override val children: List<WatchFaceElement> = listOf()
+        override val children: MutableList<WatchFaceElement> = mutableListOf()
     }
 
-    private class StrokeElement(
+    private class StrokeHasChildElement(
         cap: Cap,
         color: String,
         thickness: Int,
-    ) : WatchFaceElement {
+    ) : WatchFaceHasChildElement {
         override val elementName: String = "Stroke"
         override val attributes: Map<String, String?> = mapOf(
             "cap" to cap.value,
             "color" to color,
             "thickness" to thickness.toString(),
         )
-        override val children: List<WatchFaceElement> = listOf()
+        override val children: MutableList<WatchFaceElement> = mutableListOf()
     }
 }

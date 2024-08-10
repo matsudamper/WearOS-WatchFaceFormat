@@ -3,16 +3,18 @@
 package net.matsudamper.dsl
 
 import net.matsudamper.dsl.element.ClipShape
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
-import net.matsudamper.dsl.scope.WatchFaceScope
+import net.matsudamper.dsl.element.WatchFaceTextElement
+import net.matsudamper.dsl.scope.WatchFaceHasChildScope
 
 fun createWatchFace(
     clipShape: ClipShape,
     height: Int,
     width: Int,
-    block: WatchFaceScope.() -> Unit,
+    block: WatchFaceHasChildScope.() -> Unit,
 ): String {
-    val scope = WatchFaceScope(
+    val scope = WatchFaceHasChildScope(
         clipShape = clipShape,
         height = height,
         width = width,
@@ -25,6 +27,13 @@ fun createWatchFace(
 }
 
 private fun generateXml(element: WatchFaceElement): String {
+    when (element) {
+        is WatchFaceHasChildElement -> Unit
+        is WatchFaceTextElement -> {
+            return element.text + "\n"
+        }
+    }
+
     val attributes = element.attributes
         .mapNotNull { (key, value) ->
             value ?: return@mapNotNull null

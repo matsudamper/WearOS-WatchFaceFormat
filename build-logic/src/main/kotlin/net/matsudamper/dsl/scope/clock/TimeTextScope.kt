@@ -6,6 +6,7 @@ import net.matsudamper.dsl.element.FontWeight
 import net.matsudamper.dsl.element.FontWidth
 import net.matsudamper.dsl.element.HourFormat
 import net.matsudamper.dsl.element.TextAlign
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 import net.matsudamper.dsl.scope.font.FontScope
@@ -25,7 +26,7 @@ class TimeTextScope(
     val angle: Float?,
     val alpha: Int?,
     val tintColor: String?,
-) : WatchFaceElement {
+) : WatchFaceHasChildElement {
     override val elementName: String = "TimeText"
     override val attributes: Map<String, String?> = mapOf(
         "format" to format,

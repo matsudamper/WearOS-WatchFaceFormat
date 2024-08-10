@@ -112,6 +112,186 @@
         </ColorConfiguration>
     </UserConfigurations>
     <Scene>
+        <ComplicationSlot
+            x="292"
+            y="157"
+            width="135"
+            height="135"
+            slotId="0"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
+        <ComplicationSlot
+            x="224"
+            y="273"
+            width="135"
+            height="135"
+            slotId="1"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
+        <ComplicationSlot
+            x="90"
+            y="273"
+            width="135"
+            height="135"
+            slotId="2"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
+        <ComplicationSlot
+            x="22"
+            y="157"
+            width="135"
+            height="135"
+            slotId="3"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
+        <ComplicationSlot
+            x="90"
+            y="41"
+            width="135"
+            height="135"
+            slotId="4"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
+        <ComplicationSlot
+            x="224"
+            y="41"
+            width="135"
+            height="135"
+            slotId="5"
+            supportedTypes="SHORT_TEXT LONG_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE RANGED_VALUE EMPTY"
+            isCustomizable="true"
+            tintColor="[CONFIGURATION.contentColor.0]" >
+            <DefaultProviderPolicy
+                defaultSystemProvider="STEP_COUNT"
+                defaultSystemProviderType="SHORT_TEXT"
+                primaryProvider="com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService" />
+            <BoundingOval
+                x="0"
+                y="0"
+                width="135"
+                height="135"
+                outlinePadding="2" />
+            <Condition>
+                <Expressions>
+                    <Expression
+                        name="true" >
+                        true
+                    </Expression>
+                </Expressions>
+                <Compare
+                    expression="" />
+            </Condition>
+        </ComplicationSlot>
         <PartDraw
             x="0"
             y="0"

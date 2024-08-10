@@ -1,9 +1,10 @@
 package net.matsudamper.dsl.scope.configuration
 
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
 
 @Suppress("FunctionName")
-class UserConfigurationScope : WatchFaceElement {
+class UserConfigurationScope : WatchFaceHasChildElement {
     override val elementName: String = "UserConfigurations"
     override val attributes: Map<String, String?> = mapOf()
     override val children:MutableList<WatchFaceElement> = mutableListOf()
