@@ -13735,6 +13735,64 @@
                     thickness="10" />
             </Arc>
         </PartDraw>
+        <Group
+            x="0"
+            y="0"
+            width="450"
+            height="450" >
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="0.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE" >
+                <Transform
+                    target="angle"
+                    value="6 * [MINUTE]" />
+                <RoundRectangle
+                    x="215.5"
+                    y="45.0"
+                    width="19.0"
+                    height="190.5"
+                    cornerRadiusX="9.5"
+                    cornerRadiusY="9.5" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="2" />
+                </RoundRectangle>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="0.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE" >
+                <Transform
+                    target="angle"
+                    value="30 * [HOUR_0_11]" />
+                <RoundRectangle
+                    x="210.0"
+                    y="90.0"
+                    width="30.0"
+                    height="151.0"
+                    cornerRadiusX="15.0"
+                    cornerRadiusY="15.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="2" />
+                </RoundRectangle>
+            </PartDraw>
+        </Group>
         <DigitalClock
             x="0"
             y="197"

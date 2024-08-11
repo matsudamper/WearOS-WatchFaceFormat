@@ -11,6 +11,8 @@ import net.matsudamper.dsl.scope.PartImage
 import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.Variant
 import net.matsudamper.dsl.scope.condition.Condition
+import net.matsudamper.dsl.scope.draw.Stroke
+import net.matsudamper.dsl.scope.draw.Transform
 import net.matsudamper.dsl.scope.text.Font
 
 @Suppress("FunctionName")

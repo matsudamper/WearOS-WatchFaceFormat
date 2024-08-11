@@ -1,33 +1,29 @@
 package net.matsudamper.dsl.scope.draw
 
-import net.matsudamper.dsl.element.Direction
 import net.matsudamper.dsl.element.WatchFaceElement
 import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 
 @WatchFaceDSLMarker
-class ArcScope(
-    val centerX: Float,
-    val centerY: Float,
-    val height: Float,
+class RoundRectangleScope(
+    val x: Float,
+    val y: Float,
     val width: Float,
-    val startAngle: Float?,
-    val endAngle: Float?,
-    val direction: Direction,
+    val height: Float,
+    val cornerRadiusX: Float,
+    val cornerRadiusY: Float,
 ) : WatchFaceHasChildElement, ShapeScope {
-    override val elementName: String = "Arc"
+    override val elementName: String = "RoundRectangle"
     override val attributes: Map<String, String?> = mapOf(
-        "centerX" to centerX.toString(),
-        "centerY" to centerY.toString(),
-        "height" to height.toString(),
+        "x" to x.toString(),
+        "y" to y.toString(),
         "width" to width.toString(),
-        "startAngle" to startAngle?.toString(),
-        "endAngle" to endAngle?.toString(),
-        "direction" to direction.toString(),
+        "height" to height.toString(),
+        "cornerRadiusX" to cornerRadiusX.toString(),
+        "cornerRadiusY" to cornerRadiusY.toString(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
         children.add(child)
     }
-
 }

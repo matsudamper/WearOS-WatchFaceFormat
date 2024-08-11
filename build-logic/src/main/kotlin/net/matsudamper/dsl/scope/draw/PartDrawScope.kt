@@ -63,4 +63,25 @@ class PartDrawScope(
         block(scope)
         children.add(scope)
     }
+
+    fun RoundRectangle(
+        x: Float,
+        y: Float,
+        width: Float,
+        height: Float,
+        cornerRadiusX: Float,
+        cornerRadiusY: Float,
+        block: RoundRectangleScope.() -> Unit,
+    ) {
+        val scope = RoundRectangleScope(
+            x = x,
+            y = y,
+            width = width,
+            height = height,
+            cornerRadiusX = cornerRadiusX,
+            cornerRadiusY = cornerRadiusY,
+        )
+        block(scope)
+        children.add(scope)
+    }
 }
