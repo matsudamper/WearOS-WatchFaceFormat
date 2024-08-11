@@ -110,6 +110,9 @@ private fun SceneScope.Slots(
                 ComplicationSlotSupportedType.RANGED_VALUE,
                 ComplicationSlotSupportedType.LONG_TEXT,
                 ComplicationSlotSupportedType.SHORT_TEXT,
+                ComplicationSlotSupportedType.PHOTO_IMAGE,
+                ComplicationSlotSupportedType.SMALL_IMAGE,
+                ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE,
                 ComplicationSlotSupportedType.EMPTY,
             ),
             isCustomizable = true,
@@ -145,6 +148,33 @@ private fun SceneScope.Slots(
                 }
             }
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
+                Condition {
+                    Default {
+                        TextCompressionLayout(
+                            slotSize = slotSize,
+                        )
+                    }
+                }
+            }
+            Complication(type = ComplicationSlotSupportedType.PHOTO_IMAGE) {
+                Condition {
+                    Default {
+                        TextCompressionLayout(
+                            slotSize = slotSize,
+                        )
+                    }
+                }
+            }
+            Complication(type = ComplicationSlotSupportedType.SMALL_IMAGE) {
+                Condition {
+                    Default {
+                        TextCompressionLayout(
+                            slotSize = slotSize,
+                        )
+                    }
+                }
+            }
+            Complication(type = ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE) {
                 Condition {
                     Default {
                         TextCompressionLayout(
