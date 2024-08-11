@@ -11,11 +11,10 @@ import net.matsudamper.dsl.scope.PartImage
 import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.Variant
 import net.matsudamper.dsl.scope.condition.Condition
-import net.matsudamper.dsl.scope.condition.DefaultScope
 import net.matsudamper.dsl.scope.text.Font
 
 @Suppress("FunctionName")
-internal fun DefaultScope.RangeValueLayout(
+internal fun HasWatchFaceLayoutElement.RangeValueLayout(
     slotSize: Int,
 ) {
     Group(
@@ -32,9 +31,51 @@ internal fun DefaultScope.RangeValueLayout(
         )
     }
 }
+@Suppress("FunctionName")
+internal fun HasWatchFaceLayoutElement.SmallImageCompression(
+    slotSize: Int,
+) {
+    val hasAmbientId = "hasAmbientId"
+    Condition {
+        Expressions {
+            Expression(
+                name = hasAmbientId,
+                value = "[${Complication.SMALL_IMAGE_AMBIENT}] != null",
+            )
+        }
+        Compare(hasAmbientId) {
+            Group(
+                x = 0,
+                y = 0,
+                width = slotSize,
+                height = slotSize,
+            ) {
+                SmallImage(
+                    slotSize = slotSize,
+                    image = Complication.SMALL_IMAGE,
+                    ambientImage = Complication.SMALL_IMAGE_AMBIENT,
+                )
+            }
+        }
+        Default {
+            Group(
+                x = 0,
+                y = 0,
+                width = slotSize,
+                height = slotSize,
+            ) {
+                SmallImage(
+                    slotSize = slotSize,
+                    image = Complication.SMALL_IMAGE,
+                    ambientImage = Complication.SMALL_IMAGE,
+                )
+            }
+        }
+    }
+}
 
 @Suppress("FunctionName")
-internal fun DefaultScope.TextCompressionLayout(
+internal fun HasWatchFaceLayoutElement.TextCompressionLayout(
     slotSize: Int,
 ) {
     Condition {
@@ -162,6 +203,56 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
                     thickness = strokeSize,
                 )
             }
+        }
+    }
+}
+
+@Suppress("FunctionName")
+private fun HasWatchFaceLayoutElement.SmallImage(
+    slotSize: Int,
+    image: Complication,
+    ambientImage: Complication,
+) {
+    val iconSize = slotSize / 2
+    Group(
+        x = (slotSize - iconSize) / 2,
+        y = (slotSize - iconSize) / 2,
+        width = iconSize,
+        height = iconSize,
+    ) {
+        PartImage(
+            x = 0,
+            y = 0,
+            width = width,
+            height = height,
+            alpha = 0,
+            renderMode = null,
+        ) {
+            Variant(
+                mode = VariantMode.AMBIENT,
+                target = "alpha",
+                value = "255",
+            )
+            Image(
+                resource = "[$ambientImage]",
+            )
+        }
+        PartImage(
+            x = 0,
+            y = 0,
+            width = width,
+            height = height,
+            alpha = 255,
+            renderMode = null,
+        ) {
+            Variant(
+                mode = VariantMode.AMBIENT,
+                target = "alpha",
+                value = "0",
+            )
+            Image(
+                resource = "[$image]",
+            )
         }
     }
 }

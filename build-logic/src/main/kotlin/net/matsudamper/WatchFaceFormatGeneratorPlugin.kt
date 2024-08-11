@@ -108,11 +108,11 @@ private fun SceneScope.Slots(
             slotId = i,
             supportedTypes = listOf(
                 ComplicationSlotSupportedType.RANGED_VALUE,
+                ComplicationSlotSupportedType.SMALL_IMAGE,
                 ComplicationSlotSupportedType.LONG_TEXT,
                 ComplicationSlotSupportedType.SHORT_TEXT,
-                ComplicationSlotSupportedType.PHOTO_IMAGE,
-                ComplicationSlotSupportedType.SMALL_IMAGE,
                 ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE,
+                ComplicationSlotSupportedType.PHOTO_IMAGE,
                 ComplicationSlotSupportedType.EMPTY,
             ),
             isCustomizable = true,
@@ -130,49 +130,29 @@ private fun SceneScope.Slots(
                 outlinePadding = 2,
             )
             Complication(type = ComplicationSlotSupportedType.RANGED_VALUE) {
-                Condition {
-                    Default {
-                        RangeValueLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                RangeValueLayout(
+                    slotSize = slotSize,
+                )
             }
             Complication(type = ComplicationSlotSupportedType.LONG_TEXT) {
-                Condition {
-                    Default {
-                        TextCompressionLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                TextCompressionLayout(
+                    slotSize = slotSize,
+                )
             }
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
-                Condition {
-                    Default {
-                        TextCompressionLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                TextCompressionLayout(
+                    slotSize = slotSize,
+                )
             }
             Complication(type = ComplicationSlotSupportedType.PHOTO_IMAGE) {
-                Condition {
-                    Default {
-                        TextCompressionLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                TextCompressionLayout(
+                    slotSize = slotSize,
+                )
             }
             Complication(type = ComplicationSlotSupportedType.SMALL_IMAGE) {
-                Condition {
-                    Default {
-                        TextCompressionLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                SmallImageCompression(
+                    slotSize = slotSize,
+                )
             }
             Complication(type = ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE) {
                 Condition {
