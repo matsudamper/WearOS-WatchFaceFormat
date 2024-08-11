@@ -131,125 +131,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>
@@ -273,125 +510,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>
@@ -415,125 +889,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>
@@ -557,125 +1268,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>
@@ -699,125 +1647,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>
@@ -841,125 +2026,362 @@
                 height="135"
                 outlinePadding="2" />
             <Complication
+                type="LONG_TEXT" >
+                <Condition>
+                    <Expressions />
+                    <Default>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
+                    </Default>
+                </Condition>
+            </Complication>
+            <Complication
                 type="SHORT_TEXT" >
                 <Condition>
-                    <Expressions>
-                        <Expression
-                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
-                        </Expression>
-                    </Expressions>
-                    <Compare
-                        expression="hasMonoImage" >
-                        <Group
-                            x="34"
-                            y="34"
-                            width="135"
-                            height="135" >
-                            <Condition>
-                                <Expressions>
-                                    <Expression
-                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                </Expressions>
-                                <Compare
-                                    expression="hasMonoAmbient" >
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="0"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="255" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
-                                    </PartImage>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Variant
-                                            mode="AMBIENT"
-                                            target="alpha"
-                                            value="0" />
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Compare>
-                                <Default>
-                                    <PartImage
-                                        x="0"
-                                        y="0"
-                                        width="67"
-                                        height="67"
-                                        alpha="255"
-                                        tintColor="[CONFIGURATION.contentColor.0]" >
-                                        <Image
-                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                                    </PartImage>
-                                </Default>
-                            </Condition>
-                        </Group>
-                    </Compare>
+                    <Expressions />
                     <Default>
-                        <Group
-                            x="0"
-                            y="0"
-                            width="135"
-                            height="135" >
-                            <PartDraw
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                angle="0.0"
-                                pivotX="0.5"
-                                pivotY="0.5"
-                                alpha="255"
-                                renderMode="SOURCE" >
-                                <Arc
-                                    centerX="67.5"
-                                    centerY="67.5"
-                                    height="133.0"
-                                    width="133.0"
-                                    startAngle="0.0"
-                                    endAngle="359.999"
-                                    direction="CLOCKWISE" >
-                                    <Stroke
-                                        cap="ROUND"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        thickness="2" />
-                                </Arc>
-                            </PartDraw>
-                            <PartText
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                alpha="255" >
-                                <Text
-                                    align="CENTER"
-                                    ellipsis="true" >
-                                    <Font
-                                        family="SYNC_TO_DEVICE"
-                                        size="33"
-                                        color="[CONFIGURATION.contentColor.0]"
-                                        letterSpacing="0.0"
-                                        weight="NORMAL" >
-                                        <Template>%s
-                                        <Parameter
-                                            expression="[COMPLICATION.TEXT]" />
-                                        </Template>
-                                    </Font>
-                                </Text>
-                            </PartText>
-                        </Group>
+                        <Condition>
+                            <Expressions>
+                                <Expression
+                                    name="hasTitleId" ><![CDATA[[COMPLICATION.TITLE] != null]]>
+                                </Expression>
+                            </Expressions>
+                            <Compare
+                                expression="hasTitleId" >
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <PartText
+                                        x="0"
+                                        y="45"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TITLE]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                    <PartText
+                                        x="0"
+                                        y="67"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Compare>
+                            <Default>
+                                <Group
+                                    x="0"
+                                    y="0"
+                                    width="135"
+                                    height="135" >
+                                    <PartDraw
+                                        x="0"
+                                        y="0"
+                                        width="135"
+                                        height="135"
+                                        angle="0.0"
+                                        pivotX="0.5"
+                                        pivotY="0.5"
+                                        alpha="255"
+                                        renderMode="SOURCE" >
+                                        <Arc
+                                            centerX="67.5"
+                                            centerY="67.5"
+                                            height="133.0"
+                                            width="133.0"
+                                            startAngle="0.0"
+                                            endAngle="359.999"
+                                            direction="CLOCKWISE" >
+                                            <Stroke
+                                                cap="ROUND"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                thickness="2" />
+                                        </Arc>
+                                    </PartDraw>
+                                    <Group
+                                        x="51"
+                                        y="40"
+                                        width="33"
+                                        height="33" >
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="0"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="255" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                        </PartImage>
+                                        <PartImage
+                                            x="0"
+                                            y="0"
+                                            width="33"
+                                            height="33"
+                                            alpha="255"
+                                            tintColor="[CONFIGURATION.contentColor.0]" >
+                                            <Variant
+                                                mode="AMBIENT"
+                                                target="alpha"
+                                                value="0" />
+                                            <Image
+                                                resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                        </PartImage>
+                                    </Group>
+                                    <PartText
+                                        x="0"
+                                        y="73"
+                                        width="135"
+                                        height="22"
+                                        alpha="255" >
+                                        <Text
+                                            align="CENTER"
+                                            ellipsis="true" >
+                                            <Font
+                                                family="SYNC_TO_DEVICE"
+                                                size="22"
+                                                color="[CONFIGURATION.contentColor.0]"
+                                                letterSpacing="0.0"
+                                                weight="NORMAL" >
+                                                <Template>%s
+                                                <Parameter
+                                                    expression="[COMPLICATION.TEXT]" />
+                                                </Template>
+                                            </Font>
+                                        </Text>
+                                    </PartText>
+                                </Group>
+                            </Default>
+                        </Condition>
                     </Default>
                 </Condition>
             </Complication>

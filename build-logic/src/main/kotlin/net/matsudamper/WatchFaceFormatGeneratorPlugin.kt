@@ -125,74 +125,26 @@ private fun SceneScope.Slots(
                 height = slotSize,
                 outlinePadding = 2,
             )
-            Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
+            Complication(type = ComplicationSlotSupportedType.LONG_TEXT) {
                 Condition {
-                    MonoCompression(
-                        slotSize = slotSize,
-                    )
+//                    MonoCompression(
+//                        slotSize = slotSize,
+//                    )
                     Default {
-                        DefaultCompression(
+                        TextCompression(
                             slotSize = slotSize,
                         )
                     }
                 }
             }
-        }
-    }
-}
-
-
-@Suppress("FunctionName")
-private fun DefaultScope.DefaultCompression(
-    slotSize: Int,
-) {
-    Group(
-        x = 0,
-        y = 0,
-        width = slotSize,
-        height = slotSize,
-    ) {
-        PartDraw(
-            x = 0,
-            y = 0,
-            width = slotSize,
-            height = slotSize,
-        ) {
-            val strokeSize = 2
-            Arc(
-                centerX = this@PartDraw.width / 2f,
-                centerY = this@PartDraw.height / 2f,
-                width = this@PartDraw.width.toFloat() - strokeSize,
-                height = this@PartDraw.height.toFloat() - strokeSize,
-                startAngle = 0f,
-                endAngle = 359.999f,
-            ) {
-                Stroke(
-                    cap = Cap.ROUND,
-                    color = ContentColor.getColorSymbol(),
-                    thickness = strokeSize,
-                )
-            }
-        }
-        PartText(
-            x = 0,
-            y = 0,
-            width = slotSize,
-            height = slotSize,
-            alpha = 255,
-        ) {
-            Text(
-                align = TextAlign.CENTER,
-                ellipsis = true,
-            ) {
-                Font(
-                    color = ContentColor.getColorSymbol(),
-                    size = slotSize / 4,
-                ) {
-                    Template {
-                        addRawText("%s")
-                        Parameter(
-                            expression = "[${Complication.TEXT}]",
+            Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
+                Condition {
+//                    MonoCompression(
+//                        slotSize = slotSize,
+//                    )
+                    Default {
+                        TextCompression(
+                            slotSize = slotSize,
                         )
                     }
                 }
