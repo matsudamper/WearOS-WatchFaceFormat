@@ -3,6 +3,7 @@ package net.matsudamper
 import net.matsudamper.dsl.createWatchFace
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.ClipShape
+import net.matsudamper.dsl.element.Complication
 import net.matsudamper.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.dsl.element.DefaultProvider
 import net.matsudamper.dsl.element.SourceType
@@ -191,7 +192,7 @@ private fun DefaultScope.DefaultCompression(
                     Template {
                         addRawText("%s")
                         Parameter(
-                            expression = "[COMPLICATION.TEXT]",
+                            expression = "[${Complication.TEXT}]",
                         )
                     }
                 }
