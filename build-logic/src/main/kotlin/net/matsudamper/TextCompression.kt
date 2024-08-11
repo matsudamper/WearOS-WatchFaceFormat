@@ -104,17 +104,16 @@ internal fun HasWatchFaceLayoutElement.TextCompressionLayout(
             ) {
                 Condition {
                     val hasPhotoImage = "hasPhotoImage"
-                    val hasSmallImage = "hasSmallImage"
                     val hasSmallAndAmbientImage = "hasSmallAndAmbientImage"
-                    val monoImageAndAmbient = "monoImageAndAmbient"
+                    val hasSmallAndNoAmbientImage = "hasSmallAndNoAmbientImage"
                     Expressions {
                         Expression(
                             name = hasPhotoImage,
                             value = "[${Complication.PHOTO_IMAGE}] != null",
                         )
                         Expression(
-                            name = hasSmallImage,
-                            value = "[${Complication.SMALL_IMAGE}] != null",
+                            name = hasSmallAndNoAmbientImage,
+                            value = "[${Complication.SMALL_IMAGE}] != null && [${Complication.SMALL_IMAGE_AMBIENT}] == null",
                         )
                         Expression(
                             name = hasSmallAndAmbientImage,
@@ -122,40 +121,25 @@ internal fun HasWatchFaceLayoutElement.TextCompressionLayout(
                         )
                     }
                     Compare(hasPhotoImage) {
-                        Condition {
-                            Text(
-                                slotSize = slotSize,
-                                image = Complication.PHOTO_IMAGE,
-                                ambientImage = Complication.PHOTO_IMAGE,
-                            )
-                        }
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.PHOTO_IMAGE,
+                            ambientImage = Complication.PHOTO_IMAGE,
+                        )
                     }
                     Compare(hasSmallAndAmbientImage) {
-                        Condition {
-                            Text(
-                                slotSize = slotSize,
-                                image = Complication.SMALL_IMAGE,
-                                ambientImage = Complication.SMALL_IMAGE_AMBIENT,
-                            )
-                        }
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.SMALL_IMAGE,
+                            ambientImage = Complication.SMALL_IMAGE_AMBIENT,
+                        )
                     }
-                    Compare(hasSmallImage) {
-                        Condition {
-                            Text(
-                                slotSize = slotSize,
-                                image = Complication.SMALL_IMAGE,
-                                ambientImage = Complication.SMALL_IMAGE,
-                            )
-                        }
-                    }
-                    Compare(monoImageAndAmbient) {
-                        Condition {
-                            Text(
-                                slotSize = slotSize,
-                                image = Complication.MONOCHROMATIC_IMAGE,
-                                ambientImage = Complication.MONOCHROMATIC_IMAGE_AMBIENT,
-                            )
-                        }
+                    Compare(hasSmallAndNoAmbientImage) {
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.SMALL_IMAGE,
+                            ambientImage = Complication.SMALL_IMAGE,
+                        )
                     }
                     Default {
                         Text(
