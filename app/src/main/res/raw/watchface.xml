@@ -13706,6 +13706,10 @@
             pivotY="0.5"
             alpha="255"
             renderMode="SOURCE" >
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
             <Arc
                 centerX="225.0"
                 centerY="225.0"

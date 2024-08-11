@@ -7,6 +7,7 @@ import net.matsudamper.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.dsl.element.DefaultProvider
 import net.matsudamper.dsl.element.SourceType
 import net.matsudamper.dsl.element.TextAlign
+import net.matsudamper.dsl.element.VariantMode
 import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
 import net.matsudamper.dsl.scope.ComplicationSlot
@@ -15,6 +16,7 @@ import net.matsudamper.dsl.scope.Group
 import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
 import net.matsudamper.dsl.scope.PartDraw
 import net.matsudamper.dsl.scope.SceneScope
+import net.matsudamper.dsl.scope.Variant
 import net.matsudamper.dsl.scope.draw.Stroke
 import net.matsudamper.dsl.scope.draw.Transform
 import net.matsudamper.dsl.scope.text.Font
@@ -277,7 +279,13 @@ private fun SceneScope.SecondHand(
         y = 0,
         width = width,
         height = height,
+        alpha = 255,
     ) {
+        Variant(
+            mode = VariantMode.AMBIENT,
+            target = "alpha",
+            value = "0",
+        )
         val strokeSize = 10
         Arc(
             centerX = this@PartDraw.width / 2f,
