@@ -100,8 +100,9 @@ private fun SceneScope.Slots(
     val slotSize = (width * height) / 1500
     val slotMargin = slotSize
 
+    val angleStep = 360 / slotCount
     for (i in 0 until slotCount) {
-        val angle = i * (360 / slotCount)
+        val angle = i * angleStep + (angleStep / 2)
         ComplicationSlot(
             x = ((width - slotSize) / 2) + (cos(Math.toRadians(angle.toDouble())) * slotMargin).toInt(),
             y = ((height - slotSize) / 2) + (sin(Math.toRadians(angle.toDouble())) * slotMargin).toInt(),

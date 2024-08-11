@@ -113,8 +113,8 @@
     </UserConfigurations>
     <Scene>
         <ComplicationSlot
-            x="292"
-            y="157"
+            x="273"
+            y="224"
             width="135"
             height="135"
             slotId="0"
@@ -255,8 +255,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="224"
-            y="273"
+            x="157"
+            y="292"
             width="135"
             height="135"
             slotId="1"
@@ -397,8 +397,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="90"
-            y="273"
+            x="41"
+            y="224"
             width="135"
             height="135"
             slotId="2"
@@ -539,8 +539,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="22"
-            y="157"
+            x="41"
+            y="90"
             width="135"
             height="135"
             slotId="3"
@@ -681,8 +681,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="90"
-            y="41"
+            x="157"
+            y="22"
             width="135"
             height="135"
             slotId="4"
@@ -823,8 +823,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="224"
-            y="41"
+            x="273"
+            y="90"
             width="135"
             height="135"
             slotId="5"
