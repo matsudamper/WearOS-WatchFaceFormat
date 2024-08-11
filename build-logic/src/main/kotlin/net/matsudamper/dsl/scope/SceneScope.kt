@@ -6,7 +6,7 @@ import net.matsudamper.dsl.element.WatchFaceHasChildElement
 @WatchFaceDSLMarker
 class SceneScope(
     val backgroundColor: String?,
-) : WatchFaceHasChildElement, WatchFaceHasChildLayoutReceiveScope {
+) : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
     override val elementName: String = "Scene"
     override val attributes: Map<String, String?> = mapOf(
         "backgroundColor" to backgroundColor,

@@ -133,6 +133,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"
@@ -211,6 +234,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"
@@ -289,6 +335,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"
@@ -367,6 +436,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"
@@ -445,6 +537,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"
@@ -523,6 +638,29 @@
             <Complication
                 type="SHORT_TEXT" >
                 <Condition>
+                    <Expressions>
+                        <Expression
+                            name="hasMonoImage" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null]]>
+                        </Expression>
+                    </Expressions>
+                    <Compare
+                        expression="hasMonoImage" >
+                        <Group
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135" >
+                            <PartImage
+                                x="0"
+                                y="0"
+                                width="135"
+                                height="135"
+                                tintColor="[CONFIGURATION.contentColor.0]" >
+                                <Image
+                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                            </PartImage>
+                        </Group>
+                    </Compare>
                     <Default>
                         <Group
                             x="0"

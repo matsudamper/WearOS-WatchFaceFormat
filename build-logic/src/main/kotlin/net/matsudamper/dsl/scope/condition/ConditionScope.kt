@@ -1,10 +1,9 @@
 package net.matsudamper.dsl.scope.condition
 
-import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.element.WatchFaceElement
-import net.matsudamper.dsl.scope.WatchFaceDSLMarker
+import net.matsudamper.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
-import net.matsudamper.dsl.scope.WatchFaceHasChildLayoutReceiveScope
+import net.matsudamper.dsl.scope.WatchFaceDSLMarker
 
 
 @WatchFaceDSLMarker
@@ -12,22 +11,24 @@ import net.matsudamper.dsl.scope.WatchFaceHasChildLayoutReceiveScope
 class ConditionScope : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
     override val elementName: String = "Condition"
     override val attributes: Map<String, String?> = mapOf()
-    override val children: MutableList<WatchFaceElement> = mutableListOf()
+    private val expressions = ExpressionsScope()
+    private val mutableChildren = mutableListOf<WatchFaceElement>()
+    override val children: List<WatchFaceElement> get() = listOf(expressions).plus(mutableChildren)
     override fun addChild(child: WatchFaceElement) {
-        children.add(child)
+        mutableChildren.add(child)
     }
 
     fun Expressions(
         block: ExpressionsScope.() -> Unit
     ) {
-        children.add(ExpressionsScope().apply(block))
+        expressions.apply(block)
     }
 
     fun Compare(
         expression: String,
         block: CompareScope.() -> Unit
     ) {
-        children.add(
+        mutableChildren.add(
             CompareScope(
                 expression = expression
             ).apply(block)
@@ -37,6 +38,6 @@ class ConditionScope : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
     fun Default(
         block: DefaultScope.() -> Unit
     ) {
-        children.add(DefaultScope().apply(block))
+        mutableChildren.add(DefaultScope().apply(block))
     }
 }

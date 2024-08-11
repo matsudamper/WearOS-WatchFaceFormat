@@ -12,16 +12,19 @@ import net.matsudamper.dsl.metadata.ClockTypeValue
 import net.matsudamper.dsl.scope.Group
 import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.SceneScope
-import net.matsudamper.dsl.scope.clock.DigitalClock
-import net.matsudamper.dsl.scope.complication.ComplicationSlot
 import net.matsudamper.dsl.scope.condition.Condition
 import net.matsudamper.dsl.scope.condition.DefaultScope
-import net.matsudamper.dsl.scope.draw.PartDraw
 import net.matsudamper.dsl.scope.text.Font
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import kotlin.math.cos
 import kotlin.math.sin
+import net.matsudamper.dsl.element.Complication
+import net.matsudamper.dsl.scope.ComplicationSlot
+import net.matsudamper.dsl.scope.DigitalClock
+import net.matsudamper.dsl.scope.PartDraw
+import net.matsudamper.dsl.scope.PartImage
+import net.matsudamper.dsl.scope.condition.ConditionScope
 
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -125,12 +128,49 @@ private fun SceneScope.Slots(
             )
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
                 Condition {
+                    MonoCompression(
+                        slotSize = slotSize,
+                    )
                     Default {
                         DefaultCompression(
                             slotSize = slotSize,
                         )
                     }
                 }
+            }
+        }
+    }
+}
+
+@Suppress("FunctionName")
+private fun ConditionScope.MonoCompression(
+    slotSize: Int,
+) {
+    val id = "hasMonoImage"
+    Expressions {
+        Expression(
+            name = id,
+            value = "[${Complication.MONOCHROMATIC_IMAGE}] != null",
+        )
+    }
+    Compare(expression = id) {
+        Group(
+            x = 0,
+            y = 0,
+            width = slotSize,
+            height = slotSize,
+        ) {
+            PartImage(
+                x = 0,
+                y = 0,
+                width = slotSize,
+                height = slotSize,
+                renderMode = null,
+                tintColor = ContentColor.getColorSymbol(),
+            ) {
+                Image(
+                    resource = "[${Complication.MONOCHROMATIC_IMAGE}]",
+                )
             }
         }
     }
