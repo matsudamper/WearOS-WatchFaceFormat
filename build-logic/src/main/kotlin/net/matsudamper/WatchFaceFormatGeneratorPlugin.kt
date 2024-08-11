@@ -106,12 +106,17 @@ private fun SceneScope.Slots(
             width = slotSize,
             height = slotSize,
             slotId = i,
-            supportedTypes = ComplicationSlotSupportedType.values().toList(),
+            supportedTypes = listOf(
+                ComplicationSlotSupportedType.RANGED_VALUE,
+                ComplicationSlotSupportedType.LONG_TEXT,
+                ComplicationSlotSupportedType.SHORT_TEXT,
+                ComplicationSlotSupportedType.EMPTY,
+            ),
             isCustomizable = true,
         ) {
             DefaultProviderPolicy(
-                primaryProvider = "com.google.android.gm/com.google.android.apps.gmail.wear.complications.UnreadEmailsComplicationService",
-                defaultSystemProviderType = ComplicationSlotSupportedType.SHORT_TEXT,
+                primaryProvider = "com.fitbit.FitbitMobile/com.fitbit.complications.calories.CaloriesComplicationDataSourceService",
+                defaultSystemProviderType = ComplicationSlotSupportedType.RANGED_VALUE,
                 defaultSystemProvider = DefaultProvider.STEP_COUNT,
             )
             BoundingOval(
@@ -121,18 +126,17 @@ private fun SceneScope.Slots(
                 height = slotSize,
                 outlinePadding = 2,
             )
-//            Complication(type = ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE) {
-//                Condition {
-//                    MonoCompression(
-//                        slotSize = slotSize,
-//                    )
-//                }
-//            }
+            Complication(type = ComplicationSlotSupportedType.RANGED_VALUE) {
+                Condition {
+                    Default {
+                        RangeValueLayout(
+                            slotSize = slotSize,
+                        )
+                    }
+                }
+            }
             Complication(type = ComplicationSlotSupportedType.LONG_TEXT) {
                 Condition {
-//                    MonoCompression(
-//                        slotSize = slotSize,
-//                    )
                     Default {
                         TextCompressionLayout(
                             slotSize = slotSize,
@@ -142,9 +146,6 @@ private fun SceneScope.Slots(
             }
             Complication(type = ComplicationSlotSupportedType.SHORT_TEXT) {
                 Condition {
-//                    MonoCompression(
-//                        slotSize = slotSize,
-//                    )
                     Default {
                         TextCompressionLayout(
                             slotSize = slotSize,

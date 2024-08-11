@@ -15,6 +15,25 @@ import net.matsudamper.dsl.scope.condition.DefaultScope
 import net.matsudamper.dsl.scope.text.Font
 
 @Suppress("FunctionName")
+internal fun DefaultScope.RangeValueLayout(
+    slotSize: Int,
+) {
+    Group(
+        x = 0,
+        y = 0,
+        width = slotSize,
+        height = slotSize,
+    ) {
+        RangeLayout(
+            slotSize = slotSize,
+        )
+        TextCompressionLayout(
+            slotSize = slotSize,
+        )
+    }
+}
+
+@Suppress("FunctionName")
 internal fun DefaultScope.TextCompressionLayout(
     slotSize: Int,
 ) {
@@ -33,73 +52,75 @@ internal fun DefaultScope.TextCompressionLayout(
                 )
             }
         }
-//        Compare(expression = hasTitleId) {
-//            TextTitleCompression(
-//                slotSize = slotSize,
-//            )
-//        }
         Default {
-            Condition {
-                val hasPhotoImage = "hasPhotoImage"
-                val hasSmallImage = "hasSmallImage"
-                val hasSmallAndAmbientImage = "hasSmallAndAmbientImage"
-                val monoImageAndAmbient = "monoImageAndAmbient"
-                Expressions {
-                    Expression(
-                        name = hasPhotoImage,
-                        value = "[${Complication.PHOTO_IMAGE}] != null",
-                    )
-                    Expression(
-                        name = hasSmallImage,
-                        value = "[${Complication.SMALL_IMAGE}] != null",
-                    )
-                    Expression(
-                        name = hasSmallAndAmbientImage,
-                        value = "[${Complication.SMALL_IMAGE}] != null && [${Complication.SMALL_IMAGE_AMBIENT}] != null",
-                    )
-                }
-                Compare(hasPhotoImage) {
-                    Condition {
-                        Text(
-                            slotSize = slotSize,
-                            image = Complication.PHOTO_IMAGE,
-                            ambientImage = Complication.PHOTO_IMAGE,
+            Group(
+                x = 0,
+                y = 0,
+                width = slotSize,
+                height = slotSize,
+            ) {
+                Condition {
+                    val hasPhotoImage = "hasPhotoImage"
+                    val hasSmallImage = "hasSmallImage"
+                    val hasSmallAndAmbientImage = "hasSmallAndAmbientImage"
+                    val monoImageAndAmbient = "monoImageAndAmbient"
+                    Expressions {
+                        Expression(
+                            name = hasPhotoImage,
+                            value = "[${Complication.PHOTO_IMAGE}] != null",
+                        )
+                        Expression(
+                            name = hasSmallImage,
+                            value = "[${Complication.SMALL_IMAGE}] != null",
+                        )
+                        Expression(
+                            name = hasSmallAndAmbientImage,
+                            value = "[${Complication.SMALL_IMAGE}] != null && [${Complication.SMALL_IMAGE_AMBIENT}] != null",
                         )
                     }
-                }
-                Compare(hasSmallAndAmbientImage) {
-                    Condition {
-                        Text(
-                            slotSize = slotSize,
-                            image = Complication.SMALL_IMAGE,
-                            ambientImage = Complication.SMALL_IMAGE_AMBIENT,
-                        )
+                    Compare(hasPhotoImage) {
+                        Condition {
+                            Text(
+                                slotSize = slotSize,
+                                image = Complication.PHOTO_IMAGE,
+                                ambientImage = Complication.PHOTO_IMAGE,
+                            )
+                        }
                     }
-                }
-                Compare(hasSmallImage) {
-                    Condition {
-                        Text(
-                            slotSize = slotSize,
-                            image = Complication.SMALL_IMAGE,
-                            ambientImage = Complication.SMALL_IMAGE,
-                        )
+                    Compare(hasSmallAndAmbientImage) {
+                        Condition {
+                            Text(
+                                slotSize = slotSize,
+                                image = Complication.SMALL_IMAGE,
+                                ambientImage = Complication.SMALL_IMAGE_AMBIENT,
+                            )
+                        }
                     }
-                }
-                Compare(monoImageAndAmbient) {
-                    Condition {
+                    Compare(hasSmallImage) {
+                        Condition {
+                            Text(
+                                slotSize = slotSize,
+                                image = Complication.SMALL_IMAGE,
+                                ambientImage = Complication.SMALL_IMAGE,
+                            )
+                        }
+                    }
+                    Compare(monoImageAndAmbient) {
+                        Condition {
+                            Text(
+                                slotSize = slotSize,
+                                image = Complication.MONOCHROMATIC_IMAGE,
+                                ambientImage = Complication.MONOCHROMATIC_IMAGE_AMBIENT,
+                            )
+                        }
+                    }
+                    Default {
                         Text(
                             slotSize = slotSize,
                             image = Complication.MONOCHROMATIC_IMAGE,
-                            ambientImage = Complication.MONOCHROMATIC_IMAGE_AMBIENT,
+                            ambientImage = Complication.MONOCHROMATIC_IMAGE,
                         )
                     }
-                }
-                Default {
-                    Text(
-                        slotSize = slotSize,
-                        image = Complication.MONOCHROMATIC_IMAGE,
-                        ambientImage = Complication.MONOCHROMATIC_IMAGE,
-                    )
                 }
             }
         }
@@ -107,10 +128,8 @@ internal fun DefaultScope.TextCompressionLayout(
 }
 
 @Suppress("FunctionName")
-private fun HasWatchFaceLayoutElement.Text(
+private fun HasWatchFaceLayoutElement.RangeLayout(
     slotSize: Int,
-    image: Complication,
-    ambientImage : Complication,
 ) {
     Group(
         x = 0,
@@ -124,7 +143,7 @@ private fun HasWatchFaceLayoutElement.Text(
             width = slotSize,
             height = slotSize,
         ) {
-            val strokeSize = 2
+            val strokeSize = 4
             Arc(
                 centerX = this@PartDraw.width / 2f,
                 centerY = this@PartDraw.height / 2f,
@@ -133,6 +152,10 @@ private fun HasWatchFaceLayoutElement.Text(
                 startAngle = 0f,
                 endAngle = 359.999f,
             ) {
+                Transform(
+                    target = "endAngle",
+                    value = "360 * [${Complication.RANGED_VALUE_VALUE}] / ([${Complication.RANGED_VALUE_MAX}] - [${Complication.RANGED_VALUE_MIN}])",
+                )
                 Stroke(
                     cap = Cap.ROUND,
                     color = ContentColor.getColorSymbol(),
@@ -140,6 +163,21 @@ private fun HasWatchFaceLayoutElement.Text(
                 )
             }
         }
+    }
+}
+
+@Suppress("FunctionName")
+private fun HasWatchFaceLayoutElement.Text(
+    slotSize: Int,
+    image: Complication,
+    ambientImage: Complication,
+) {
+    Group(
+        x = 0,
+        y = 0,
+        width = slotSize,
+        height = slotSize,
+    ) {
         val fontSize = slotSize / 6
         val iconSize = slotSize / 4
         val verticalPadding = (slotSize - iconSize - fontSize) / 2
@@ -223,28 +261,6 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
         width = slotSize,
         height = slotSize,
     ) {
-        PartDraw(
-            x = 0,
-            y = 0,
-            width = slotSize,
-            height = slotSize,
-        ) {
-            val strokeSize = 2
-            Arc(
-                centerX = this@PartDraw.width / 2f,
-                centerY = this@PartDraw.height / 2f,
-                width = this@PartDraw.width.toFloat() - strokeSize,
-                height = this@PartDraw.height.toFloat() - strokeSize,
-                startAngle = 0f,
-                endAngle = 359.999f,
-            ) {
-                Stroke(
-                    cap = Cap.ROUND,
-                    color = ContentColor.getColorSymbol(),
-                    thickness = strokeSize,
-                )
-            }
-        }
         val fontSize = slotSize / 6
         val padding = (height - (fontSize * 2)) / 2
         PartText(
