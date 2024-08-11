@@ -155,13 +155,9 @@ private fun SceneScope.Slots(
                 )
             }
             Complication(type = ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE) {
-                Condition {
-                    Default {
-                        TextCompressionLayout(
-                            slotSize = slotSize,
-                        )
-                    }
-                }
+                TextCompressionLayout(
+                    slotSize = slotSize,
+                )
             }
         }
     }
