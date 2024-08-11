@@ -15,7 +15,7 @@ import net.matsudamper.dsl.scope.condition.DefaultScope
 import net.matsudamper.dsl.scope.text.Font
 
 @Suppress("FunctionName")
-internal fun DefaultScope.TextCompression(
+internal fun DefaultScope.TextCompressionLayout(
     slotSize: Int,
 ) {
     Condition {
@@ -26,15 +26,82 @@ internal fun DefaultScope.TextCompression(
                 value = "[${Complication.TITLE}] != null",
             )
         }
-        Compare(expression = hasTitleId) {
-            TextTitleCompression(
-                slotSize = slotSize,
-            )
+        Compare(hasTitleId) {
+            Condition {
+                TextTitleCompression(
+                    slotSize = slotSize,
+                )
+            }
         }
+//        Compare(expression = hasTitleId) {
+//            TextTitleCompression(
+//                slotSize = slotSize,
+//            )
+//        }
         Default {
-            Text(
-                slotSize = slotSize,
-            )
+            Condition {
+                val hasPhotoImage = "hasPhotoImage"
+                val hasSmallImage = "hasSmallImage"
+                val hasSmallAndAmbientImage = "hasSmallAndAmbientImage"
+                val monoImageAndAmbient = "monoImageAndAmbient"
+                Expressions {
+                    Expression(
+                        name = hasPhotoImage,
+                        value = "[${Complication.PHOTO_IMAGE}] != null",
+                    )
+                    Expression(
+                        name = hasSmallImage,
+                        value = "[${Complication.SMALL_IMAGE}] != null",
+                    )
+                    Expression(
+                        name = hasSmallAndAmbientImage,
+                        value = "[${Complication.SMALL_IMAGE}] != null && [${Complication.SMALL_IMAGE_AMBIENT}] != null",
+                    )
+                }
+                Compare(hasPhotoImage) {
+                    Condition {
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.PHOTO_IMAGE,
+                            ambientImage = Complication.PHOTO_IMAGE,
+                        )
+                    }
+                }
+                Compare(hasSmallAndAmbientImage) {
+                    Condition {
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.SMALL_IMAGE,
+                            ambientImage = Complication.SMALL_IMAGE_AMBIENT,
+                        )
+                    }
+                }
+                Compare(hasSmallImage) {
+                    Condition {
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.SMALL_IMAGE,
+                            ambientImage = Complication.SMALL_IMAGE,
+                        )
+                    }
+                }
+                Compare(monoImageAndAmbient) {
+                    Condition {
+                        Text(
+                            slotSize = slotSize,
+                            image = Complication.MONOCHROMATIC_IMAGE,
+                            ambientImage = Complication.MONOCHROMATIC_IMAGE_AMBIENT,
+                        )
+                    }
+                }
+                Default {
+                    Text(
+                        slotSize = slotSize,
+                        image = Complication.MONOCHROMATIC_IMAGE,
+                        ambientImage = Complication.MONOCHROMATIC_IMAGE,
+                    )
+                }
+            }
         }
     }
 }
@@ -42,6 +109,8 @@ internal fun DefaultScope.TextCompression(
 @Suppress("FunctionName")
 private fun HasWatchFaceLayoutElement.Text(
     slotSize: Int,
+    image: Complication,
+    ambientImage : Complication,
 ) {
     Group(
         x = 0,
@@ -95,7 +164,7 @@ private fun HasWatchFaceLayoutElement.Text(
                     value = "255",
                 )
                 Image(
-                    resource = "[${Complication.MONOCHROMATIC_IMAGE_AMBIENT}]",
+                    resource = "[$ambientImage]",
                 )
             }
             PartImage(
@@ -113,7 +182,7 @@ private fun HasWatchFaceLayoutElement.Text(
                     value = "0",
                 )
                 Image(
-                    resource = "[${Complication.MONOCHROMATIC_IMAGE}]",
+                    resource = "[$image]",
                 )
             }
         }

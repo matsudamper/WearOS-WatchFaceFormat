@@ -3,7 +3,6 @@ package net.matsudamper
 import net.matsudamper.dsl.createWatchFace
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.ClipShape
-import net.matsudamper.dsl.element.Complication
 import net.matsudamper.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.dsl.element.DefaultProvider
 import net.matsudamper.dsl.element.SourceType
@@ -12,12 +11,9 @@ import net.matsudamper.dsl.metadata.ClockType
 import net.matsudamper.dsl.metadata.ClockTypeValue
 import net.matsudamper.dsl.scope.ComplicationSlot
 import net.matsudamper.dsl.scope.DigitalClock
-import net.matsudamper.dsl.scope.Group
 import net.matsudamper.dsl.scope.PartDraw
-import net.matsudamper.dsl.scope.PartText
 import net.matsudamper.dsl.scope.SceneScope
 import net.matsudamper.dsl.scope.condition.Condition
-import net.matsudamper.dsl.scope.condition.DefaultScope
 import net.matsudamper.dsl.scope.text.Font
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -125,13 +121,20 @@ private fun SceneScope.Slots(
                 height = slotSize,
                 outlinePadding = 2,
             )
+//            Complication(type = ComplicationSlotSupportedType.MONOCHROMATIC_IMAGE) {
+//                Condition {
+//                    MonoCompression(
+//                        slotSize = slotSize,
+//                    )
+//                }
+//            }
             Complication(type = ComplicationSlotSupportedType.LONG_TEXT) {
                 Condition {
 //                    MonoCompression(
 //                        slotSize = slotSize,
 //                    )
                     Default {
-                        TextCompression(
+                        TextCompressionLayout(
                             slotSize = slotSize,
                         )
                     }
@@ -143,7 +146,7 @@ private fun SceneScope.Slots(
 //                        slotSize = slotSize,
 //                    )
                     Default {
-                        TextCompression(
+                        TextCompressionLayout(
                             slotSize = slotSize,
                         )
                     }
