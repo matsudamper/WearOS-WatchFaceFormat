@@ -141,19 +141,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
@@ -242,19 +283,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
@@ -343,19 +425,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
@@ -444,19 +567,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
@@ -545,19 +709,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
@@ -646,19 +851,60 @@
                     <Compare
                         expression="hasMonoImage" >
                         <Group
-                            x="0"
-                            y="0"
+                            x="34"
+                            y="34"
                             width="135"
                             height="135" >
-                            <PartImage
-                                x="0"
-                                y="0"
-                                width="135"
-                                height="135"
-                                tintColor="[CONFIGURATION.contentColor.0]" >
-                                <Image
-                                    resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                            </PartImage>
+                            <Condition>
+                                <Expressions>
+                                    <Expression
+                                        name="hasMonoAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
+                                    </Expression>
+                                </Expressions>
+                                <Compare
+                                    expression="hasMonoAmbient" >
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="0"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="255" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT]" />
+                                    </PartImage>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Variant
+                                            mode="AMBIENT"
+                                            target="alpha"
+                                            value="0" />
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Compare>
+                                <Default>
+                                    <PartImage
+                                        x="0"
+                                        y="0"
+                                        width="67"
+                                        height="67"
+                                        alpha="255"
+                                        tintColor="[CONFIGURATION.contentColor.0]" >
+                                        <Image
+                                            resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                                    </PartImage>
+                                </Default>
+                            </Condition>
                         </Group>
                     </Compare>
                     <Default>
