@@ -579,7 +579,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -613,16 +613,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -644,7 +644,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -678,16 +678,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -709,7 +709,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -743,16 +743,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -773,7 +773,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -807,16 +807,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -926,7 +926,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -960,16 +960,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -991,7 +991,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1025,16 +1025,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1056,7 +1056,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1090,16 +1090,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1120,7 +1120,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1154,16 +1154,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1272,7 +1272,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1306,16 +1306,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1337,7 +1337,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1371,16 +1371,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1402,7 +1402,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1436,16 +1436,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1466,7 +1466,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1500,16 +1500,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1618,7 +1618,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1652,16 +1652,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1683,7 +1683,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1717,16 +1717,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1748,7 +1748,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1782,16 +1782,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -1812,7 +1812,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -1846,16 +1846,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2055,7 +2055,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2089,16 +2089,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2120,7 +2120,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2154,16 +2154,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2185,7 +2185,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2219,16 +2219,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2249,7 +2249,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2283,16 +2283,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2458,7 +2458,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -2492,16 +2492,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -2523,7 +2523,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -2557,16 +2557,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -2588,7 +2588,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -2622,16 +2622,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -2652,7 +2652,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -2686,16 +2686,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -2805,7 +2805,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2839,16 +2839,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2870,7 +2870,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2904,16 +2904,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2935,7 +2935,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -2969,16 +2969,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -2999,7 +2999,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3033,16 +3033,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3151,7 +3151,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3185,16 +3185,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3216,7 +3216,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3250,16 +3250,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3281,7 +3281,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3315,16 +3315,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3345,7 +3345,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3379,16 +3379,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3497,7 +3497,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3531,16 +3531,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3562,7 +3562,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3596,16 +3596,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3627,7 +3627,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3661,16 +3661,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3691,7 +3691,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3725,16 +3725,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3934,7 +3934,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -3968,16 +3968,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -3999,7 +3999,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4033,16 +4033,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4064,7 +4064,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4098,16 +4098,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4128,7 +4128,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4162,16 +4162,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4337,7 +4337,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -4371,16 +4371,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -4402,7 +4402,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -4436,16 +4436,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -4467,7 +4467,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -4501,16 +4501,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -4531,7 +4531,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -4565,16 +4565,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -4684,7 +4684,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4718,16 +4718,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4749,7 +4749,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4783,16 +4783,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4814,7 +4814,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4848,16 +4848,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -4878,7 +4878,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -4912,16 +4912,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5030,7 +5030,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5064,16 +5064,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5095,7 +5095,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5129,16 +5129,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5160,7 +5160,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5194,16 +5194,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5224,7 +5224,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5258,16 +5258,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5376,7 +5376,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5410,16 +5410,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5441,7 +5441,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5475,16 +5475,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5506,7 +5506,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5540,16 +5540,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5570,7 +5570,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5604,16 +5604,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5813,7 +5813,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5847,16 +5847,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5878,7 +5878,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5912,16 +5912,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -5943,7 +5943,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -5977,16 +5977,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6007,7 +6007,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6041,16 +6041,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6216,7 +6216,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -6250,16 +6250,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -6281,7 +6281,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -6315,16 +6315,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -6346,7 +6346,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -6380,16 +6380,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -6410,7 +6410,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -6444,16 +6444,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -6563,7 +6563,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6597,16 +6597,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6628,7 +6628,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6662,16 +6662,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6693,7 +6693,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6727,16 +6727,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6757,7 +6757,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6791,16 +6791,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6909,7 +6909,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -6943,16 +6943,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -6974,7 +6974,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7008,16 +7008,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7039,7 +7039,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7073,16 +7073,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7103,7 +7103,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7137,16 +7137,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7255,7 +7255,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7289,16 +7289,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7320,7 +7320,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7354,16 +7354,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7385,7 +7385,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7419,16 +7419,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7449,7 +7449,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7483,16 +7483,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7692,7 +7692,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7726,16 +7726,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7757,7 +7757,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7791,16 +7791,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7822,7 +7822,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7856,16 +7856,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -7886,7 +7886,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -7920,16 +7920,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8095,7 +8095,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -8129,16 +8129,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -8160,7 +8160,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -8194,16 +8194,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -8225,7 +8225,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -8259,16 +8259,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -8289,7 +8289,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -8323,16 +8323,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -8442,7 +8442,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8476,16 +8476,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8507,7 +8507,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8541,16 +8541,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8572,7 +8572,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8606,16 +8606,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8636,7 +8636,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8670,16 +8670,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8788,7 +8788,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8822,16 +8822,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8853,7 +8853,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8887,16 +8887,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8918,7 +8918,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -8952,16 +8952,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -8982,7 +8982,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9016,16 +9016,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9134,7 +9134,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9168,16 +9168,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9199,7 +9199,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9233,16 +9233,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9264,7 +9264,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9298,16 +9298,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9328,7 +9328,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9362,16 +9362,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9571,7 +9571,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9605,16 +9605,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9636,7 +9636,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9670,16 +9670,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9701,7 +9701,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9735,16 +9735,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9765,7 +9765,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -9799,16 +9799,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -9974,7 +9974,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -10008,16 +10008,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -10039,7 +10039,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -10073,16 +10073,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -10104,7 +10104,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -10138,16 +10138,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -10168,7 +10168,7 @@
                                             height="135" >
                                             <Group
                                                 x="51"
-                                                y="40"
+                                                y="34"
                                                 width="33"
                                                 height="33" >
                                                 <PartImage
@@ -10202,16 +10202,16 @@
                                             </Group>
                                             <PartText
                                                 x="0"
-                                                y="73"
+                                                y="67"
                                                 width="135"
-                                                height="22"
+                                                height="33"
                                                 alpha="255" >
                                                 <Text
                                                     align="CENTER"
                                                     ellipsis="true" >
                                                     <Font
                                                         family="SYNC_TO_DEVICE"
-                                                        size="22"
+                                                        size="33"
                                                         color="[CONFIGURATION.contentColor.0]"
                                                         letterSpacing="0.0"
                                                         weight="NORMAL" >
@@ -10321,7 +10321,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10355,16 +10355,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10386,7 +10386,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10420,16 +10420,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10451,7 +10451,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10485,16 +10485,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10515,7 +10515,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10549,16 +10549,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10667,7 +10667,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10701,16 +10701,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10732,7 +10732,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10766,16 +10766,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10797,7 +10797,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10831,16 +10831,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -10861,7 +10861,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -10895,16 +10895,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11013,7 +11013,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11047,16 +11047,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11078,7 +11078,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11112,16 +11112,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11143,7 +11143,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11177,16 +11177,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11207,7 +11207,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11241,16 +11241,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11450,7 +11450,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11484,16 +11484,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11515,7 +11515,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11549,16 +11549,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11580,7 +11580,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11614,16 +11614,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >
@@ -11644,7 +11644,7 @@
                                         height="135" >
                                         <Group
                                             x="51"
-                                            y="40"
+                                            y="34"
                                             width="33"
                                             height="33" >
                                             <PartImage
@@ -11678,16 +11678,16 @@
                                         </Group>
                                         <PartText
                                             x="0"
-                                            y="73"
+                                            y="67"
                                             width="135"
-                                            height="22"
+                                            height="33"
                                             alpha="255" >
                                             <Text
                                                 align="CENTER"
                                                 ellipsis="true" >
                                                 <Font
                                                     family="SYNC_TO_DEVICE"
-                                                    size="22"
+                                                    size="33"
                                                     color="[CONFIGURATION.contentColor.0]"
                                                     letterSpacing="0.0"
                                                     weight="NORMAL" >

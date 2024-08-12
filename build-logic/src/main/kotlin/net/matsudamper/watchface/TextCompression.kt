@@ -256,7 +256,7 @@ private fun HasWatchFaceLayoutElement.Text(
         width = slotSize,
         height = slotSize,
     ) {
-        val fontSize = slotSize / 6
+        val fontSize = slotSize / 4
         val iconSize = slotSize / 4
         val verticalPadding = (slotSize - iconSize - fontSize) / 2
         Group(
