@@ -3,6 +3,7 @@ package net.matsudamper.watchface
 import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.dsl.element.Cap
 import net.matsudamper.watchface.dsl.element.Complication
+import net.matsudamper.watchface.dsl.element.FontWeight
 import net.matsudamper.watchface.dsl.element.TextAlign
 import net.matsudamper.watchface.dsl.element.VariantMode
 import net.matsudamper.watchface.dsl.scope.Group
@@ -407,6 +408,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
                 Font(
                     color = UserContentColor.getColorSymbol(),
                     size = fontSize,
+                    weight = FontWeight.BOLD,
                 ) {
                     Template {
                         addRawText("%s")

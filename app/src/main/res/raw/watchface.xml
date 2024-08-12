@@ -568,7 +568,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -915,7 +915,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -1261,7 +1261,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -1607,7 +1607,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -2044,7 +2044,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -2474,7 +2474,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -2821,7 +2821,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -3167,7 +3167,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -3513,7 +3513,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -3950,7 +3950,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -4380,7 +4380,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -4727,7 +4727,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -5073,7 +5073,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -5419,7 +5419,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -5856,7 +5856,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -6286,7 +6286,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -6633,7 +6633,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -6979,7 +6979,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -7325,7 +7325,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -7762,7 +7762,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -8192,7 +8192,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -8539,7 +8539,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -8885,7 +8885,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -9231,7 +9231,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -9668,7 +9668,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -10098,7 +10098,7 @@
                                                 size="29"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
-                                                weight="NORMAL" >
+                                                weight="BOLD" >
                                                 <Template>%s
                                                 <Parameter
                                                     expression="[COMPLICATION.TEXT]" />
@@ -10445,7 +10445,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -10791,7 +10791,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -11137,7 +11137,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
@@ -11574,7 +11574,7 @@
                                             size="29"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
-                                            weight="NORMAL" >
+                                            weight="BOLD" >
                                             <Template>%s
                                             <Parameter
                                                 expression="[COMPLICATION.TEXT]" />
