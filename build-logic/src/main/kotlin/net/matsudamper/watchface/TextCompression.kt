@@ -345,6 +345,7 @@ private fun HasWatchFaceLayoutElement.Text(
                 Font(
                     color = UserContentColor.getColorSymbol(),
                     size = fontSize,
+                    weight = FontWeight.BOLD,
                 ) {
                     Template {
                         addRawText("%s")
