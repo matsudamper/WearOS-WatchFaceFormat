@@ -24,6 +24,8 @@ jobs:
       - name: build
         run: ./gradlew assembleRelease
       - name: github release
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           DATE=$(date +'%Y%m%d')
           HASH=$(git rev-parse --short HEAD)
