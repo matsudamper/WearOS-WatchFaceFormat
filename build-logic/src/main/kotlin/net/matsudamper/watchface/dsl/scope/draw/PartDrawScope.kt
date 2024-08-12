@@ -6,6 +6,7 @@ import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 import net.matsudamper.watchface.dsl.scope.HasWatchFaceLayoutElement
+import javax.sound.sampled.Line
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
@@ -39,6 +40,23 @@ class PartDrawScope(
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
         children.add(child)
+    }
+
+    fun Line(
+        startX: Float,
+        startY: Float,
+        endX: Float,
+        endY: Float,
+        block: LineScope.() -> Unit,
+    ) {
+        children.add(
+            LineScope(
+                startX = startX,
+                startY = startY,
+                endX = endX,
+                endY = endY,
+            ).apply(block)
+        )
     }
 
     fun Arc(

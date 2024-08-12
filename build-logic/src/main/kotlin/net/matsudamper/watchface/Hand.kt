@@ -85,6 +85,7 @@ internal fun HasWatchFaceLayoutElement.Hand(
 internal fun SceneScope.SecondHand(
     width: Int,
     height: Int,
+    strokeSize : Int,
 ) {
     PartDraw(
         x = 0,
@@ -98,7 +99,6 @@ internal fun SceneScope.SecondHand(
             target = "alpha",
             value = "0",
         )
-        val strokeSize = 10
         Arc(
             centerX = this@PartDraw.width / 2f,
             centerY = this@PartDraw.height / 2f,

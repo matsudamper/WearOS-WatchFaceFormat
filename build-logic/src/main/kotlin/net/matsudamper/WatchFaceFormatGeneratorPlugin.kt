@@ -7,6 +7,7 @@ import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
 import net.matsudamper.watchface.ContentColor
 import net.matsudamper.watchface.HourMinHand
+import net.matsudamper.watchface.Scale
 import net.matsudamper.watchface.SecondHand
 import net.matsudamper.watchface.Slots
 import org.gradle.api.Plugin
@@ -64,6 +65,7 @@ private fun generate(): String {
             }
         }
         Scene {
+            val secondCircleStrokeSize = 10
             Slots(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
@@ -71,6 +73,7 @@ private fun generate(): String {
             SecondHand(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
+                strokeSize = secondCircleStrokeSize,
             )
             HourMinHand(
                 width = this@createWatchFace.width,
@@ -79,6 +82,11 @@ private fun generate(): String {
             CenterDigitalClock(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
+            )
+            Scale(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+                maxStrokeSize = secondCircleStrokeSize,
             )
         }
     }

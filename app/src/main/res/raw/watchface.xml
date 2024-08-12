@@ -11508,5 +11508,1331 @@
                     weight="NORMAL" />
             </TimeText>
         </DigitalClock>
+        <Group
+            x="0"
+            y="0"
+            width="450"
+            height="450" >
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="0.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="6.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="12.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="18.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="24.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="30.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="36.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="42.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="48.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="54.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="60.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="66.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="72.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="78.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="84.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="90.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="96.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="102.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="108.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="114.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="120.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="126.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="132.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="138.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="144.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="150.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="156.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="162.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="168.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="174.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="180.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="186.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="192.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="198.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="204.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="210.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="216.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="222.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="228.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="234.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="240.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="246.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="252.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="258.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="264.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="270.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="276.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="282.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="288.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="294.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="300.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="306.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="312.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="318.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="324.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="330.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="10.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="336.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="342.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="348.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+            <PartDraw
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                angle="354.0"
+                pivotX="0.5"
+                pivotY="0.5"
+                alpha="255"
+                renderMode="SOURCE"
+                tintColor="[CONFIGURATION.contentColor.0]" >
+                <Line
+                    startX="222.0"
+                    startY="0.0"
+                    endX="222.0"
+                    endY="5.0" >
+                    <Stroke
+                        cap="ROUND"
+                        color="[CONFIGURATION.contentColor.0]"
+                        thickness="3" />
+                </Line>
+            </PartDraw>
+        </Group>
     </Scene>
 </WatchFace>
