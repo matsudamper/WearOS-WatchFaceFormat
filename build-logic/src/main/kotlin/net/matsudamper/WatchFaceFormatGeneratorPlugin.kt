@@ -21,7 +21,7 @@ import org.gradle.api.Project
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
-            val generateFormat = tasks.register("generateFormat") {
+            val generateWatchFace = tasks.register("generateWatchFace") {
                 doLast {
                     runCatching {
                         val xml = generate()
@@ -34,7 +34,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
             }
 
             tasks.named("preBuild") {
-                dependsOn(generateFormat)
+                dependsOn(generateWatchFace)
             }
         }
     }
