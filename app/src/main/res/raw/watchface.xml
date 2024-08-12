@@ -11754,6 +11754,360 @@
             y="0"
             width="450"
             height="450" >
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="30.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-30.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>1
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="60.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-60.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>2
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="90.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-90.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>3
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="120.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-120.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>4
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="150.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-150.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>5
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="180.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-180.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>6
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="210.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-210.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>7
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="240.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-240.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>8
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="270.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-270.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>9
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="300.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-300.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>10
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="330.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-330.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>11
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+            <Group
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5"
+                angle="360.0" >
+                <PartText
+                    x="0"
+                    y="19"
+                    width="450"
+                    height="28"
+                    angle="-360.0" >
+                    <Text
+                        align="CENTER"
+                        ellipsis="true" >
+                        <Font
+                            family="SYNC_TO_DEVICE"
+                            size="28"
+                            color="[CONFIGURATION.digitalTimeColor.0]"
+                            letterSpacing="0.0"
+                            weight="NORMAL" >
+                            <Template>12
+                            </Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Group>
+        </Group>
+        <Group
+            x="0"
+            y="0"
+            width="450"
+            height="450" >
             <PartDraw
                 x="0"
                 y="0"

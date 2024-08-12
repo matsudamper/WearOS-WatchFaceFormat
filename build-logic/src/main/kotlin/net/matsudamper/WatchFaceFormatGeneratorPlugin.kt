@@ -1,5 +1,6 @@
 package net.matsudamper
 
+import net.matsudamper.watchface.AnalogClockNumber
 import net.matsudamper.watchface.dsl.createWatchFace
 import net.matsudamper.watchface.dsl.element.ClipShape
 import net.matsudamper.watchface.dsl.metadata.ClockType
@@ -117,6 +118,11 @@ private fun generate(): String {
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
                 strokeSize = secondCircleStrokeSize,
+            )
+            AnalogClockNumber(
+                width = this@createWatchFace.width,
+                height =this@createWatchFace.height,
+                margin = secondCircleStrokeSize,
             )
             HourMinHand(
                 width = this@createWatchFace.width,
