@@ -12,7 +12,107 @@
     <UserConfigurations>
         <ColorConfiguration
             id="contentColor"
-            displayName="theme"
+            displayName="content color"
+            defaultValue="Red" >
+            <ColorOption
+                id="Red"
+                displayName="color_red"
+                screenReaderText="color_red"
+                colors="#E57373 #" />
+            <ColorOption
+                id="Pink"
+                displayName="color_pink"
+                screenReaderText="color_pink"
+                colors="#F06292 #" />
+            <ColorOption
+                id="Purple"
+                displayName="color_purple"
+                screenReaderText="color_purple"
+                colors="#BA68C8 #" />
+            <ColorOption
+                id="DeepPurple"
+                displayName="color_deep_purple"
+                screenReaderText="color_deep_purple"
+                colors="#7E57C2 #" />
+            <ColorOption
+                id="Indigo"
+                displayName="color_indigo"
+                screenReaderText="color_indigo"
+                colors="#7986CB #" />
+            <ColorOption
+                id="Blue"
+                displayName="color_blue"
+                screenReaderText="color_blue"
+                colors="#64B5F6 #" />
+            <ColorOption
+                id="LightBlue"
+                displayName="color_light_blue"
+                screenReaderText="color_light_blue"
+                colors="#4FC3F7 #" />
+            <ColorOption
+                id="Cyan"
+                displayName="color_cyan"
+                screenReaderText="color_cyan"
+                colors="#4DD0E1 #" />
+            <ColorOption
+                id="Teal"
+                displayName="color_teal"
+                screenReaderText="color_teal"
+                colors="#4DB6AC #" />
+            <ColorOption
+                id="Green"
+                displayName="color_green"
+                screenReaderText="color_green"
+                colors="#81C784 #" />
+            <ColorOption
+                id="LightGreen"
+                displayName="color_light_green"
+                screenReaderText="color_light_green"
+                colors="#AED581 #" />
+            <ColorOption
+                id="Lime"
+                displayName="color_lime"
+                screenReaderText="color_lime"
+                colors="#DCE775 #" />
+            <ColorOption
+                id="Yellow"
+                displayName="color_yellow"
+                screenReaderText="color_yellow"
+                colors="#FFF176 #" />
+            <ColorOption
+                id="Amber"
+                displayName="color_amber"
+                screenReaderText="color_amber"
+                colors="#FFD54F #" />
+            <ColorOption
+                id="Orange"
+                displayName="color_orange"
+                screenReaderText="color_orange"
+                colors="#FFB74D #" />
+            <ColorOption
+                id="DeepOrange"
+                displayName="color_deep_orange"
+                screenReaderText="color_deep_orange"
+                colors="#FF8A65 #" />
+            <ColorOption
+                id="Brown"
+                displayName="color_brown"
+                screenReaderText="color_brown"
+                colors="#A1887F #" />
+            <ColorOption
+                id="Grey"
+                displayName="color_grey"
+                screenReaderText="color_grey"
+                colors="#E0E0E0 #" />
+            <ColorOption
+                id="BlueGrey"
+                displayName="color_blue_grey"
+                screenReaderText="color_blue_grey"
+                colors="#90A4AE #" />
+        </ColorConfiguration>
+        <ColorConfiguration
+            id="digitalTimeColor"
+            displayName="digital time"
             defaultValue="Red" >
             <ColorOption
                 id="Red"
@@ -11503,7 +11603,7 @@
                 <Font
                     family="SYNC_TO_DEVICE"
                     size="56"
-                    color="[CONFIGURATION.contentColor.0]"
+                    color="[CONFIGURATION.digitalTimeColor.0]"
                     letterSpacing="0.0"
                     weight="NORMAL" />
             </TimeText>

@@ -11,7 +11,7 @@ import net.matsudamper.watchface.HourMinHand
 import net.matsudamper.watchface.Scale
 import net.matsudamper.watchface.SecondHand
 import net.matsudamper.watchface.Slots
-import net.matsudamper.watchface.color.UserTimeColor
+import net.matsudamper.watchface.color.UserDigitalTimeColor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -66,11 +66,11 @@ private fun generate(): String {
                 }
             }
             UserConfigurations(
-                id = UserTimeColor.ID,
-                displayName = UserTimeColor.displayName,
+                id = UserDigitalTimeColor.ID,
+                displayName = UserDigitalTimeColor.displayName,
                 defaultValue = Colors.Red.id,
             ) {
-                UserTimeColor.values().forEach { color ->
+                UserDigitalTimeColor.values().forEach { color ->
                     ColorOption(
                         id = color.id,
                         displayName = color.resourceName,
