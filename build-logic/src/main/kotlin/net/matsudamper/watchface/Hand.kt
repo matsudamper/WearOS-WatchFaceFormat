@@ -74,7 +74,7 @@ internal fun HasWatchFaceLayoutElement.Hand(
         ) {
             Stroke(
                 cap = Cap.ROUND,
-                color = ContentColor.getColorSymbol(),
+                color = UserContentColor.getColorSymbol(),
                 thickness = strokeSize,
             )
         }
@@ -126,7 +126,7 @@ internal fun SceneScope.SecondHand(
             )
             Stroke(
                 cap = Cap.ROUND,
-                color = ContentColor.getColorSymbol(),
+                color = UserContentColor.getColorSymbol(),
                 thickness = strokeSize,
             )
         }

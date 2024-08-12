@@ -185,7 +185,7 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
                 )
                 Stroke(
                     cap = Cap.ROUND,
-                    color = ContentColor.getColorSymbol(),
+                    color = UserContentColor.getColorSymbol(),
                     thickness = strokeSize,
                 )
             }
@@ -271,7 +271,7 @@ private fun HasWatchFaceLayoutElement.Text(
                 height = height,
                 alpha = 0,
                 renderMode = null,
-                tintColor = ContentColor.getColorSymbol(),
+                tintColor = UserContentColor.getColorSymbol(),
             ) {
                 Variant(
                     mode = VariantMode.AMBIENT,
@@ -289,7 +289,7 @@ private fun HasWatchFaceLayoutElement.Text(
                 height = height,
                 alpha = 255,
                 renderMode = null,
-                tintColor = ContentColor.getColorSymbol(),
+                tintColor = UserContentColor.getColorSymbol(),
             ) {
                 Variant(
                     mode = VariantMode.AMBIENT,
@@ -313,7 +313,7 @@ private fun HasWatchFaceLayoutElement.Text(
                 ellipsis = true,
             ) {
                 Font(
-                    color = ContentColor.getColorSymbol(),
+                    color = UserContentColor.getColorSymbol(),
                     size = fontSize,
                 ) {
                     Template {
@@ -352,7 +352,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
                 ellipsis = true,
             ) {
                 Font(
-                    color = ContentColor.getColorSymbol(),
+                    color = UserContentColor.getColorSymbol(),
                     size = fontSize,
                 ) {
                     Template {
@@ -376,7 +376,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
                 ellipsis = true,
             ) {
                 Font(
-                    color = ContentColor.getColorSymbol(),
+                    color = UserContentColor.getColorSymbol(),
                     size = fontSize,
                 ) {
                     Template {

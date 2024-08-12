@@ -32,7 +32,7 @@ internal fun SceneScope.Scale(
                 pivotX = 0.5f,
                 pivotY = 0.5f,
                 angle = angle.toFloat(),
-                tintColor = ContentColor.getColorSymbol(),
+                tintColor = UserContentColor.getColorSymbol(),
             ) {
                 val startX = width / 2f - border
                 Line(
@@ -43,7 +43,7 @@ internal fun SceneScope.Scale(
                 ) {
                     Stroke(
                         cap = Cap.ROUND,
-                        color = ContentColor.getColorSymbol(),
+                        color = UserContentColor.getColorSymbol(),
                         thickness = border,
                     )
                 }

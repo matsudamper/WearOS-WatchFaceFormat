@@ -43,7 +43,7 @@ internal fun ConditionScope.MonoCompression(
                         height = imageSize,
                         alpha = 0,
                         renderMode = null,
-                        tintColor = ContentColor.getColorSymbol(),
+                        tintColor = UserContentColor.getColorSymbol(),
                     ) {
                         Variant(
                             mode = VariantMode.AMBIENT,
@@ -61,7 +61,7 @@ internal fun ConditionScope.MonoCompression(
                         height = imageSize,
                         alpha = 255,
                         renderMode = null,
-                        tintColor = ContentColor.getColorSymbol(),
+                        tintColor = UserContentColor.getColorSymbol(),
                     ) {
                         Variant(
                             mode = VariantMode.AMBIENT,
@@ -81,7 +81,7 @@ internal fun ConditionScope.MonoCompression(
                         height = imageSize,
                         alpha = 255,
                         renderMode = null,
-                        tintColor = ContentColor.getColorSymbol(),
+                        tintColor = UserContentColor.getColorSymbol(),
                     ) {
                         Image(
                             resource = "[${Complication.MONOCHROMATIC_IMAGE}]",

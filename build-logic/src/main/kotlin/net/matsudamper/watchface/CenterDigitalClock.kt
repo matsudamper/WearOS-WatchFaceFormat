@@ -25,7 +25,7 @@ internal fun SceneScope.CenterDigitalClock(
             align = TextAlign.CENTER,
         ) {
             Font(
-                color = ContentColor.getColorSymbol(),
+                color = UserContentColor.getColorSymbol(),
                 size = fontHeight,
             )
         }

@@ -5,7 +5,8 @@ import net.matsudamper.watchface.dsl.element.ClipShape
 import net.matsudamper.watchface.dsl.metadata.ClockType
 import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
-import net.matsudamper.watchface.ContentColor
+import net.matsudamper.watchface.Colors
+import net.matsudamper.watchface.UserContentColor
 import net.matsudamper.watchface.HourMinHand
 import net.matsudamper.watchface.Scale
 import net.matsudamper.watchface.SecondHand
@@ -51,11 +52,11 @@ private fun generate(): String {
         )
         UserConfiguration {
             UserConfigurations(
-                id = ContentColor.ID,
-                displayName = "theme",
-                defaultValue = ContentColor.Red.id,
+                id = UserContentColor.ID,
+                displayName = "content color",
+                defaultValue = Colors.Red.id,
             ) {
-                ContentColor.values().forEach { color ->
+                UserContentColor.values().forEach { color ->
                     ColorOption(
                         id = color.id,
                         displayName = color.resourceName,
