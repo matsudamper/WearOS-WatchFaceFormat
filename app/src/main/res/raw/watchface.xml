@@ -507,16 +507,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -531,14 +531,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -854,16 +854,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -878,14 +878,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -1200,16 +1200,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -1224,14 +1224,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -1546,16 +1546,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -1570,14 +1570,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -1983,16 +1983,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -2007,14 +2007,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -2386,16 +2386,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -2410,14 +2410,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -2733,16 +2733,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -2757,14 +2757,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3079,16 +3079,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3103,14 +3103,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3425,16 +3425,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3449,14 +3449,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3862,16 +3862,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -3886,14 +3886,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -4265,16 +4265,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -4289,14 +4289,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -4612,16 +4612,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -4636,14 +4636,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -4958,16 +4958,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -4982,14 +4982,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -5304,16 +5304,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -5328,14 +5328,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -5741,16 +5741,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -5765,14 +5765,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -6144,16 +6144,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -6168,14 +6168,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -6491,16 +6491,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -6515,14 +6515,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -6837,16 +6837,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -6861,14 +6861,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -7183,16 +7183,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -7207,14 +7207,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -7620,16 +7620,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -7644,14 +7644,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -8023,16 +8023,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -8047,14 +8047,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -8370,16 +8370,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -8394,14 +8394,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -8716,16 +8716,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -8740,14 +8740,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -9062,16 +9062,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -9086,14 +9086,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -9499,16 +9499,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -9523,14 +9523,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -9902,16 +9902,16 @@
                                     height="135" >
                                     <PartText
                                         x="0"
-                                        y="45"
+                                        y="34"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -9926,14 +9926,14 @@
                                         x="0"
                                         y="67"
                                         width="135"
-                                        height="22"
+                                        height="33"
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
                                             ellipsis="true" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
-                                                size="22"
+                                                size="33"
                                                 color="[CONFIGURATION.contentColor.0]"
                                                 letterSpacing="0.0"
                                                 weight="NORMAL" >
@@ -10249,16 +10249,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -10273,14 +10273,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -10595,16 +10595,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -10619,14 +10619,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -10941,16 +10941,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -10965,14 +10965,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -11378,16 +11378,16 @@
                                 height="135" >
                                 <PartText
                                     x="0"
-                                    y="45"
+                                    y="34"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >
@@ -11402,14 +11402,14 @@
                                     x="0"
                                     y="67"
                                     width="135"
-                                    height="22"
+                                    height="33"
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
                                         ellipsis="true" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
-                                            size="22"
+                                            size="33"
                                             color="[CONFIGURATION.contentColor.0]"
                                             letterSpacing="0.0"
                                             weight="NORMAL" >

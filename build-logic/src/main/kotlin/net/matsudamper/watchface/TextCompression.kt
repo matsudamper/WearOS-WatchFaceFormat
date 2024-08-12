@@ -339,7 +339,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
         width = slotSize,
         height = slotSize,
     ) {
-        val fontSize = slotSize / 6
+        val fontSize = slotSize / 4
         val padding = (height - (fontSize * 2)) / 2
         PartText(
             x = 0,
