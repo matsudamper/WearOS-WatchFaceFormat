@@ -222,7 +222,7 @@
         </ColorConfiguration>
         <ColorConfiguration
             id="analogSecondColor"
-            displayName="color_name_analog_second"
+            displayName="color_name_analog_seconds"
             defaultValue="White" >
             <ColorOption
                 id="Red"
