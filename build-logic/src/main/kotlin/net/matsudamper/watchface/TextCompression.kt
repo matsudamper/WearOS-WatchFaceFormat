@@ -1,4 +1,4 @@
-package net.matsudamper
+package net.matsudamper.watchface
 
 import net.matsudamper.dsl.element.Cap
 import net.matsudamper.dsl.element.Complication

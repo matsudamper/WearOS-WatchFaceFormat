@@ -1,4 +1,4 @@
-package net.matsudamper
+package net.matsudamper.watchface
 
 enum class ContentColor {
     Red {
