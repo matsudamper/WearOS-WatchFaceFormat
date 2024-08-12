@@ -13,7 +13,7 @@
         <ColorConfiguration
             id="contentColor"
             displayName="content color"
-            defaultValue="Red" >
+            defaultValue="White" >
             <ColorOption
                 id="Red"
                 displayName="color_red"
@@ -109,11 +109,16 @@
                 displayName="color_blue_grey"
                 screenReaderText="color_blue_grey"
                 colors="#90A4AE #" />
+            <ColorOption
+                id="White"
+                displayName="color_white"
+                screenReaderText="color_white"
+                colors="#FFFFFF #" />
         </ColorConfiguration>
         <ColorConfiguration
             id="digitalTimeColor"
             displayName="digital time"
-            defaultValue="Red" >
+            defaultValue="White" >
             <ColorOption
                 id="Red"
                 displayName="color_red"
@@ -209,6 +214,11 @@
                 displayName="color_blue_grey"
                 screenReaderText="color_blue_grey"
                 colors="#90A4AE #" />
+            <ColorOption
+                id="White"
+                displayName="color_white"
+                screenReaderText="color_white"
+                colors="#FFFFFF #" />
         </ColorConfiguration>
     </UserConfigurations>
     <Scene>

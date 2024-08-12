@@ -55,7 +55,7 @@ private fun generate(): String {
             UserConfigurations(
                 id = UserContentColor.ID,
                 displayName = UserContentColor.displayName,
-                defaultValue = Colors.Red.id,
+                defaultValue = Colors.White.id,
             ) {
                 UserContentColor.values().forEach { color ->
                     ColorOption(
@@ -68,7 +68,7 @@ private fun generate(): String {
             UserConfigurations(
                 id = UserDigitalTimeColor.ID,
                 displayName = UserDigitalTimeColor.displayName,
-                defaultValue = Colors.Red.id,
+                defaultValue = Colors.White.id,
             ) {
                 UserDigitalTimeColor.values().forEach { color ->
                     ColorOption(

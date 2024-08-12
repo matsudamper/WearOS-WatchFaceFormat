@@ -97,6 +97,11 @@ enum class Colors {
         override val resourceName: String = "color_blue_grey"
         override val color: String = "#90A4AE"
     },
+    White {
+        override val id: String = "White"
+        override val resourceName: String = "color_white"
+        override val color: String = "#FFFFFF"
+    },
     ;
 
     abstract val id: String
