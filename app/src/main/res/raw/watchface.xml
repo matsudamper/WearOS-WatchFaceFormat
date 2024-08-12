@@ -12,7 +12,7 @@
     <UserConfigurations>
         <ColorConfiguration
             id="contentColor"
-            displayName="content color"
+            displayName="color_name_content"
             defaultValue="White" >
             <ColorOption
                 id="Red"
@@ -117,7 +117,7 @@
         </ColorConfiguration>
         <ColorConfiguration
             id="digitalTimeColor"
-            displayName="digital time"
+            displayName="color_name_digital_time"
             defaultValue="White" >
             <ColorOption
                 id="Red"

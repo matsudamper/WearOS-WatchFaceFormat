@@ -32,4 +32,7 @@
     <string name="color_grey">Grey</string>
     <string name="color_blue_grey">Blue Grey</string>
     <string name="color_white">White</string>
+
+    <string name="color_name_digital_time">digital time</string>
+    <string name="color_name_content">content</string>
 </resources>

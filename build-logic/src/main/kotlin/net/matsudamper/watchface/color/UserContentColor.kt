@@ -2,7 +2,7 @@ package net.matsudamper.watchface.color
 
 object UserContentColor {
     const val ID = "contentColor"
-    const val displayName: String = "content color"
+    const val displayName: String = "color_name_content"
 
     fun values(): List<UserColorConfigurations> {
         return Colors.values().map { color ->
