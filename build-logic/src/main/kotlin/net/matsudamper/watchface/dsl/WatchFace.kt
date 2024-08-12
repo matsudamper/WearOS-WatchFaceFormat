@@ -22,7 +22,7 @@ fun createWatchFace(
     block(scope)
     return buildString {
         appendLine("""<?xml version="1.0"?>""")
-        append(net.matsudamper.watchface.dsl.generateXml(scope))
+        append(generateXml(scope))
     }
 }
 
@@ -66,7 +66,7 @@ private fun generateXml(element: WatchFaceElement): String {
             }
 
             element.children.forEach { child ->
-                val childXml = net.matsudamper.watchface.dsl.generateXml(child)
+                val childXml = generateXml(child)
                 if (containText) {
                     append(childXml)
                 } else {
