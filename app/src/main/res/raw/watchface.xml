@@ -11475,9 +11475,9 @@
                     value="30 * [HOUR_0_11]" />
                 <RoundRectangle
                     x="210.0"
-                    y="112.5"
+                    y="135.0"
                     width="30.0"
-                    height="128.5"
+                    height="106.0"
                     cornerRadiusX="15.0"
                     cornerRadiusY="15.0" >
                     <Stroke

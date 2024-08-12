@@ -28,7 +28,7 @@ internal fun SceneScope.HourMinHand(
             angleTransform = "6 * ${SourceType.MINUTE.symbol}",
             strokeSize = 2,
             hourWidth = width / (14 * 1.5).toInt(),
-            padding = width / 2f / 5f,
+            padding = (width / 2f) / (5f / 1f),
         )
         Hand(
             width = width,
@@ -36,7 +36,7 @@ internal fun SceneScope.HourMinHand(
             angleTransform = "30 * ${SourceType.HOUR_0_11.symbol}",
             strokeSize = 2,
             hourWidth = width / 14,
-            padding = width / 2f / 2f,
+            padding = (width / 2f) / (5 / 3f),
         )
     }
 }
