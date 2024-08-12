@@ -1,13 +1,8 @@
-package net.matsudamper.watchface
-
-data class UserColorConfigurations(
-    val resourceName: String,
-    val colors: List<String>,
-    val id: String,
-)
+package net.matsudamper.watchface.color
 
 object UserContentColor {
     const val ID = "contentColor"
+    const val displayName: String = "content color"
 
     fun values(): List<UserColorConfigurations> {
         return Colors.values().map { color ->

@@ -1,5 +1,6 @@
 package net.matsudamper.watchface
 
+import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.dsl.element.Cap
 import net.matsudamper.watchface.dsl.element.SourceType
 import net.matsudamper.watchface.dsl.element.VariantMode

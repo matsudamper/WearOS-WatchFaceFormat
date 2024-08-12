@@ -1,5 +1,6 @@
 package net.matsudamper.watchface
 
+import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.dsl.element.Complication
 import net.matsudamper.watchface.dsl.element.VariantMode
 import net.matsudamper.watchface.dsl.scope.Group

@@ -5,12 +5,13 @@ import net.matsudamper.watchface.dsl.element.ClipShape
 import net.matsudamper.watchface.dsl.metadata.ClockType
 import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
-import net.matsudamper.watchface.Colors
-import net.matsudamper.watchface.UserContentColor
+import net.matsudamper.watchface.color.Colors
+import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.HourMinHand
 import net.matsudamper.watchface.Scale
 import net.matsudamper.watchface.SecondHand
 import net.matsudamper.watchface.Slots
+import net.matsudamper.watchface.color.UserTimeColor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -53,10 +54,23 @@ private fun generate(): String {
         UserConfiguration {
             UserConfigurations(
                 id = UserContentColor.ID,
-                displayName = "content color",
+                displayName = UserContentColor.displayName,
                 defaultValue = Colors.Red.id,
             ) {
                 UserContentColor.values().forEach { color ->
+                    ColorOption(
+                        id = color.id,
+                        displayName = color.resourceName,
+                        colors = color.colors,
+                    )
+                }
+            }
+            UserConfigurations(
+                id = UserTimeColor.ID,
+                displayName = UserTimeColor.displayName,
+                defaultValue = Colors.Red.id,
+            ) {
+                UserTimeColor.values().forEach { color ->
                     ColorOption(
                         id = color.id,
                         displayName = color.resourceName,
