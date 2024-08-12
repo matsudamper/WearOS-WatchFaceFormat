@@ -34,6 +34,7 @@ internal fun HasWatchFaceLayoutElement.RangeValueLayout(
         )
     }
 }
+
 @Suppress("FunctionName")
 internal fun HasWatchFaceLayoutElement.SmallImageCompression(
     slotSize: Int,
@@ -165,13 +166,13 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
         width = slotSize,
         height = slotSize,
     ) {
+        val strokeSize = 8
         PartDraw(
             x = 0,
             y = 0,
             width = slotSize,
             height = slotSize,
         ) {
-            val strokeSize = 4
             Arc(
                 centerX = this@PartDraw.width / 2f,
                 centerY = this@PartDraw.height / 2f,
@@ -182,6 +183,33 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
             ) {
                 Transform(
                     target = "endAngle",
+                    value = "360 * [${Complication.RANGED_VALUE_VALUE}] / ([${Complication.RANGED_VALUE_MAX}] - [${Complication.RANGED_VALUE_MIN}])",
+                )
+                Stroke(
+                    cap = Cap.ROUND,
+                    color = UserContentColor.getColorSymbol(),
+                    thickness = strokeSize,
+                )
+            }
+        }
+
+        PartDraw(
+            x = 0,
+            y = 0,
+            width = slotSize,
+            height = slotSize,
+            alpha = 256 / 3,
+        ) {
+            Arc(
+                centerX = this@PartDraw.width / 2f,
+                centerY = this@PartDraw.height / 2f,
+                width = this@PartDraw.width.toFloat() - strokeSize,
+                height = this@PartDraw.height.toFloat() - strokeSize,
+                startAngle = 0f,
+                endAngle = 359.999f,
+            ) {
+                Transform(
+                    target = "startAngle",
                     value = "360 * [${Complication.RANGED_VALUE_VALUE}] / ([${Complication.RANGED_VALUE_MAX}] - [${Complication.RANGED_VALUE_MIN}])",
                 )
                 Stroke(

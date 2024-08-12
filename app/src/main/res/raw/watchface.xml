@@ -475,8 +475,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -486,7 +486,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
@@ -2354,8 +2381,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -2365,7 +2392,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
@@ -4233,8 +4287,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -4244,7 +4298,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
@@ -6112,8 +6193,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -6123,7 +6204,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
@@ -7991,8 +8099,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -8002,7 +8110,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
@@ -9870,8 +10005,8 @@
                             <Arc
                                 centerX="67.5"
                                 centerY="67.5"
-                                height="131.0"
-                                width="131.0"
+                                height="127.0"
+                                width="127.0"
                                 startAngle="0.0"
                                 endAngle="359.999"
                                 direction="CLOCKWISE" >
@@ -9881,7 +10016,34 @@
                                 <Stroke
                                     cap="ROUND"
                                     color="[CONFIGURATION.contentColor.0]"
-                                    thickness="4" />
+                                    thickness="8" />
+                            </Arc>
+                        </PartDraw>
+                        <PartDraw
+                            x="0"
+                            y="0"
+                            width="135"
+                            height="135"
+                            angle="0.0"
+                            pivotX="0.5"
+                            pivotY="0.5"
+                            alpha="85"
+                            renderMode="SOURCE" >
+                            <Arc
+                                centerX="67.5"
+                                centerY="67.5"
+                                height="127.0"
+                                width="127.0"
+                                startAngle="0.0"
+                                endAngle="359.999"
+                                direction="CLOCKWISE" >
+                                <Transform
+                                    target="startAngle"
+                                    value="360 * [COMPLICATION.RANGED_VALUE_VALUE] / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN])" />
+                                <Stroke
+                                    cap="ROUND"
+                                    color="[CONFIGURATION.contentColor.0]"
+                                    thickness="8" />
                             </Arc>
                         </PartDraw>
                     </Group>
