@@ -33,7 +33,7 @@ internal fun SceneScope.AnalogClockNumber(
                 val size = width / 16
                 PartText(
                     x = 0,
-                    y = margin + (size / 3),
+                    y = margin + if (i % 3 == 0 || i < 10) 0 else size / 3,
                     width = width,
                     height = size,
                     angle = -angle.toFloat(),
