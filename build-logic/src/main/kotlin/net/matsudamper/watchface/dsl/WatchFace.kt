@@ -8,6 +8,10 @@ import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.element.WatchFaceTextElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceHasChildScope
 
+/**
+ * 全ての要素は定義していない
+ * https://developer.android.com/training/wearables/wff/watch-face
+ */
 fun createWatchFace(
     clipShape: ClipShape,
     height: Int,
