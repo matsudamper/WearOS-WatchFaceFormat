@@ -1,9 +1,9 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.dsl.element.TextAlign
-import net.matsudamper.dsl.scope.DigitalClock
-import net.matsudamper.dsl.scope.SceneScope
-import net.matsudamper.dsl.scope.text.Font
+import net.matsudamper.watchface.dsl.element.TextAlign
+import net.matsudamper.watchface.dsl.scope.DigitalClock
+import net.matsudamper.watchface.dsl.scope.SceneScope
+import net.matsudamper.watchface.dsl.scope.text.Font
 
 @Suppress("FunctionName")
 internal fun SceneScope.CenterDigitalClock(

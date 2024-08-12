@@ -1,9 +1,9 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.dsl.element.ComplicationSlotSupportedType
-import net.matsudamper.dsl.element.DefaultProvider
-import net.matsudamper.dsl.scope.ComplicationSlot
-import net.matsudamper.dsl.scope.SceneScope
+import net.matsudamper.watchface.dsl.element.ComplicationSlotSupportedType
+import net.matsudamper.watchface.dsl.element.DefaultProvider
+import net.matsudamper.watchface.dsl.scope.ComplicationSlot
+import net.matsudamper.watchface.dsl.scope.SceneScope
 import kotlin.math.cos
 import kotlin.math.sin
 

@@ -1,19 +1,19 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.dsl.element.Cap
-import net.matsudamper.dsl.element.Complication
-import net.matsudamper.dsl.element.TextAlign
-import net.matsudamper.dsl.element.VariantMode
-import net.matsudamper.dsl.scope.Group
-import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
-import net.matsudamper.dsl.scope.PartDraw
-import net.matsudamper.dsl.scope.PartImage
-import net.matsudamper.dsl.scope.PartText
-import net.matsudamper.dsl.scope.Variant
-import net.matsudamper.dsl.scope.condition.Condition
-import net.matsudamper.dsl.scope.draw.Stroke
-import net.matsudamper.dsl.scope.draw.Transform
-import net.matsudamper.dsl.scope.text.Font
+import net.matsudamper.watchface.dsl.element.Cap
+import net.matsudamper.watchface.dsl.element.Complication
+import net.matsudamper.watchface.dsl.element.TextAlign
+import net.matsudamper.watchface.dsl.element.VariantMode
+import net.matsudamper.watchface.dsl.scope.Group
+import net.matsudamper.watchface.dsl.scope.HasWatchFaceLayoutElement
+import net.matsudamper.watchface.dsl.scope.PartDraw
+import net.matsudamper.watchface.dsl.scope.PartImage
+import net.matsudamper.watchface.dsl.scope.PartText
+import net.matsudamper.watchface.dsl.scope.Variant
+import net.matsudamper.watchface.dsl.scope.condition.Condition
+import net.matsudamper.watchface.dsl.scope.draw.Stroke
+import net.matsudamper.watchface.dsl.scope.draw.Transform
+import net.matsudamper.watchface.dsl.scope.text.Font
 
 @Suppress("FunctionName")
 internal fun HasWatchFaceLayoutElement.RangeValueLayout(

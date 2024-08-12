@@ -1,12 +1,12 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.dsl.element.Complication
-import net.matsudamper.dsl.element.VariantMode
-import net.matsudamper.dsl.scope.Group
-import net.matsudamper.dsl.scope.PartImage
-import net.matsudamper.dsl.scope.Variant
-import net.matsudamper.dsl.scope.condition.Condition
-import net.matsudamper.dsl.scope.condition.ConditionScope
+import net.matsudamper.watchface.dsl.element.Complication
+import net.matsudamper.watchface.dsl.element.VariantMode
+import net.matsudamper.watchface.dsl.scope.Group
+import net.matsudamper.watchface.dsl.scope.PartImage
+import net.matsudamper.watchface.dsl.scope.Variant
+import net.matsudamper.watchface.dsl.scope.condition.Condition
+import net.matsudamper.watchface.dsl.scope.condition.ConditionScope
 
 @Suppress("FunctionName")
 internal fun ConditionScope.MonoCompression(

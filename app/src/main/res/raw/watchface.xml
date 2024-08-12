@@ -249,9 +249,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -599,9 +596,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -948,9 +942,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -1296,9 +1287,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -1736,9 +1724,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -2143,9 +2128,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -2493,9 +2475,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -2842,9 +2821,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -3190,9 +3166,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -3630,9 +3603,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -4037,9 +4007,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -4387,9 +4354,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -4736,9 +4700,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -5084,9 +5045,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -5524,9 +5482,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -5931,9 +5886,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -6281,9 +6233,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -6630,9 +6579,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -6978,9 +6924,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -7418,9 +7361,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -7825,9 +7765,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -8175,9 +8112,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -8524,9 +8458,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -8872,9 +8803,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -9312,9 +9240,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -9719,9 +9644,6 @@
                                         <Expression
                                             name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                         </Expression>
-                                        <Expression
-                                            name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                        </Expression>
                                     </Expressions>
                                     <Compare
                                         expression="hasPhotoImage" >
@@ -10069,9 +9991,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -10418,9 +10337,6 @@
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
                                     </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
                                 </Expressions>
                                 <Compare
                                     expression="hasPhotoImage" >
@@ -10766,9 +10682,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare
@@ -11206,9 +11119,6 @@
                                     </Expression>
                                     <Expression
                                         name="hasSmallAndAmbientImage" ><![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.SMALL_IMAGE_AMBIENT] != null]]>
-                                    </Expression>
-                                    <Expression
-                                        name="monoImageAndAmbient" ><![CDATA[[COMPLICATION.MONOCHROMATIC_IMAGE] != null && [COMPLICATION.MONOCHROMATIC_IMAGE_AMBIENT] != null]]>
                                     </Expression>
                                 </Expressions>
                                 <Compare

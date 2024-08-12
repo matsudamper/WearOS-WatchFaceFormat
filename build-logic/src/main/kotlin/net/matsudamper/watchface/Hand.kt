@@ -1,15 +1,15 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.dsl.element.Cap
-import net.matsudamper.dsl.element.SourceType
-import net.matsudamper.dsl.element.VariantMode
-import net.matsudamper.dsl.scope.Group
-import net.matsudamper.dsl.scope.HasWatchFaceLayoutElement
-import net.matsudamper.dsl.scope.PartDraw
-import net.matsudamper.dsl.scope.SceneScope
-import net.matsudamper.dsl.scope.Variant
-import net.matsudamper.dsl.scope.draw.Stroke
-import net.matsudamper.dsl.scope.draw.Transform
+import net.matsudamper.watchface.dsl.element.Cap
+import net.matsudamper.watchface.dsl.element.SourceType
+import net.matsudamper.watchface.dsl.element.VariantMode
+import net.matsudamper.watchface.dsl.scope.Group
+import net.matsudamper.watchface.dsl.scope.HasWatchFaceLayoutElement
+import net.matsudamper.watchface.dsl.scope.PartDraw
+import net.matsudamper.watchface.dsl.scope.SceneScope
+import net.matsudamper.watchface.dsl.scope.Variant
+import net.matsudamper.watchface.dsl.scope.draw.Stroke
+import net.matsudamper.watchface.dsl.scope.draw.Transform
 
 @Suppress("FunctionName")
 internal fun SceneScope.HourMinHand(

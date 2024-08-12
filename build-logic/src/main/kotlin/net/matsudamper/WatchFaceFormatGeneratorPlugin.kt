@@ -1,9 +1,9 @@
 package net.matsudamper
 
-import net.matsudamper.dsl.createWatchFace
-import net.matsudamper.dsl.element.ClipShape
-import net.matsudamper.dsl.metadata.ClockType
-import net.matsudamper.dsl.metadata.ClockTypeValue
+import net.matsudamper.watchface.dsl.createWatchFace
+import net.matsudamper.watchface.dsl.element.ClipShape
+import net.matsudamper.watchface.dsl.metadata.ClockType
+import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
 import net.matsudamper.watchface.ContentColor
 import net.matsudamper.watchface.HourMinHand
@@ -35,7 +35,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
 }
 
 private fun generate(): String {
-    return createWatchFace(
+    return net.matsudamper.watchface.dsl.createWatchFace(
         width = 450,
         height = 450,
         clipShape = ClipShape.CIRCLE,

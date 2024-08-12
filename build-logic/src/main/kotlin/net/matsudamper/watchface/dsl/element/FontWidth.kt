@@ -1,0 +1,13 @@
+package net.matsudamper.watchface.dsl.element
+
+enum class FontWidth(val value: String) {
+    ULTRA_CONDENSED("ULTRA_CONDENSED"),
+    EXTRA_CONDENSED("EXTRA_CONDENSED"),
+    CONDENSED("CONDENSED"),
+    SEMI_CONDENSED("SEMI_CONDENSED"),
+    NORMAL("NORMAL"),
+    SEMI_EXPANDED("SEMI_EXPANDED"),
+    EXPANDED("EXPANDED"),
+    EXTRA_EXPANDED("EXTRA_EXPANDED"),
+    ULTRA_EXPANDED("ULTRA_EXPANDED"),
+}
