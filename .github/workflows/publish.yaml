@@ -8,6 +8,10 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
