@@ -34,5 +34,7 @@
     <string name="color_white">White</string>
 
     <string name="color_name_digital_time">digital time</string>
+    <string name="color_name_analog_seconds">analog seconds</string>
+    <string name="color_name_analog_hand">analog time</string>
     <string name="color_name_content">content</string>
 </resources>

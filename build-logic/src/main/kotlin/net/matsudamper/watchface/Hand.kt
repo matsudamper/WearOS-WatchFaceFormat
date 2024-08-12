@@ -1,6 +1,7 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.watchface.color.UserContentColor
+import net.matsudamper.watchface.color.UserAnalogHandColor
+import net.matsudamper.watchface.color.UserAnalogSecondColor
 import net.matsudamper.watchface.dsl.element.Cap
 import net.matsudamper.watchface.dsl.element.SourceType
 import net.matsudamper.watchface.dsl.element.VariantMode
@@ -30,14 +31,16 @@ internal fun SceneScope.HourMinHand(
             strokeSize = 2,
             hourWidth = width / (14 * 1.5).toInt(),
             padding = (width / 2f) / (5f / 1f),
+            color = UserAnalogHandColor.getColorSymbol(),
         )
         Hand(
             width = width,
             height = height,
             angleTransform = "30 * ${SourceType.HOUR_0_11.symbol}",
             strokeSize = 2,
-            hourWidth = width / 14,
             padding = (width / 2f) / (5 / 3f),
+            hourWidth = width / 14,
+            color = UserAnalogHandColor.getColorSymbol(),
         )
     }
 }
@@ -50,6 +53,7 @@ internal fun HasWatchFaceLayoutElement.Hand(
     strokeSize: Int,
     padding: Float,
     hourWidth: Int,
+    color: String,
 ) {
     PartDraw(
         x = 0,
@@ -75,7 +79,7 @@ internal fun HasWatchFaceLayoutElement.Hand(
         ) {
             Stroke(
                 cap = Cap.ROUND,
-                color = UserContentColor.getColorSymbol(),
+                color = color,
                 thickness = strokeSize,
             )
         }
@@ -127,7 +131,7 @@ internal fun SceneScope.SecondHand(
             )
             Stroke(
                 cap = Cap.ROUND,
-                color = UserContentColor.getColorSymbol(),
+                color = UserAnalogSecondColor.getColorSymbol(),
                 thickness = strokeSize,
             )
         }
