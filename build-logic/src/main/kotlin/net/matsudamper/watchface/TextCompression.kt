@@ -166,7 +166,7 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
         width = slotSize,
         height = slotSize,
     ) {
-        val strokeSize = 8
+        val strokeSize = 6
         PartDraw(
             x = 0,
             y = 0,

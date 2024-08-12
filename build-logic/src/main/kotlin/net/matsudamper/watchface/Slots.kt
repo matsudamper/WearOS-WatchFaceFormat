@@ -13,7 +13,7 @@ internal fun SceneScope.Slots(
     height: Int,
 ) {
     val slotCount = 6
-    val slotSize = (width * height) / 1500
+    val slotSize = (width * height) / 1700
     val slotMargin = slotSize * 1.05
 
     val angleStep = 360 / slotCount
