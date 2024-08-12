@@ -433,8 +433,8 @@
     </UserConfigurations>
     <Scene>
         <ComplicationSlot
-            x="273"
-            y="224"
+            x="279"
+            y="227"
             width="135"
             height="135"
             slotId="0"
@@ -2340,7 +2340,7 @@
         </ComplicationSlot>
         <ComplicationSlot
             x="157"
-            y="292"
+            y="298"
             width="135"
             height="135"
             slotId="1"
@@ -4245,8 +4245,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="41"
-            y="224"
+            x="35"
+            y="227"
             width="135"
             height="135"
             slotId="2"
@@ -6151,8 +6151,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="41"
-            y="90"
+            x="35"
+            y="87"
             width="135"
             height="135"
             slotId="3"
@@ -8058,7 +8058,7 @@
         </ComplicationSlot>
         <ComplicationSlot
             x="157"
-            y="22"
+            y="16"
             width="135"
             height="135"
             slotId="4"
@@ -9963,8 +9963,8 @@
             </Complication>
         </ComplicationSlot>
         <ComplicationSlot
-            x="273"
-            y="90"
+            x="279"
+            y="87"
             width="135"
             height="135"
             slotId="5"
@@ -11926,7 +11926,7 @@
                 angle="30.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-30.0" >
@@ -11955,7 +11955,7 @@
                 angle="60.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-60.0" >
@@ -11984,7 +11984,7 @@
                 angle="90.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-90.0" >
@@ -12013,7 +12013,7 @@
                 angle="120.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-120.0" >
@@ -12042,7 +12042,7 @@
                 angle="150.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-150.0" >
@@ -12071,7 +12071,7 @@
                 angle="180.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-180.0" >
@@ -12100,7 +12100,7 @@
                 angle="210.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-210.0" >
@@ -12129,7 +12129,7 @@
                 angle="240.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-240.0" >
@@ -12158,7 +12158,7 @@
                 angle="270.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-270.0" >
@@ -12245,7 +12245,7 @@
                 angle="360.0" >
                 <PartText
                     x="0"
-                    y="19"
+                    y="10"
                     width="450"
                     height="28"
                     angle="-360.0" >
