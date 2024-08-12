@@ -15,6 +15,7 @@ import net.matsudamper.watchface.Slots
 import net.matsudamper.watchface.color.UserAnalogHandColor
 import net.matsudamper.watchface.color.UserAnalogSecondColor
 import net.matsudamper.watchface.color.UserDigitalTimeColor
+import net.matsudamper.watchface.color.UserScaleColor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import kotlin.math.roundToInt
@@ -101,6 +102,19 @@ private fun generate(): String {
                 defaultValue = Colors.White.id,
             ) {
                 UserAnalogHandColor.values().forEach { color ->
+                    ColorOption(
+                        id = color.id,
+                        displayName = color.resourceName,
+                        colors = color.colors,
+                    )
+                }
+            }
+            UserConfigurations(
+                id = UserScaleColor.ID,
+                displayName = UserScaleColor.displayName,
+                defaultValue = Colors.White.id,
+            ) {
+                UserScaleColor.values().forEach { color ->
                     ColorOption(
                         id = color.id,
                         displayName = color.resourceName,

@@ -1,6 +1,6 @@
 package net.matsudamper.watchface
 
-import net.matsudamper.watchface.color.UserContentColor
+import net.matsudamper.watchface.color.UserScaleColor
 import net.matsudamper.watchface.dsl.element.Cap
 import net.matsudamper.watchface.dsl.scope.Group
 import net.matsudamper.watchface.dsl.scope.PartDraw
@@ -33,7 +33,7 @@ internal fun SceneScope.Scale(
                 pivotX = 0.5f,
                 pivotY = 0.5f,
                 angle = angle.toFloat(),
-                tintColor = UserContentColor.getColorSymbol(),
+                tintColor = UserScaleColor.getColorSymbol(),
             ) {
                 val startX = width / 2f - border
                 Line(
@@ -44,7 +44,7 @@ internal fun SceneScope.Scale(
                 ) {
                     Stroke(
                         cap = Cap.ROUND,
-                        color = UserContentColor.getColorSymbol(),
+                        color = UserScaleColor.getColorSymbol(),
                         thickness = border,
                     )
                 }
