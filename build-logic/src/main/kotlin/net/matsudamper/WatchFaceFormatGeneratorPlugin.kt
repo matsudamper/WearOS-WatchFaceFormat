@@ -17,6 +17,7 @@ import net.matsudamper.watchface.color.UserAnalogSecondColor
 import net.matsudamper.watchface.color.UserDigitalTimeColor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import kotlin.math.roundToInt
 
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -109,7 +110,7 @@ private fun generate(): String {
             }
         }
         Scene {
-            val secondCircleStrokeSize = 10
+            val secondCircleStrokeSize = (this@createWatchFace.width * 2f / 100f).roundToInt()
             Slots(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,

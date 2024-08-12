@@ -12,6 +12,7 @@ import net.matsudamper.watchface.dsl.scope.SceneScope
 import net.matsudamper.watchface.dsl.scope.Variant
 import net.matsudamper.watchface.dsl.scope.draw.Stroke
 import net.matsudamper.watchface.dsl.scope.draw.Transform
+import kotlin.math.roundToInt
 
 @Suppress("FunctionName")
 internal fun SceneScope.HourMinHand(
@@ -24,11 +25,12 @@ internal fun SceneScope.HourMinHand(
         width = width,
         height = height,
     ) {
+        val strokeSize = (1f / 225 * width).roundToInt()
         Hand(
             width = width,
             height = height,
             angleTransform = "6 * ${SourceType.MINUTE.symbol}",
-            strokeSize = 2,
+            strokeSize = strokeSize,
             hourWidth = width / (14 * 1.5).toInt(),
             padding = (width / 2f) / (5f / 1f),
             color = UserAnalogHandColor.getColorSymbol(),
@@ -37,7 +39,7 @@ internal fun SceneScope.HourMinHand(
             width = width,
             height = height,
             angleTransform = "30 * ${SourceType.HOUR_0_11.symbol}",
-            strokeSize = 2,
+            strokeSize = strokeSize,
             padding = (width / 2f) / (5 / 3f),
             hourWidth = width / 14,
             color = UserAnalogHandColor.getColorSymbol(),
