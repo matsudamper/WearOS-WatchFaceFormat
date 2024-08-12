@@ -35,7 +35,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
 }
 
 private fun generate(): String {
-    return net.matsudamper.watchface.dsl.createWatchFace(
+    return createWatchFace(
         width = 450,
         height = 450,
         clipShape = ClipShape.CIRCLE,
