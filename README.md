@@ -9,6 +9,14 @@ Sassのようなもの。
 https://github.com/matsudamper/WearOS-WatchFaceFormat/blob/main/build-logic/src/main/kotlin/net/matsudamper/WatchFaceFormatGeneratorPlugin.kt  
 
 # インストール方法
+## Release
+```shell
+./gradlew assembleRelease
+adb install .\app\build\outputs\apk\release\app-release.apk
+adb shell am broadcast -a com.google.android.wearable.app.DEBUG_SURFACE --es operation set-watchface --es watchFaceId net.matsudamper.watchface
+```
+
+## Debug
 ```shell
 ./gradlew assembleDebug
 adb install .\app\build\outputs\apk\debug\app-debug.apk
