@@ -24,7 +24,7 @@ internal fun SceneScope.Scale(
         for (i in 0 until 60) {
             val angle = i * step
             val isBig = i % 5 == 0
-            val length = if (isBig) maxStrokeSize else maxStrokeSize / 2
+            val length = if (isBig) maxStrokeSize.toFloat() else maxStrokeSize / 2f
             val border = if (isBig) 5 else 3
             PartDraw(
                 x = 0,
@@ -41,7 +41,7 @@ internal fun SceneScope.Scale(
                     startX = startX,
                     startY = 0f,
                     endX = startX,
-                    endY = length.toFloat(),
+                    endY = length,
                 ) {
                     Stroke(
                         cap = if (isBig) {
