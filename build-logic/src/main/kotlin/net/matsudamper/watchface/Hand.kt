@@ -38,7 +38,7 @@ internal fun SceneScope.HourMinHand(
         Hand(
             width = width,
             height = height,
-            angleTransform = "30 * ${SourceType.HOUR_0_11.symbol}",
+            angleTransform = "(60 * ${SourceType.HOUR_0_11.symbol} + ${SourceType.MINUTE.symbol}) / 2",
             strokeSize = strokeSize,
             padding = (width / 2f) / (5 / 3f),
             hourWidth = width / 14,

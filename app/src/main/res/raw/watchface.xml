@@ -13739,7 +13739,7 @@
                 renderMode="SOURCE" >
                 <Transform
                     target="angle"
-                    value="30 * [HOUR_0_11]" />
+                    value="(60 * [HOUR_0_11] + [MINUTE]) / 2" />
                 <RoundRectangle
                     x="210.0"
                     y="135.0"
