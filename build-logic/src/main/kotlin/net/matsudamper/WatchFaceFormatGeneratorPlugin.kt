@@ -125,6 +125,16 @@ private fun generate(): String {
         }
         Scene {
             val secondCircleStrokeSize = (this@createWatchFace.width * 2f / 100f).roundToInt()
+            Scale(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+                maxStrokeSize = secondCircleStrokeSize,
+            )
+            AnalogClockNumber(
+                width = this@createWatchFace.width,
+                height =this@createWatchFace.height,
+                margin = secondCircleStrokeSize,
+            )
             Slots(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
@@ -134,11 +144,6 @@ private fun generate(): String {
                 height = this@createWatchFace.height,
                 strokeSize = secondCircleStrokeSize,
             )
-            AnalogClockNumber(
-                width = this@createWatchFace.width,
-                height =this@createWatchFace.height,
-                margin = secondCircleStrokeSize,
-            )
             HourMinHand(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
@@ -146,11 +151,6 @@ private fun generate(): String {
             CenterDigitalClock(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
-            )
-            Scale(
-                width = this@createWatchFace.width,
-                height = this@createWatchFace.height,
-                maxStrokeSize = secondCircleStrokeSize,
             )
         }
     }
