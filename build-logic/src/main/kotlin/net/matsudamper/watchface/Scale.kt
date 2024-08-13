@@ -23,8 +23,9 @@ internal fun SceneScope.Scale(
         val step = 360 / 60
         for (i in 0 until 60) {
             val angle = i * step
-            val length = if (i % 5 == 0) maxStrokeSize else maxStrokeSize / 2
-            val border = if (i % 5 == 0) 5 else 3
+            val isBig = i % 5 == 0
+            val length = if (isBig) maxStrokeSize else maxStrokeSize / 2
+            val border = if (isBig) 5 else 3
             PartDraw(
                 x = 0,
                 y = 0,
@@ -43,7 +44,11 @@ internal fun SceneScope.Scale(
                     endY = length.toFloat(),
                 ) {
                     Stroke(
-                        cap = Cap.ROUND,
+                        cap = if (isBig) {
+                            Cap.ROUND
+                        } else {
+                            Cap.SQUARE
+                        },
                         color = UserScaleColor.getColorSymbol(),
                         thickness = border,
                     )

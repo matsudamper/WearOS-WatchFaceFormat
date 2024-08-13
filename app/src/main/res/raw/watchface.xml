@@ -624,7 +624,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -646,7 +646,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -668,7 +668,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -690,7 +690,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -734,7 +734,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -756,7 +756,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -778,7 +778,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -800,7 +800,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -844,7 +844,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -866,7 +866,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -888,7 +888,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -910,7 +910,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -954,7 +954,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -976,7 +976,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -998,7 +998,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1020,7 +1020,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1064,7 +1064,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1086,7 +1086,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1108,7 +1108,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1130,7 +1130,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1174,7 +1174,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1196,7 +1196,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1218,7 +1218,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1240,7 +1240,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1284,7 +1284,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1306,7 +1306,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1328,7 +1328,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1350,7 +1350,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1394,7 +1394,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1416,7 +1416,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1438,7 +1438,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1460,7 +1460,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1504,7 +1504,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1526,7 +1526,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1548,7 +1548,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1570,7 +1570,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1614,7 +1614,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1636,7 +1636,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1658,7 +1658,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1680,7 +1680,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1724,7 +1724,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1746,7 +1746,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1768,7 +1768,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1790,7 +1790,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1834,7 +1834,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1856,7 +1856,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1878,7 +1878,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
@@ -1900,7 +1900,7 @@
                     endX="225.0"
                     endY="4.0" >
                     <Stroke
-                        cap="ROUND"
+                        cap="SQUARE"
                         color="[CONFIGURATION.scaleColor.0]"
                         thickness="3" />
                 </Line>
