@@ -43,7 +43,7 @@ internal fun SceneScope.Scale(
                     endY = length.toFloat(),
                 ) {
                     Stroke(
-                        cap = Cap.ROUND,
+                        cap = Cap.SQUARE,
                         color = UserScaleColor.getColorSymbol(),
                         thickness = border,
                     )
