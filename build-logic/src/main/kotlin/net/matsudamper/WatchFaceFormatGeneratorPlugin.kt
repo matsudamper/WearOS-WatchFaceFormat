@@ -125,6 +125,11 @@ private fun generate(): String {
         }
         Scene {
             val secondCircleStrokeSize = (this@createWatchFace.width * 2f / 100f).roundToInt()
+            SecondHand(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+                strokeSize = secondCircleStrokeSize,
+            )
             Scale(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
@@ -138,11 +143,6 @@ private fun generate(): String {
             Slots(
                 width = this@createWatchFace.width,
                 height = this@createWatchFace.height,
-            )
-            SecondHand(
-                width = this@createWatchFace.width,
-                height = this@createWatchFace.height,
-                strokeSize = secondCircleStrokeSize,
             )
             HourMinHand(
                 width = this@createWatchFace.width,
