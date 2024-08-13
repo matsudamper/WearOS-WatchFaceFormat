@@ -35,7 +35,7 @@ internal fun SceneScope.Scale(
                 angle = angle.toFloat(),
                 tintColor = UserScaleColor.getColorSymbol(),
             ) {
-                val startX = width / 2f - border
+                val startX = width / 2f
                 Line(
                     startX = startX,
                     startY = 0f,
