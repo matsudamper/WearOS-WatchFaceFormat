@@ -3744,15 +3744,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -3764,8 +3764,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -3784,15 +3784,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -3804,8 +3804,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -5650,15 +5650,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -5670,8 +5670,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -5690,15 +5690,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -5710,8 +5710,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -7556,15 +7556,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -7576,8 +7576,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -7596,15 +7596,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -7616,8 +7616,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -9462,15 +9462,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -9482,8 +9482,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -9502,15 +9502,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -9522,8 +9522,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -11368,15 +11368,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -11388,8 +11388,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -11408,15 +11408,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -11428,8 +11428,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -13274,15 +13274,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -13294,8 +13294,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"
@@ -13314,15 +13314,15 @@
                             width="112"
                             height="112" >
                             <Group
-                                x="28"
-                                y="28"
-                                width="56"
-                                height="56" >
+                                x="19"
+                                y="19"
+                                width="75"
+                                height="75" >
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="0" >
                                     <Variant
                                         mode="AMBIENT"
@@ -13334,8 +13334,8 @@
                                 <PartImage
                                     x="0"
                                     y="0"
-                                    width="56"
-                                    height="56"
+                                    width="75"
+                                    height="75"
                                     alpha="255" >
                                     <Variant
                                         mode="AMBIENT"

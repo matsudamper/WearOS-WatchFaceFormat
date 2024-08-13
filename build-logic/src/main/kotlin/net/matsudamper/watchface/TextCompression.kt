@@ -17,6 +17,7 @@ import net.matsudamper.watchface.dsl.scope.draw.Stroke
 import net.matsudamper.watchface.dsl.scope.draw.Transform
 import net.matsudamper.watchface.dsl.scope.text.Font
 import net.matsudamper.watchface.dsl.scope.text.Template
+import kotlin.math.roundToInt
 
 @Suppress("FunctionName")
 internal fun HasWatchFaceLayoutElement.RangeValueLayout(
@@ -230,12 +231,12 @@ private fun HasWatchFaceLayoutElement.SmallImage(
     image: Complication,
     ambientImage: Complication,
 ) {
-    val iconSize = slotSize / 2
+    val iconSize = slotSize * (2f / 3f)
     Group(
-        x = (slotSize - iconSize) / 2,
-        y = (slotSize - iconSize) / 2,
-        width = iconSize,
-        height = iconSize,
+        x = ((slotSize - iconSize) / 2).roundToInt(),
+        y = ((slotSize - iconSize) / 2).roundToInt(),
+        width = iconSize.roundToInt(),
+        height = iconSize.roundToInt(),
     ) {
         PartImage(
             x = 0,
