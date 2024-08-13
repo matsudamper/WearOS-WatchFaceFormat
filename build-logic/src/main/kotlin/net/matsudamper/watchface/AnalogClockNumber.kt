@@ -6,6 +6,7 @@ import net.matsudamper.watchface.dsl.scope.Group
 import net.matsudamper.watchface.dsl.scope.PartText
 import net.matsudamper.watchface.dsl.scope.SceneScope
 import net.matsudamper.watchface.dsl.scope.text.Font
+import net.matsudamper.watchface.dsl.scope.text.Template
 
 @Suppress("FunctionName")
 internal fun SceneScope.AnalogClockNumber(

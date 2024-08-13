@@ -4,12 +4,14 @@ import net.matsudamper.watchface.dsl.element.FontFamily
 import net.matsudamper.watchface.dsl.element.FontSlant
 import net.matsudamper.watchface.dsl.element.FontWeight
 import net.matsudamper.watchface.dsl.element.FontWidth
+import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
+import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 
 /**
  * FOntを子に持てる
  */
-interface HasFontElement: WatchFaceHasChildElement
+interface HasFontElement : WatchFaceHasChildElement
 
 @Suppress("FunctionName")
 fun HasFontElement.Font(
@@ -33,4 +35,38 @@ fun HasFontElement.Font(
             weight = weight,
         ).apply(block)
     )
+}
+
+@Suppress("FunctionName")
+fun HasFontElement.BitmapFont(
+    family: FontFamily.Value,
+    size: Int,
+    color: String? = null,
+    block: BitmapFontScope.() -> Unit = {},
+) {
+    addChild(
+        BitmapFontScope(
+            family = family,
+            size = size,
+            color = color,
+        ).apply(block)
+    )
+}
+
+@WatchFaceDSLMarker
+class BitmapFontScope(
+    val family: FontFamily,
+    val size: Int,
+    val color: String?,
+) : WatchFaceHasChildElement, FontBitmapFontScope {
+    override val elementName: String = "BitmapFont"
+    override val attributes: Map<String, String?> = mapOf(
+        "family" to family.value,
+        "size" to size.toString(),
+        "color" to color,
+    )
+    override val children: MutableList<WatchFaceElement> = mutableListOf()
+    override fun addChild(child: WatchFaceElement) {
+        children.add(child)
+    }
 }

@@ -18,7 +18,7 @@ class FontScope(
     val letterSpacing: Float,
     val width: FontWidth?,
     val weight: FontWeight,
-) : WatchFaceHasChildElement {
+) : WatchFaceHasChildElement, FontBitmapFontScope {
     override val elementName: String = "Font"
     override val attributes: Map<String, String?> = mapOf(
         "family" to family?.value,
@@ -33,12 +33,15 @@ class FontScope(
     override fun addChild(child: WatchFaceElement) {
         children.add(child)
     }
+}
 
-    fun Template(
-        block: TemplateScope.() -> Unit,
-    ) {
-        val scope = TemplateScope()
-        scope.block()
-        children.add(scope)
-    }
+interface FontBitmapFontScope : WatchFaceHasChildElement
+
+@Suppress("FunctionName")
+fun FontBitmapFontScope.Template(
+    block: TemplateScope.() -> Unit,
+) {
+    val scope = TemplateScope()
+    scope.block()
+    addChild(scope)
 }

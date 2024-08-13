@@ -16,6 +16,7 @@ import net.matsudamper.watchface.dsl.scope.condition.Condition
 import net.matsudamper.watchface.dsl.scope.draw.Stroke
 import net.matsudamper.watchface.dsl.scope.draw.Transform
 import net.matsudamper.watchface.dsl.scope.text.Font
+import net.matsudamper.watchface.dsl.scope.text.Template
 
 @Suppress("FunctionName")
 internal fun HasWatchFaceLayoutElement.RangeValueLayout(
