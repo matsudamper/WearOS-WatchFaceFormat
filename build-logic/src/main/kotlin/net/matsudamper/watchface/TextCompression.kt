@@ -406,7 +406,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
         ) {
             Text(
                 align = TextAlign.CENTER,
-                ellipsis = true,
+                ellipsis = false,
             ) {
                 Font(
                     color = UserContentColor.getColorSymbol(),

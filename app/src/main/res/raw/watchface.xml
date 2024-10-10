@@ -2390,7 +2390,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -2737,7 +2737,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -3083,7 +3083,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -3429,7 +3429,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -3866,7 +3866,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -4296,7 +4296,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -4643,7 +4643,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -4989,7 +4989,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -5335,7 +5335,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -5772,7 +5772,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -6202,7 +6202,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -6549,7 +6549,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -6895,7 +6895,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -7241,7 +7241,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -7678,7 +7678,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -8108,7 +8108,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -8455,7 +8455,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -8801,7 +8801,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -9147,7 +9147,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -9584,7 +9584,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -10014,7 +10014,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -10361,7 +10361,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -10707,7 +10707,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -11053,7 +11053,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -11490,7 +11490,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -11920,7 +11920,7 @@
                                         alpha="255" >
                                         <Text
                                             align="CENTER"
-                                            ellipsis="true" >
+                                            ellipsis="false" >
                                             <Font
                                                 family="SYNC_TO_DEVICE"
                                                 size="28"
@@ -12267,7 +12267,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -12613,7 +12613,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -12959,7 +12959,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
@@ -13396,7 +13396,7 @@
                                     alpha="255" >
                                     <Text
                                         align="CENTER"
-                                        ellipsis="true" >
+                                        ellipsis="false" >
                                         <Font
                                             family="SYNC_TO_DEVICE"
                                             size="28"
