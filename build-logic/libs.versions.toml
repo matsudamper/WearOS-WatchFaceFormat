@@ -3,7 +3,7 @@ compileSdk = "35"
 buildToolsVersion = "35.0.0"
 minSdk = "30"
 targetSdk = "35"
-androidGradlePlugin = "8.7.2"
+androidGradlePlugin = "8.7.3"
 kotlin = "2.1.0"
 
 [plugins]
