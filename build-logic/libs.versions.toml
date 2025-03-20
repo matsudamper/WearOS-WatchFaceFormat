@@ -4,7 +4,7 @@ buildToolsVersion = "35.0.0"
 minSdk = "30"
 targetSdk = "35"
 androidGradlePlugin = "8.9.0"
-kotlin = "2.1.10"
+kotlin = "2.1.20"
 
 [plugins]
 androidGradlePlugin = { id = "com.android.application", version.ref = "androidGradlePlugin" }
