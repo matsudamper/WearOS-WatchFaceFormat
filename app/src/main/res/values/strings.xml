@@ -38,4 +38,9 @@
     <string name="color_name_analog_hand">analog time</string>
     <string name="color_name_content">content</string>
     <string name="color_name_scale">scale</string>
+
+    <string name="background_image">背景画像</string>
+    <string name="background_none">なし</string>
+    <string name="background_dark">ダーク</string>
+    <string name="background_light">ライト</string>
 </resources>
