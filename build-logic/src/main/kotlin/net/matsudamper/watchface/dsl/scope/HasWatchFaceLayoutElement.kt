@@ -3,6 +3,8 @@ package net.matsudamper.watchface.dsl.scope
 import net.matsudamper.watchface.dsl.element.ComplicationSlotSupportedType
 import net.matsudamper.watchface.dsl.element.RenderMode
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
+import net.matsudamper.watchface.dsl.scope.animatedimage.PartAnimatedImageScope
+import net.matsudamper.watchface.dsl.scope.clock.AnalogClockScope
 import net.matsudamper.watchface.dsl.scope.clock.DigitalClockScope
 import net.matsudamper.watchface.dsl.scope.complication.ComplicationSlotScope
 import net.matsudamper.watchface.dsl.scope.draw.PartDrawScope
@@ -11,10 +13,6 @@ import net.matsudamper.watchface.dsl.scope.text.PartTextScope
 
 /**
  * レイアウトに関する子を持てる
- * TODO一覧
- *         <PartImage ... />
- *         <PartAnimatedImage ... />
- *         <AnalogClock ... />
  */
 interface HasWatchFaceLayoutElement : WatchFaceHasChildElement
 
@@ -227,6 +225,78 @@ fun HasWatchFaceLayoutElement.ComplicationSlot(
         supportedTypes = supportedTypes,
         isCustomizable = isCustomizable,
         tintColor = tintColor,
+    )
+    block(scope)
+    addChild(scope)
+}
+
+@Suppress("FunctionName")
+fun HasWatchFaceLayoutElement.AnalogClock(
+    x: Int,
+    y: Int,
+    width: Int,
+    height: Int,
+    pivotX: Float? = null,
+    pivotY: Float? = null,
+    angle: Float? = null,
+    alpha: Int? = null,
+    scaleX: Float? = null,
+    scaleY: Float? = null,
+    renderMode: RenderMode? = null,
+    tintColor: String? = null,
+    block: AnalogClockScope.() -> Unit,
+) {
+    val scope = AnalogClockScope(
+        x = x,
+        y = y,
+        width = width,
+        height = height,
+        pivotX = pivotX,
+        pivotY = pivotY,
+        angle = angle,
+        alpha = alpha,
+        scaleX = scaleX,
+        scaleY = scaleY,
+        renderMode = renderMode,
+        tintColor = tintColor,
+    )
+    block(scope)
+    addChild(scope)
+}
+
+@Suppress("FunctionName")
+fun HasWatchFaceLayoutElement.PartAnimatedImage(
+    x: Int,
+    y: Int,
+    width: Int,
+    height: Int,
+    name: String? = null,
+    angle: Float? = null,
+    pivotX: Float? = null,
+    pivotY: Float? = null,
+    alpha: Int? = null,
+    scaleX: Float? = null,
+    scaleY: Float? = null,
+    renderMode: RenderMode? = null,
+    tintColor: String? = null,
+    blendMode: String? = null,
+    block: PartAnimatedImageScope.() -> Unit,
+) {
+    val scope = PartAnimatedImageScope(
+        x = x,
+        y = y,
+        width = width,
+        height = height,
+        name = name,
+        angle = angle,
+        pivotX = pivotX,
+        pivotY = pivotY,
+        alpha = alpha,
+        scaleX = scaleX,
+        scaleY = scaleY,
+        renderMode = renderMode,
+        tintColor = tintColor,
+        blendMode = blendMode,
     )
     block(scope)
     addChild(scope)
