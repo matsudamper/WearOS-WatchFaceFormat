@@ -43,4 +43,8 @@
     <string name="background_none">なし</string>
     <string name="background_dark">ダーク</string>
     <string name="background_light">ライト</string>
+
+    <string name="config_title">ウォッチフェイス設定</string>
+    <string name="config_close">閉じる</string>
+    <string name="config_error_title">エラー</string>
 </resources>
