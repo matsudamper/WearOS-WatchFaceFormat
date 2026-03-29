@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.androidGradlePlugin)
+    alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.composeCompiler)
     id("net.matsudamper.WatchFaceFormatGenerator")
 }
 
@@ -34,9 +36,24 @@ android {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
+    kotlinOptions {
+        jvmTarget = "21"
+    }
+    buildFeatures {
+        compose = true
+    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+}
+
+dependencies {
+    implementation(libs.wearComposeMaterial)
+    implementation(libs.wearComposeFoundation)
+    implementation(libs.wearWatchfaceEditor)
+    implementation(libs.activityCompose)
+    implementation(libs.lifecycleRuntimeCompose)
+    implementation(libs.coroutinesAndroid)
 }

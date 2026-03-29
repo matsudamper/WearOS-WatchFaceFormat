@@ -30,4 +30,23 @@ class UserConfigurationScope : WatchFaceHasChildElement {
         block(scope)
         children.add(scope)
     }
+
+    fun ListConfiguration(
+        id: String? = null,
+        displayName: String,
+        icon: String? = null,
+        screenReaderText: String? = null,
+        defaultValue: String,
+        block: ListConfigurationScope.() -> Unit,
+    ) {
+        val scope = ListConfigurationScope(
+            id = id,
+            displayName = displayName,
+            icon = icon,
+            screenReaderText = screenReaderText,
+            defaultValue = defaultValue,
+        )
+        block(scope)
+        children.add(scope)
+    }
 }

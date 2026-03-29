@@ -16,6 +16,8 @@ import net.matsudamper.watchface.color.UserAnalogHandColor
 import net.matsudamper.watchface.color.UserAnalogSecondColor
 import net.matsudamper.watchface.color.UserDigitalTimeColor
 import net.matsudamper.watchface.color.UserScaleColor
+import net.matsudamper.watchface.background.BackgroundImages
+import net.matsudamper.watchface.Background
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import kotlin.math.roundToInt
@@ -122,8 +124,24 @@ private fun generate(): String {
                     )
                 }
             }
+            ListConfiguration(
+                id = BackgroundImages.CONFIGURATION_ID,
+                displayName = BackgroundImages.DISPLAY_NAME,
+                defaultValue = BackgroundImages.options.first().id,
+            ) {
+                BackgroundImages.options.forEach { option ->
+                    ListOption(
+                        id = option.id,
+                        displayName = option.displayName,
+                    )
+                }
+            }
         }
         Scene {
+            Background(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+            )
             val secondCircleStrokeSize = (this@createWatchFace.width * 2f / 100f).roundToInt()
             SecondHand(
                 width = this@createWatchFace.width,
