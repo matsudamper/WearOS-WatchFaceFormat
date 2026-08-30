@@ -6,7 +6,6 @@ import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 import net.matsudamper.watchface.dsl.scope.HasWatchFaceLayoutElement
-import javax.sound.sampled.Line
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
@@ -98,6 +97,40 @@ class PartDrawScope(
             height = height,
             cornerRadiusX = cornerRadiusX,
             cornerRadiusY = cornerRadiusY,
+        )
+        block(scope)
+        children.add(scope)
+    }
+
+    fun Rectangle(
+        x: Float,
+        y: Float,
+        width: Float,
+        height: Float,
+        block: RectangleScope.() -> Unit,
+    ) {
+        val scope = RectangleScope(
+            x = x,
+            y = y,
+            width = width,
+            height = height,
+        )
+        block(scope)
+        children.add(scope)
+    }
+
+    fun Ellipse(
+        x: Float,
+        y: Float,
+        width: Float,
+        height: Float,
+        block: EllipseScope.() -> Unit,
+    ) {
+        val scope = EllipseScope(
+            x = x,
+            y = y,
+            width = width,
+            height = height,
         )
         block(scope)
         children.add(scope)
