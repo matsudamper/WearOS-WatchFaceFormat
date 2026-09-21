@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v6
         with:
           distribution: 'temurin'
-          java-version: '26.0.2+10'
+          java-version: '27.0.0+35'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
       - name: build
