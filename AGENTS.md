@@ -39,14 +39,8 @@ WearOS向けウォッチフェイス。DSLでWatch Face Format XMLを生成。
 - 処理の復唱（What）は書かない
 - 例外の緩さはリポジトリ固有セクションおよび docs に従う
 
-## Kotlin / 一般（該当する場合）
-- Kotlin 公式コーディング規約に従う（リポに docs があればそちら優先）
-- 基本は `.editorconfig`
-- `var` より `val`。`!!` 禁止（必要なら null チェック後に `val` へ載せ替え）
-- デフォルト引数はなるべく使わない（既存は可。Compose の `Modifier` だけは倣わない）
-- `@Suppress` / lint ignore の勝手追加禁止
+## 一般
 - ファイル移動は `git mv`
-- import はワイルドカード禁止。FQCN より import して短縮名
 - Markdown で `**` 太字は使わない
 
 ## Git
