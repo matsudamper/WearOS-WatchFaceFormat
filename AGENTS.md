@@ -19,10 +19,8 @@ WearOS向けウォッチフェイス。DSLでWatch Face Format XMLを生成。
 リポジトリに存在する `docs/` 以下のエージェント向けドキュメントがあれば、必ず読んで従う。無いファイルは無視してよい。
 
 例:
-- `docs/agent-kotlin.md` — Kotlin 詳細スタイル
-- `docs/agent-compose.md` — Compose / UiState
-- `docs/agent-paparazzi.md` — Paparazzi
-- 既存の `docs/compose-guidelines.md` / `docs/coding_style.md` などリポ固有の詳細ガイド
+- `docs/agent-*.md`
+- `docs/*-guidelines.md` / `docs/*_style.md` など
 
 ## 言語
 - 応答・説明・コミットメッセージ・PR 文・レビュー返信は日本語
