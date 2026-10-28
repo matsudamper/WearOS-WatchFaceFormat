@@ -80,24 +80,25 @@ WearOS向けウォッチフェイス。DSLでWatch Face Format XMLを生成。
    - 本文は変更内容に合わせて全体を更新してよいが、ユーザーが追記した内容は尊重して保持する
 4. 更新不要と判断した場合はスキップし、更新した場合はユーザーに変更内容を報告する
 
-## PR作成後のフォロー（Cursor Cloud Agent）
-このルールは Cursor Cloud Agent（AIリモート実行環境）でのみ自動的に適用する。ローカル CLI や IDE 拡張ではユーザーから指示があった場合にのみ適用する。
+## PR作成後のフォロー
+PRを作成したら、CIの結果とレビューを購読し、必要に応じて修正する。  
 
-PR を作成または更新して push した後、レビューと CI の結果を待ち、必要に応じて修正する。
+### Cursor Cloud Agentのみのフォロー
+Cursor Cloud Agent（AIリモート実行環境）でのみ自動的に適用する。  
 
-### 購読
+#### 購読
 1. `cursor-subscriptions-list_subscriptions` で既存の購読を確認する。同一 PR・ブランチへの購読がなければ新規作成する
 2. `cursor-subscriptions-subscribe_github_ci` で push したブランチの CI 完了を購読する
 3. `cursor-subscriptions-subscribe_github_pr`（scope: `pr`）で PR のレビュー・コメントを購読する
 4. 購読後はターンを終了し、通知を待つ
 
-### 通知で再開したら
+#### 通知で再開したら
 - CI 失敗: 失敗したチェックを調査し修正して push する
 - レビューコメント: 内容を確認し対応する。対応内容はコミットメッセージに書く。あわせてレビュースレッドに返信する（PR 本体への一般コメントは書かない）
 - Bugbot や Agentic Security Review の指摘: レビューコメントと同様に対応する
 - 修正を push したら購読は維持する（期限切れの場合は再購読する）
 
-### 購読の解除
+#### 購読の解除
 PR がマージまたはクローズされたら `cursor-subscriptions-unsubscribe` で購読を解除する。
 
 ## ビルド・検証（方針）
