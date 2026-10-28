@@ -23,16 +23,8 @@ import kotlin.math.roundToInt
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
-            val generateWatchFace = tasks.register("generateWatchFace") {
-                doLast {
-                    runCatching {
-                        val xml = generate()
-                        layout.projectDirectory.asFile.resolve("src/main/res/raw/watchface.xml")
-                            .writeText(xml)
-                    }.onFailure {
-                        it.printStackTrace()
-                    }.getOrThrow()
-                }
+            val generateWatchFace = tasks.register("generateWatchFace", GenerateWatchFaceTask::class.java) {
+                outputFile.set(layout.projectDirectory.file("src/main/res/raw/watchface.xml"))
             }
 
             tasks.named("preBuild") {
@@ -42,7 +34,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     }
 }
 
-private fun generate(): String {
+internal fun generate(): String {
     return createWatchFace(
         width = 450,
         height = 450,
