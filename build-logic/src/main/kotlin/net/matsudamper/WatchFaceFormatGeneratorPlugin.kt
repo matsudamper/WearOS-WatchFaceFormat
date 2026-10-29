@@ -27,8 +27,9 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
                 doLast {
                     runCatching {
                         val xml = generate()
-                        layout.projectDirectory.asFile.resolve("src/main/res/raw/watchface.xml")
-                            .writeText(xml)
+                        val outputFile = layout.projectDirectory.asFile.resolve("src/main/res/raw/watchface.xml")
+                        outputFile.parentFile.mkdirs()
+                        outputFile.writeText(xml)
                     }.onFailure {
                         it.printStackTrace()
                     }.getOrThrow()
