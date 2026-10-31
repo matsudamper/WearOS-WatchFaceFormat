@@ -24,6 +24,7 @@ internal fun HasWatchFaceLayoutElement.RangeValueLayout(
     slotSize: Int,
 ) {
     Group(
+        name = "rangeValue",
         x = 0,
         y = 0,
         width = slotSize,
@@ -52,6 +53,7 @@ internal fun HasWatchFaceLayoutElement.SmallImageCompression(
         }
         Compare(hasAmbientId) {
             Group(
+                name = "smallImageWithAmbient",
                 x = 0,
                 y = 0,
                 width = slotSize,
@@ -66,6 +68,7 @@ internal fun HasWatchFaceLayoutElement.SmallImageCompression(
         }
         Default {
             Group(
+                name = "smallImageWithoutAmbient",
                 x = 0,
                 y = 0,
                 width = slotSize,
@@ -100,6 +103,7 @@ internal fun HasWatchFaceLayoutElement.TextCompressionLayout(
         }
         Default {
             Group(
+                name = "textWithoutTitle",
                 x = 0,
                 y = 0,
                 width = slotSize,
@@ -162,6 +166,7 @@ private fun HasWatchFaceLayoutElement.RangeLayout(
     slotSize: Int,
 ) {
     Group(
+        name = "range",
         x = 0,
         y = 0,
         width = slotSize,
@@ -231,6 +236,7 @@ private fun HasWatchFaceLayoutElement.SmallImage(
 ) {
     val iconSize = slotSize * (2f / 3f)
     Group(
+        name = "smallImage",
         x = ((slotSize - iconSize) / 2).roundToInt(),
         y = ((slotSize - iconSize) / 2).roundToInt(),
         width = iconSize.roundToInt(),
@@ -280,6 +286,7 @@ private fun HasWatchFaceLayoutElement.Text(
     ambientImage: Complication,
 ) {
     Group(
+        name = "text",
         x = 0,
         y = 0,
         width = slotSize,
@@ -289,6 +296,7 @@ private fun HasWatchFaceLayoutElement.Text(
         val iconSize = slotSize / 4
         val verticalPadding = (slotSize - iconSize - fontSize) / 2
         Group(
+            name = "textIcon",
             x = (slotSize - iconSize) / 2,
             y = verticalPadding,
             width = iconSize,
@@ -364,6 +372,7 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
     slotSize: Int,
 ) {
     Group(
+        name = "textWithTitle",
         x = 0,
         y = 0,
         width = slotSize,

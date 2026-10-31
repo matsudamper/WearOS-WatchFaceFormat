@@ -20,6 +20,7 @@ internal fun SceneScope.HourMinHand(
     height: Int,
 ) {
     Group(
+        name = "hourMinuteHands",
         x = 0,
         y = 0,
         width = width,

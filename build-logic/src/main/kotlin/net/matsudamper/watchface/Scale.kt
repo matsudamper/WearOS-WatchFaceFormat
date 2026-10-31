@@ -15,6 +15,7 @@ internal fun SceneScope.Scale(
     maxStrokeSize: Int,
 ) {
     Group(
+        name = "scale",
         x = 0,
         y = 0,
         width = width,
