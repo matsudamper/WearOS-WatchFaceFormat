@@ -5,6 +5,9 @@ minSdk = "30"
 targetSdk = "35"
 androidGradlePlugin = "9.5.0"
 kotlin = "2.4.21"
+xercesXsd11 = "2.12.0"
+xpath2 = "1.2.0"
+javaCup = "10k"
 
 [plugins]
 androidGradlePlugin = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -13,3 +16,6 @@ kotlinGradlePlugin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 [libraries]
 androidGradlePlugin = { module = "com.android.application:com.android.application.gradle.plugin", version.ref = "androidGradlePlugin" }
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+xercesXsd11 = { module = "org.exist-db.thirdparty.xerces:xercesImpl", version.ref = "xercesXsd11" }
+xpath2 = { module = "org.exist-db.thirdparty.org.eclipse.wst.xml:xpath2", version.ref = "xpath2" }
+javaCup = { module = "edu.princeton.cup:java-cup", version.ref = "javaCup" }
