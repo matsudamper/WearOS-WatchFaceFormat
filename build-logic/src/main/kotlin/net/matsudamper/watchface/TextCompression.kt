@@ -94,11 +94,9 @@ internal fun HasWatchFaceLayoutElement.TextCompressionLayout(
             )
         }
         Compare(hasTitleId) {
-            Condition {
-                TextTitleCompression(
-                    slotSize = slotSize,
-                )
-            }
+            TextTitleCompression(
+                slotSize = slotSize,
+            )
         }
         Default {
             Group(
