@@ -254,6 +254,7 @@ private fun HasWatchFaceLayoutElement.SmallImage(
                 mode = VariantMode.AMBIENT,
                 target = "alpha",
                 value = "255",
+                transition = AmbientFadeTransition,
             )
             Image(
                 resource = "[$ambientImage]",
@@ -271,6 +272,7 @@ private fun HasWatchFaceLayoutElement.SmallImage(
                 mode = VariantMode.AMBIENT,
                 target = "alpha",
                 value = "0",
+                transition = AmbientFadeTransition,
             )
             Image(
                 resource = "[$image]",
@@ -315,6 +317,7 @@ private fun HasWatchFaceLayoutElement.Text(
                     mode = VariantMode.AMBIENT,
                     target = "alpha",
                     value = "255",
+                    transition = AmbientFadeTransition,
                 )
                 Image(
                     resource = "[$ambientImage]",
@@ -333,6 +336,7 @@ private fun HasWatchFaceLayoutElement.Text(
                     mode = VariantMode.AMBIENT,
                     target = "alpha",
                     value = "0",
+                    transition = AmbientFadeTransition,
                 )
                 Image(
                     resource = "[$image]",
