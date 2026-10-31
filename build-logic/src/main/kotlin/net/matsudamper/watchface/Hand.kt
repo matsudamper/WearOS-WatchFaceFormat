@@ -126,6 +126,7 @@ internal fun SceneScope.SecondHand(
             width = this@PartDraw.width.toFloat() - strokeSize,
             height = this@PartDraw.height.toFloat() - strokeSize,
             startAngle = 0f,
+            endAngle = 0f,
         ) {
             Transform(
                 target = "endAngle",
