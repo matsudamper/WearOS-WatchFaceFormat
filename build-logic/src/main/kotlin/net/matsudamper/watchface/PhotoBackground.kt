@@ -14,7 +14,6 @@ internal object PhotoBackground {
     const val DEFAULT_IMAGE_RESOURCE = "photo_background_default"
 }
 
-@Suppress("FunctionName")
 internal fun SceneScope.PhotoBackground(
     width: Int,
     height: Int,
