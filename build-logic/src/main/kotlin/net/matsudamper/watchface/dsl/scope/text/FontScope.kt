@@ -15,7 +15,7 @@ class FontScope(
     val size: Int,
     val color: String?,
     val slant: FontSlant?,
-    val letterSpacing: Float,
+    val letterSpacing: Float?,
     val width: FontWidth?,
     val weight: FontWeight,
 ) : WatchFaceHasChildElement, FontBitmapFontScope {
@@ -25,7 +25,7 @@ class FontScope(
         "size" to size.toString(),
         "color" to color,
         "slant" to slant?.value,
-        "letterSpacing" to letterSpacing.toString(),
+        "letterSpacing" to letterSpacing?.toString(),
         "width" to width?.value,
         "weight" to weight.value,
     )
