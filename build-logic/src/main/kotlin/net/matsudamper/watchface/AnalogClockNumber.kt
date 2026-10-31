@@ -46,9 +46,7 @@ internal fun SceneScope.AnalogClockNumber(
                             size = size,
                             color = UserDigitalTimeColor.getColorSymbol(),
                         ) {
-                            Template {
-                                addRawText("$i")
-                            }
+                            addRawText("$i")
                         }
                     }
                 }
