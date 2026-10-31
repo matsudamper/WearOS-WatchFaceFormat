@@ -11,12 +11,14 @@ class TextScope(
     val align: TextAlign?,
     val ellipsis: Boolean,
     val maxLines: Int?,
+    val isAutoSize: Boolean,
 ) : HasWatchFaceLayoutElement, HasFontElement {
     override val elementName: String = "Text"
     override val attributes: Map<String, String?> = mapOf(
         "align" to align?.value,
         "ellipsis" to ellipsis.toString().uppercase(),
         "maxLines" to maxLines?.toString(),
+        "isAutoSize" to isAutoSize.toString().uppercase(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {

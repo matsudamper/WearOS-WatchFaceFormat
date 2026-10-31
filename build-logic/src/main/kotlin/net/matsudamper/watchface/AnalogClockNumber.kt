@@ -43,6 +43,7 @@ internal fun SceneScope.AnalogClockNumber(
                 ) {
                     Text(
                         align = TextAlign.CENTER,
+                        isAutoSize = false,
                     ) {
                         Font(
                             size = size,

@@ -48,12 +48,14 @@ class PartTextScope(
         align: TextAlign? = null,
         ellipsis: Boolean = true,
         maxLines: Int? = null,
+        isAutoSize: Boolean,
         block: TextScope.() -> Unit
     ) {
         val text = TextScope(
             align = align,
             ellipsis = ellipsis,
-            maxLines = maxLines
+            maxLines = maxLines,
+            isAutoSize = isAutoSize,
         )
         text.block()
         children.add(text)
