@@ -1,5 +1,6 @@
 package net.matsudamper.watchface.dsl.scope.configuration
 
+import net.matsudamper.watchface.dsl.element.PhotosConfigType
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
 
@@ -29,5 +30,17 @@ class UserConfigurationScope : WatchFaceHasChildElement {
         )
         block(scope)
         children.add(scope)
+    }
+
+    fun PhotosConfiguration(
+        id: String,
+        configType: PhotosConfigType,
+    ) {
+        children.add(
+            PhotosConfigurationScope(
+                id = id,
+                configType = configType,
+            )
+        )
     }
 }

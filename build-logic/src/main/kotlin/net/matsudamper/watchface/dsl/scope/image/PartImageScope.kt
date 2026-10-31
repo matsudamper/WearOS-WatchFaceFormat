@@ -1,5 +1,6 @@
 package net.matsudamper.watchface.dsl.scope.image
 
+import net.matsudamper.watchface.dsl.element.PhotoChangeTrigger
 import net.matsudamper.watchface.dsl.element.RenderMode
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
@@ -50,6 +51,26 @@ class PartImageScope(
         children.add(
             ImageScope(
                 resource = resource
+            )
+        )
+    }
+
+    fun Photos(
+        source: String,
+        defaultImageResource: String,
+        change: List<PhotoChangeTrigger>?,
+        changeAfterEvery: Int?,
+        width: Int?,
+        height: Int?,
+    ) {
+        children.add(
+            PhotosScope(
+                source = source,
+                defaultImageResource = defaultImageResource,
+                change = change,
+                changeAfterEvery = changeAfterEvery,
+                width = width,
+                height = height,
             )
         )
     }
