@@ -4,7 +4,6 @@ import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 
-@Suppress("FunctionName")
 @WatchFaceDSLMarker
 class FlavorsScope(
     val defaultValue: String,
@@ -32,7 +31,6 @@ class FlavorsScope(
     }
 }
 
-@Suppress("FunctionName")
 @WatchFaceDSLMarker
 class FlavorScope(
     val id: String,
