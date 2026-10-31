@@ -20,6 +20,7 @@ internal fun SceneScope.HourMinHand(
     height: Int,
 ) {
     Group(
+        name = "hourMinuteHands",
         x = 0,
         y = 0,
         width = width,
@@ -126,6 +127,7 @@ internal fun SceneScope.SecondHand(
             width = this@PartDraw.width.toFloat() - strokeSize,
             height = this@PartDraw.height.toFloat() - strokeSize,
             startAngle = 0f,
+            endAngle = 0f,
         ) {
             Transform(
                 target = "endAngle",

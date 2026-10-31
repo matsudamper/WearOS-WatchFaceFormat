@@ -43,7 +43,7 @@ class ComplicationSlotScope(
         "scaleX" to scaleX?.toString(),
         "scaleY" to scaleY?.toString(),
         "supportedTypes" to supportedTypes.joinToString(" ") { it.value },
-        "isCustomizable" to isCustomizable.toString(),
+        "isCustomizable" to isCustomizable.toString().uppercase(),
         "tintColor" to tintColor,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()

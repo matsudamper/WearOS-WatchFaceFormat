@@ -2,13 +2,12 @@ package net.matsudamper.watchface.dsl.scope.condition
 
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
-import net.matsudamper.watchface.dsl.scope.HasWatchFaceLayoutElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 
 
 @WatchFaceDSLMarker
 @Suppress("FunctionName")
-class ConditionScope : WatchFaceHasChildElement, HasWatchFaceLayoutElement {
+class ConditionScope : WatchFaceHasChildElement {
     override val elementName: String = "Condition"
     override val attributes: Map<String, String?> = mapOf()
     private val expressions = ExpressionsScope()
