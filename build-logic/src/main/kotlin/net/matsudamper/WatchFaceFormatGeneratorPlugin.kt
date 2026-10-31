@@ -3,12 +3,14 @@ package net.matsudamper
 import net.matsudamper.watchface.AnalogClockNumber
 import net.matsudamper.watchface.dsl.createWatchFace
 import net.matsudamper.watchface.dsl.element.ClipShape
+import net.matsudamper.watchface.dsl.element.PhotosConfigType
 import net.matsudamper.watchface.dsl.metadata.ClockType
 import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
 import net.matsudamper.watchface.color.Colors
 import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.HourMinHand
+import net.matsudamper.watchface.PhotoBackground
 import net.matsudamper.watchface.Scale
 import net.matsudamper.watchface.SecondHand
 import net.matsudamper.watchface.Slots
@@ -137,8 +139,16 @@ internal fun generate(): String {
                     )
                 }
             }
+            PhotosConfiguration(
+                id = PhotoBackground.CONFIGURATION_ID,
+                configType = PhotosConfigType.SINGLE,
+            )
         }
         Scene {
+            PhotoBackground(
+                width = this@createWatchFace.width,
+                height = this@createWatchFace.height,
+            )
             val secondCircleStrokeSize = (this@createWatchFace.width * 2f / 100f).roundToInt()
             SecondHand(
                 width = this@createWatchFace.width,
