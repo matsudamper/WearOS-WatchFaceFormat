@@ -349,7 +349,7 @@ private fun HasWatchFaceLayoutElement.Text(
             Text(
                 align = TextAlign.CENTER,
                 ellipsis = true,
-                isAutoSize = false,
+                isAutoSize = true,
             ) {
                 Font(
                     color = UserContentColor.getColorSymbol(),
@@ -390,8 +390,8 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
         ) {
             Text(
                 align = TextAlign.CENTER,
-                ellipsis = false,
-                isAutoSize = false,
+                ellipsis = true,
+                isAutoSize = true,
             ) {
                 Font(
                     color = UserContentColor.getColorSymbol(),
@@ -415,8 +415,8 @@ private fun HasWatchFaceLayoutElement.TextTitleCompression(
         ) {
             Text(
                 align = TextAlign.CENTER,
-                ellipsis = false,
-                isAutoSize = false,
+                ellipsis = true,
+                isAutoSize = true,
             ) {
                 Font(
                     color = UserContentColor.getColorSymbol(),
