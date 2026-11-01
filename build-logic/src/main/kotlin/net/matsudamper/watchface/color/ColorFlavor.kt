@@ -1,0 +1,57 @@
+package net.matsudamper.watchface.color
+
+enum class ColorFlavor(
+    val id: String,
+    val resourceName: String,
+    val contentColor: Colors,
+    val digitalTimeColor: Colors,
+    val analogSecondColor: Colors,
+    val analogHandColor: Colors,
+    val scaleColor: Colors,
+) {
+    Monochrome(
+        id = "Monochrome",
+        resourceName = "flavor_monochrome",
+        contentColor = Colors.White,
+        digitalTimeColor = Colors.White,
+        analogSecondColor = Colors.White,
+        analogHandColor = Colors.White,
+        scaleColor = Colors.White,
+    ),
+    Ocean(
+        id = "Ocean",
+        resourceName = "flavor_ocean",
+        contentColor = Colors.LightBlue,
+        digitalTimeColor = Colors.Cyan,
+        analogSecondColor = Colors.Blue,
+        analogHandColor = Colors.White,
+        scaleColor = Colors.BlueGrey,
+    ),
+    Forest(
+        id = "Forest",
+        resourceName = "flavor_forest",
+        contentColor = Colors.LightGreen,
+        digitalTimeColor = Colors.Lime,
+        analogSecondColor = Colors.Green,
+        analogHandColor = Colors.White,
+        scaleColor = Colors.Teal,
+    ),
+    Sunset(
+        id = "Sunset",
+        resourceName = "flavor_sunset",
+        contentColor = Colors.Amber,
+        digitalTimeColor = Colors.Orange,
+        analogSecondColor = Colors.DeepOrange,
+        analogHandColor = Colors.White,
+        scaleColor = Colors.Brown,
+    ),
+    Blossom(
+        id = "Blossom",
+        resourceName = "flavor_blossom",
+        contentColor = Colors.Pink,
+        digitalTimeColor = Colors.Purple,
+        analogSecondColor = Colors.Red,
+        analogHandColor = Colors.White,
+        scaleColor = Colors.DeepPurple,
+    ),
+}
