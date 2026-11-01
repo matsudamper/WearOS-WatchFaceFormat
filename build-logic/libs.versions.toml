@@ -5,7 +5,7 @@ minSdk = "36"
 targetSdk = "36"
 androidGradlePlugin = "9.5.0"
 kotlin = "2.4.21"
-xercesXsd11 = "2.12.0"
+xercesXsd11 = "2.12.2"
 xpath2 = "1.2.0"
 javaCup = "10k"
 

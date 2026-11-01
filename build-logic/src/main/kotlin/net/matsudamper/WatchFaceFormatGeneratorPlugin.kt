@@ -7,6 +7,7 @@ import net.matsudamper.watchface.dsl.element.PhotosConfigType
 import net.matsudamper.watchface.dsl.metadata.ClockType
 import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
+import net.matsudamper.watchface.color.ColorFlavor
 import net.matsudamper.watchface.color.Colors
 import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.HourMinHand
@@ -143,6 +144,22 @@ internal fun generate(): String {
                 id = PhotoBackground.CONFIGURATION_ID,
                 configType = PhotosConfigType.SINGLE,
             )
+            Flavors(
+                defaultValue = ColorFlavor.Monochrome.id,
+            ) {
+                ColorFlavor.entries.forEach { flavor ->
+                    Flavor(
+                        id = flavor.id,
+                        displayName = flavor.resourceName,
+                    ) {
+                        Configuration(id = UserContentColor.ID, optionId = flavor.contentColor.id)
+                        Configuration(id = UserDigitalTimeColor.ID, optionId = flavor.digitalTimeColor.id)
+                        Configuration(id = UserAnalogSecondColor.ID, optionId = flavor.analogSecondColor.id)
+                        Configuration(id = UserAnalogHandColor.ID, optionId = flavor.analogHandColor.id)
+                        Configuration(id = UserScaleColor.ID, optionId = flavor.scaleColor.id)
+                    }
+                }
+            }
         }
         Scene {
             PhotoBackground(
