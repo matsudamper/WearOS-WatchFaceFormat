@@ -30,4 +30,15 @@ class UserConfigurationScope : WatchFaceHasChildElement {
         block(scope)
         children.add(scope)
     }
+
+    fun Flavors(
+        defaultValue: String,
+        block: FlavorsScope.() -> Unit,
+    ) {
+        val scope = FlavorsScope(
+            defaultValue = defaultValue,
+        )
+        block(scope)
+        children.add(scope)
+    }
 }
