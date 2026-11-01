@@ -39,8 +39,8 @@ class ColorConfigurationScope(
                 displayName = displayName,
                 screenReaderText = screenReaderText,
                 icon = icon,
-                // 要素が1つだけの時、リアルタイムに色が反映されない為、末尾に追加している
-                colors = colors.plus("#")
+                // 要素が1つだけの時、リアルタイムに色が反映されない為、XSDで有効な色を末尾に追加している
+                colors = colors.plus(colors.last())
             )
         )
     }

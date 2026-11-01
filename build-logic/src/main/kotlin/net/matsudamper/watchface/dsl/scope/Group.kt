@@ -12,7 +12,7 @@ class GroupScope(
     val pivotY: Float?,
     val angle: Float?,
     val alpha: Int?,
-    val name: String?,
+    val name: String,
     val renderMode: RenderMode?,
     val tintColor: String?
 ) : HasWatchFaceLayoutElement {

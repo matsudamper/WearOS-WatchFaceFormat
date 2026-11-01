@@ -19,7 +19,7 @@ fun HasFontElement.Font(
     size: Int,
     color: String? = null,
     slant: FontSlant? = null,
-    letterSpacing: Float = 0f,
+    letterSpacing: Float? = null,
     width: FontWidth? = null,
     weight: FontWeight = FontWeight.NORMAL,
     block: FontScope.() -> Unit = {},

@@ -18,6 +18,7 @@ import net.matsudamper.watchface.color.UserDigitalTimeColor
 import net.matsudamper.watchface.color.UserScaleColor
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.artifacts.VersionCatalogsExtension
 import kotlin.math.roundToInt
 
 class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
@@ -27,8 +28,30 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
                 outputFile.set(layout.projectDirectory.file("src/main/res/raw/watchface.xml"))
             }
 
+            val watchFaceValidatorDependencies = configurations.dependencyScope("watchFaceValidator")
+            val watchFaceValidatorClasspath = configurations.resolvable("watchFaceValidatorClasspath") {
+                extendsFrom(watchFaceValidatorDependencies.get())
+            }
+            val libs = extensions.getByType(VersionCatalogsExtension::class.java).named("libs")
+            dependencies.addProvider(
+                watchFaceValidatorDependencies.name,
+                dependencies.variantOf(libs.findLibrary("xercesXsd11").get()) { classifier("xml-schema-1.1") },
+            )
+            // XSD 1.1のassert評価に必要だが、xercesのPOMではoptionalのため明示する
+            dependencies.addProvider(watchFaceValidatorDependencies.name, libs.findLibrary("xpath2").get())
+            dependencies.addProvider(watchFaceValidatorDependencies.name, libs.findLibrary("javaCup").get())
+
+            val validateWatchFace = tasks.register("validateWatchFace", ValidateWatchFaceTask::class.java) {
+                watchFaceFile.set(generateWatchFace.flatMap { it.outputFile })
+                manifestFile.set(layout.projectDirectory.file("src/main/AndroidManifest.xml"))
+                specificationDirectory.set(rootProject.layout.projectDirectory.dir("third_party/wff-specification/documents"))
+                validatorClasspath.from(watchFaceValidatorClasspath)
+                reportFile.set(layout.buildDirectory.file("intermediates/watchface/validateWatchFace.txt"))
+            }
+
             tasks.named("preBuild") {
                 dependsOn(generateWatchFace)
+                dependsOn(validateWatchFace)
             }
         }
     }

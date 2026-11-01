@@ -15,7 +15,7 @@ class TextScope(
     override val elementName: String = "Text"
     override val attributes: Map<String, String?> = mapOf(
         "align" to align?.value,
-        "ellipsis" to ellipsis.toString(),
+        "ellipsis" to ellipsis.toString().uppercase(),
         "maxLines" to maxLines?.toString(),
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()

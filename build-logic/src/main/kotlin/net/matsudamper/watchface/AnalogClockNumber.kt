@@ -15,6 +15,7 @@ internal fun SceneScope.AnalogClockNumber(
     margin: Int,
 ) {
     Group(
+        name = "analogClockNumbers",
         x = 0,
         y = 0,
         width = width,
@@ -23,6 +24,7 @@ internal fun SceneScope.AnalogClockNumber(
         for (i in 1..12) {
             val angle = (360 / 12) * i
             Group(
+                name = "analogClockNumber$i",
                 x = 0,
                 y = 0,
                 width = width,
@@ -46,9 +48,7 @@ internal fun SceneScope.AnalogClockNumber(
                             size = size,
                             color = UserDigitalTimeColor.getColorSymbol(),
                         ) {
-                            Template {
-                                addRawText("$i")
-                            }
+                            addRawText("$i")
                         }
                     }
                 }

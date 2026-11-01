@@ -56,6 +56,7 @@ fun HasWatchFaceLayoutElement.PartText(
 
 @Suppress("FunctionName")
 fun HasWatchFaceLayoutElement.Group(
+    name: String,
     x: Int,
     y: Int,
     width: Int,
@@ -64,7 +65,6 @@ fun HasWatchFaceLayoutElement.Group(
     pivotY: Float? = null,
     angle: Float? = null,
     alpha: Int? = null,
-    name: String? = null,
     renderMode: RenderMode? = null,
     tintColor: String? = null,
     block: GroupScope.() -> Unit

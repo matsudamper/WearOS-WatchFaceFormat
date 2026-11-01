@@ -24,6 +24,7 @@ internal fun ConditionScope.MonoCompression(
     Compare(expression = hasMonoImage) {
         val imageSize = slotSize / 2
         Group(
+            name = "monochromaticImage",
             x = (slotSize - imageSize) / 2,
             y = (slotSize - imageSize) / 2,
             width = slotSize,

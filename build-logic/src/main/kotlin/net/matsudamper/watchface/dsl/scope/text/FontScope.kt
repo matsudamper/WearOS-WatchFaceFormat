@@ -6,6 +6,7 @@ import net.matsudamper.watchface.dsl.element.FontWeight
 import net.matsudamper.watchface.dsl.element.FontWidth
 import net.matsudamper.watchface.dsl.element.WatchFaceHasChildElement
 import net.matsudamper.watchface.dsl.element.WatchFaceElement
+import net.matsudamper.watchface.dsl.element.WatchFaceTextElement
 import net.matsudamper.watchface.dsl.scope.WatchFaceDSLMarker
 
 @WatchFaceDSLMarker
@@ -15,7 +16,7 @@ class FontScope(
     val size: Int,
     val color: String?,
     val slant: FontSlant?,
-    val letterSpacing: Float,
+    val letterSpacing: Float?,
     val width: FontWidth?,
     val weight: FontWeight,
 ) : WatchFaceHasChildElement, FontBitmapFontScope {
@@ -25,13 +26,17 @@ class FontScope(
         "size" to size.toString(),
         "color" to color,
         "slant" to slant?.value,
-        "letterSpacing" to letterSpacing.toString(),
+        "letterSpacing" to letterSpacing?.toString(),
         "width" to width?.value,
         "weight" to weight.value,
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
         children.add(child)
+    }
+
+    fun addRawText(text: String) {
+        children.add(WatchFaceTextElement(text))
     }
 }
 
