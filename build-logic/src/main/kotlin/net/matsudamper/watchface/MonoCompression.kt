@@ -51,6 +51,7 @@ internal fun ConditionScope.MonoCompression(
                             mode = VariantMode.AMBIENT,
                             target = "alpha",
                             value = "255",
+                            transition = AmbientFadeTransition,
                         )
                         Image(
                             resource = "[${Complication.MONOCHROMATIC_IMAGE_AMBIENT}]",
@@ -69,6 +70,7 @@ internal fun ConditionScope.MonoCompression(
                             mode = VariantMode.AMBIENT,
                             target = "alpha",
                             value = "0",
+                            transition = AmbientFadeTransition,
                         )
                         Image(
                             resource = "[${Complication.MONOCHROMATIC_IMAGE}]",

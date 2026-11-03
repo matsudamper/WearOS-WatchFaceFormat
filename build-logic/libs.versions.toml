@@ -1,8 +1,8 @@
 [versions]
-compileSdk = "35"
+compileSdk = "36"
 buildToolsVersion = "35.0.0"
-minSdk = "34"
-targetSdk = "35"
+minSdk = "36"
+targetSdk = "36"
 androidGradlePlugin = "9.5.0"
 kotlin = "2.4.21"
 xercesXsd11 = "2.12.2"

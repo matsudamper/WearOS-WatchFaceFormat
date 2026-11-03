@@ -106,6 +106,7 @@ internal fun SceneScope.SecondHand(
             mode = VariantMode.AMBIENT,
             target = "alpha",
             value = "0",
+            transition = AmbientFadeTransition,
         )
         Arc(
             centerX = this@PartDraw.width / 2f,
