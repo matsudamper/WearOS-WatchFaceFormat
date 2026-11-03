@@ -30,6 +30,7 @@ internal fun SceneScope.PhotoBackground(
             mode = VariantMode.AMBIENT,
             target = "alpha",
             value = "0",
+            transition = AmbientFadeTransition,
         )
         Photos(
             source = "[CONFIGURATION.${PhotoBackground.CONFIGURATION_ID}]",
