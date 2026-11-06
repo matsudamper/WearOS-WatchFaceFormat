@@ -21,7 +21,6 @@ if [ -f local.properties ]; then
   sdk_dir_in_local_properties="$(sed -n 's/^[[:space:]]*sdk\.dir[[:space:]]*=[[:space:]]*\(.*\)$/\1/p' local.properties | tail -n 1)"
 fi
 ANDROID_SDK_ROOT="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-${sdk_dir_in_local_properties:-${HOME}/android-sdk}}}"
-SDKMANAGER="${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager"
 ANDROID_CLI="${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/android"
 
 compile_sdk_major="$(sed -n -E \
@@ -44,8 +43,8 @@ else
   platform="android-${compile_sdk_major}.${compile_sdk_minor}"
 fi
 
-# SessionStart フックからも呼ぶので、揃っているときは sdkmanager を起動しない。
-# sdkmanager は何もすることが無くてもリモートのリポジトリを引きに行って数秒かかる
+# SessionStart フックからも呼ぶので、揃っているときは android sdk install を起動しない。
+# 何もすることが無くても 1.7 秒ほどかかる
 if [ ! -f "${ANDROID_SDK_ROOT}/platforms/${platform}/android.jar" ] ||
   [ ! -d "${ANDROID_SDK_ROOT}/build-tools/${BUILD_TOOLS_VERSION}" ] ||
   [ ! -x "${ANDROID_SDK_ROOT}/platform-tools/adb" ] ||
@@ -73,12 +72,11 @@ if [ ! -f "${ANDROID_SDK_ROOT}/platforms/${platform}/android.jar" ] ||
   fi
 
   echo "[setup] Android SDK パッケージを導入する (${platform})"
-  # yes だと SIGPIPE で 141 を返し pipefail に引っかかるので、有限個の y を流す
-  { for _ in $(seq 1 200); do printf 'y\n'; done; } | "${SDKMANAGER}" --sdk_root="${ANDROID_SDK_ROOT}" --licenses > /dev/null
-  "${SDKMANAGER}" --sdk_root="${ANDROID_SDK_ROOT}" --install \
+  # ライセンスは android sdk install が承諾して licenses/ に書くので、別の手順は要らない
+  "${ANDROID_CLI}" --sdk="${ANDROID_SDK_ROOT}" sdk install \
     "platform-tools" \
-    "platforms;${platform}" \
-    "build-tools;${BUILD_TOOLS_VERSION}" > /dev/null
+    "platforms/${platform}" \
+    "build-tools/${BUILD_TOOLS_VERSION}" < /dev/null > /dev/null
 fi
 
 # 環境変数(ANDROID_HOME)はセットアップ後のシェルに残らないので local.properties に書く。
