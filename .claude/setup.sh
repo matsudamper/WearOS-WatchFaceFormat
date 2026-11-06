@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CMDLINE_TOOLS_REVISION="13114758"
+CMDLINE_TOOLS_REVISION="16111833"
 # AGP の DEFAULT_BUILD_TOOLS_REVISION。compileSdk とは独立していて、
 # 揃えないと AGP がビルド中に別バージョンを取りに行く
 BUILD_TOOLS_VERSION="36.0.0"
@@ -21,7 +21,7 @@ if [ -f local.properties ]; then
   sdk_dir_in_local_properties="$(sed -n 's/^[[:space:]]*sdk\.dir[[:space:]]*=[[:space:]]*\(.*\)$/\1/p' local.properties | tail -n 1)"
 fi
 ANDROID_SDK_ROOT="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-${sdk_dir_in_local_properties:-${HOME}/android-sdk}}}"
-SDKMANAGER="${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager"
+ANDROID_CLI="${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/android"
 
 compile_sdk_major="$(sed -n -E \
   -e 's/^[[:space:]]*(androidCompileSdk|compileSdk)[[:space:]]*=[[:space:]]*"?([0-9]+)"?[[:space:]]*$/\2/p' \
@@ -43,12 +43,14 @@ else
   platform="android-${compile_sdk_major}.${compile_sdk_minor}"
 fi
 
-# SessionStart フックからも呼ぶので、揃っているときは sdkmanager を起動しない。
-# sdkmanager は何もすることが無くてもリモートのリポジトリを引きに行って数秒かかる
+# SessionStart フックからも呼ぶので、揃っているときは android sdk install を起動しない。
+# 何もすることが無くても 1.7 秒ほどかかる
 if [ ! -f "${ANDROID_SDK_ROOT}/platforms/${platform}/android.jar" ] ||
   [ ! -d "${ANDROID_SDK_ROOT}/build-tools/${BUILD_TOOLS_VERSION}" ] ||
-  [ ! -x "${ANDROID_SDK_ROOT}/platform-tools/adb" ]; then
-  if [ ! -x "${SDKMANAGER}" ]; then
+  [ ! -x "${ANDROID_SDK_ROOT}/platform-tools/adb" ] ||
+  [ ! -x "${ANDROID_CLI}" ]; then
+  # これまで入れていた 13114758 の cmdline-tools には Android CLI(android コマンド)が無いので、android の有無で入れ替える
+  if [ ! -x "${ANDROID_CLI}" ]; then
     echo "[setup] cmdline-tools を導入する"
     mkdir -p "${ANDROID_SDK_ROOT}/cmdline-tools"
     tmp="$(mktemp -d)"
@@ -70,12 +72,11 @@ if [ ! -f "${ANDROID_SDK_ROOT}/platforms/${platform}/android.jar" ] ||
   fi
 
   echo "[setup] Android SDK パッケージを導入する (${platform})"
-  # yes だと SIGPIPE で 141 を返し pipefail に引っかかるので、有限個の y を流す
-  { for _ in $(seq 1 200); do printf 'y\n'; done; } | "${SDKMANAGER}" --sdk_root="${ANDROID_SDK_ROOT}" --licenses > /dev/null
-  "${SDKMANAGER}" --sdk_root="${ANDROID_SDK_ROOT}" --install \
+  # ライセンスは android sdk install が承諾して licenses/ に書くので、別の手順は要らない
+  "${ANDROID_CLI}" --sdk="${ANDROID_SDK_ROOT}" sdk install \
     "platform-tools" \
-    "platforms;${platform}" \
-    "build-tools;${BUILD_TOOLS_VERSION}" > /dev/null
+    "platforms/${platform}" \
+    "build-tools/${BUILD_TOOLS_VERSION}" < /dev/null > /dev/null
 fi
 
 # 環境変数(ANDROID_HOME)はセットアップ後のシェルに残らないので local.properties に書く。
@@ -86,6 +87,12 @@ if [ -f local.properties ]; then
 fi
 echo "sdk.dir=${ANDROID_SDK_ROOT}" >> "${tmp_local_properties}"
 mv "${tmp_local_properties}" local.properties
+
+# hook の環境変数は CLAUDE_ENV_FILE に書いたものだけがセッションに残る
+if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
+  path_export="export PATH=$(printf '%q' "${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin"):\$PATH"
+  grep -qxF "${path_export}" "${CLAUDE_ENV_FILE}" 2>/dev/null || echo "${path_export}" >> "${CLAUDE_ENV_FILE}"
+fi
 
 android_user_home="${ANDROID_USER_HOME:-${HOME}/.android}"
 if [ ! -f "${android_user_home}/debug.keystore" ]; then
