@@ -15,6 +15,9 @@ fi
 # セットアップスクリプト欄から呼ぶときは cwd がリポジトリ外なので、自分の位置から解決する
 cd "${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"
 
+# validateWatchFace が使う WFF 仕様(XSD)は submodule にあり、clone 直後は空
+git submodule update --init --depth 1 third_party/watchface
+
 # 構築済みの SDK を無視して入れ直さないよう、local.properties の sdk.dir も候補にする
 sdk_dir_in_local_properties=""
 if [ -f local.properties ]; then

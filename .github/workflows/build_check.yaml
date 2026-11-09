@@ -11,6 +11,8 @@ jobs:
       GRADLE_OPTS: -Dorg.gradle.workers.max=4 -Dorg.gradle.jvmargs=-Xmx13g
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: true
       - name: Setup Java
         uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
         with:
