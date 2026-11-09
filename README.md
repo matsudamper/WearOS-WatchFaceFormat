@@ -8,6 +8,26 @@ Sassのようなもの。
 記述部分  
 https://github.com/matsudamper/WearOS-WatchFaceFormat/blob/main/build-logic/src/main/kotlin/net/matsudamper/WatchFaceFormatGeneratorPlugin.kt  
 
+# セットアップ
+Watch Face Format の仕様(XSD)を [google/watchface](https://github.com/google/watchface) の submodule として `third_party/watchface` に取り込んでいる。  
+`validateWatchFace` が使うため、ビルド前に取得しておく。  
+
+```shell
+git clone --recurse-submodules https://github.com/matsudamper/WearOS-WatchFaceFormat.git
+```
+
+clone 済みの場合:
+```shell
+git submodule update --init --depth 1
+```
+
+仕様を更新するとき:
+```shell
+git -C third_party/watchface fetch origin main
+git -C third_party/watchface checkout <コミット>
+git add third_party/watchface
+```
+
 # インストール方法
 ## Release
 ```shell

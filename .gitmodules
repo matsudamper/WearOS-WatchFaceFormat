@@ -1,0 +1,3 @@
+[submodule "third_party/watchface"]
+	path = third_party/watchface
+	url = https://github.com/google/watchface.git

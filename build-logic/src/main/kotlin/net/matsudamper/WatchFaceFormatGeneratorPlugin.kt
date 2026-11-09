@@ -47,7 +47,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
             val validateWatchFace = tasks.register("validateWatchFace", ValidateWatchFaceTask::class.java) {
                 watchFaceFile.set(generateWatchFace.flatMap { it.outputFile })
                 manifestFile.set(layout.projectDirectory.file("src/main/AndroidManifest.xml"))
-                specificationDirectory.set(rootProject.layout.projectDirectory.dir("third_party/wff-specification/documents"))
+                specificationDirectory.set(rootProject.layout.projectDirectory.dir("third_party/watchface/third_party/wff/specification/documents"))
                 validatorClasspath.from(watchFaceValidatorClasspath)
                 reportFile.set(layout.buildDirectory.file("intermediates/watchface/validateWatchFace.txt"))
             }
