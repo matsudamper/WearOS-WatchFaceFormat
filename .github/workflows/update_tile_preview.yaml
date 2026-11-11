@@ -18,6 +18,7 @@ jobs:
       PREVIEW_BRANCH: tile-preview/${{ github.ref_name }}
       BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
+      SYSTEM_IMAGE: system-images;android-36;android-wear-signed;x86_64
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -38,16 +39,40 @@ jobs:
           sudo udevadm trigger --name-match=kvm
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Install emulator
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install emulator platform-tools "$SYSTEM_IMAGE" > /dev/null
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force -n wear -k "$SYSTEM_IMAGE" -d wearos_large_round
+          echo "$ANDROID_HOME/emulator" >> "$GITHUB_PATH"
+          echo "$ANDROID_HOME/platform-tools" >> "$GITHUB_PATH"
+      - name: Start emulator
+        run: |
+          nohup emulator -avd wear -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim > emulator.log 2>&1 &
+      - name: Wait for boot
+        timeout-minutes: 10
+        run: |
+          adb wait-for-device
+          until [ "$(adb shell getprop sys.boot_completed | tr -d '\r')" = "1" ]; do sleep 5; done
+      - name: Install watch face
+        run: adb install -r app/build/outputs/apk/debug/app-debug.apk
+      - name: Set watch face
+        run: |
+          # 充電中だと充電画面がウォッチフェイスに重なるため、未接続扱いにする
+          adb shell dumpsys battery unplug
+          adb shell am broadcast \
+            -a com.google.android.wearable.app.DEBUG_SURFACE \
+            --es operation set-watchface \
+            --es watchFaceId "$APPLICATION_ID"
+          adb shell input keyevent KEYCODE_WAKEUP
+          sleep 15
       - name: Capture preview
-        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        run: adb exec-out screencap -p > preview_raw.png
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
         with:
-          api-level: 36
-          target: android-wear-signed
-          arch: x86_64
-          profile: wearos_large_round
-          disable-animations: true
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
-          script: ./.github/scripts/capture_tile_preview.sh
+          name: emulator-log
+          path: emulator.log
       - name: Resize preview
         run: |
           convert preview_raw.png -resize 384x384 -strip app/src/main/res/drawable/tile_preview.png
