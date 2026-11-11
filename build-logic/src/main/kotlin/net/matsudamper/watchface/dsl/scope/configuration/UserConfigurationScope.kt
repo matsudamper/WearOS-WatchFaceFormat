@@ -18,7 +18,7 @@ class UserConfigurationScope : WatchFaceHasChildElement {
         displayName: String,
         icon: String? = null,
         screenReaderText: String? = null,
-        defaultValue: String,
+        defaultValue: ColorOptionId,
         block: ColorConfigurationScope.() -> Unit
     ) {
         val scope = ColorConfigurationScope(
