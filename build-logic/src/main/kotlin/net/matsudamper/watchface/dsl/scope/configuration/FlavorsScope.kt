@@ -48,12 +48,12 @@ class FlavorScope(
 
     fun Configuration(
         id: String,
-        optionId: String,
+        optionId: ColorOptionId,
     ) {
         children.add(
             FlavorConfiguration(
                 id = id,
-                optionId = optionId,
+                optionId = optionId.attributeValue,
             )
         )
     }

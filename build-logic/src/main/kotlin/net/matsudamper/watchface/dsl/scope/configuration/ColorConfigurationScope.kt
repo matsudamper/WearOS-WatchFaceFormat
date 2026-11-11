@@ -11,7 +11,7 @@ class ColorConfigurationScope(
     val displayName: String,
     val icon: String?,
     val screenReaderText: String?,
-    val defaultValue: String
+    val defaultValue: ColorOptionId
 ) : WatchFaceHasChildElement {
     override val elementName: String = "ColorConfiguration"
     override val attributes: Map<String, String?> = mapOf(
@@ -19,7 +19,7 @@ class ColorConfigurationScope(
         "displayName" to displayName,
         "icon" to icon,
         "screenReaderText" to screenReaderText,
-        "defaultValue" to defaultValue
+        "defaultValue" to defaultValue.attributeValue
     )
     override val children: MutableList<WatchFaceElement> = mutableListOf()
     override fun addChild(child: WatchFaceElement) {
@@ -27,7 +27,7 @@ class ColorConfigurationScope(
     }
 
     fun ColorOption(
-        id: String? = null,
+        id: ColorOptionId,
         displayName: String,
         screenReaderText: String? = displayName,
         icon: String? = null,
@@ -46,7 +46,7 @@ class ColorConfigurationScope(
     }
 
     class ColorOptionData(
-        id: String?,
+        id: ColorOptionId,
         displayName: String,
         screenReaderText: String?,
         icon: String?,
@@ -54,7 +54,7 @@ class ColorConfigurationScope(
     ) : WatchFaceHasChildElement {
         override val elementName: String = "ColorOption"
         override val attributes: Map<String, String?> = mapOf(
-            "id" to id,
+            "id" to id.attributeValue,
             "displayName" to displayName,
             "screenReaderText" to screenReaderText,
             "icon" to icon,
