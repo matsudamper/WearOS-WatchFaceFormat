@@ -42,7 +42,7 @@ jobs:
         uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
         with:
           api-level: 36
-          target: android-wear
+          target: android-wear-signed
           arch: x86_64
           profile: wearos_large_round
           disable-animations: true
