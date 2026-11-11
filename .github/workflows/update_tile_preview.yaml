@@ -19,6 +19,7 @@ jobs:
       BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
       SYSTEM_IMAGE: system-images;android-36;android-wear-signed;x86_64
+      ANDROID_AVD_HOME: ${{ github.workspace }}/.avd
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -49,11 +50,17 @@ jobs:
       - name: Start emulator
         run: |
           nohup emulator -avd wear -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim > emulator.log 2>&1 &
+          echo "EMULATOR_PID=$!" >> "$GITHUB_ENV"
       - name: Wait for boot
         timeout-minutes: 10
         run: |
-          adb wait-for-device
-          until [ "$(adb shell getprop sys.boot_completed | tr -d '\r')" = "1" ]; do sleep 5; done
+          until [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; do
+            if ! kill -0 "$EMULATOR_PID" 2>/dev/null; then
+              cat emulator.log
+              exit 1
+            fi
+            sleep 5
+          done
       - name: Install watch face
         run: adb install -r app/build/outputs/apk/debug/app-debug.apk
       - name: Set watch face
