@@ -1,14 +1,9 @@
 name: Update Tile Preview
 on:
   workflow_dispatch:
-    inputs:
-      branch:
-        description: 'プレビューを撮影し、PR のマージ先にするブランチ'
-        required: true
-        default: 'main'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ inputs.branch }}
+  group: ${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 
 permissions:
@@ -20,13 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GRADLE_OPTS: -Dorg.gradle.workers.max=4 -Dorg.gradle.jvmargs=-Xmx13g
-      PREVIEW_BRANCH: tile-preview/${{ inputs.branch }}
-      BASE_BRANCH: ${{ inputs.branch }}
+      PREVIEW_BRANCH: tile-preview/${{ github.ref_name }}
+      BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ inputs.branch }}
           submodules: true
       - name: Setup Java
         uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
