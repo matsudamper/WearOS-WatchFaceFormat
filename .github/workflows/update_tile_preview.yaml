@@ -19,7 +19,6 @@ jobs:
       BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
       SYSTEM_IMAGE: system-images;android-36;android-wear-signed;x86_64
-      WFF_RUNTIME_COMPONENT: com.google.wear.watchface.runtime/com.google.wear.watchface.runtime.DeclarativeWatchFaceRuntime0
       ANDROID_AVD_HOME: ${{ github.workspace }}/.avd
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -91,7 +90,7 @@ jobs:
             adb shell am broadcast \
               -a com.google.android.wearable.app.DEBUG_SURFACE \
               --es operation set-complication \
-              --ecn watchface "$WFF_RUNTIME_COMPONENT" \
+              --es watchFaceId "$APPLICATION_ID" \
               --ecn component "$provider" \
               --ei slot "$slot" \
               --ei type "$type"
