@@ -65,11 +65,6 @@ jobs:
           done
       - name: Install watch face
         run: adb install -r app/build/outputs/apk/debug/app-debug.apk
-      - name: Start synthetic health data
-        run: |
-          # 既定のコンプリケーションは歩数のため、エミュレータで歩数データが出るよう Health Services の合成データで歩行させる
-          adb shell am broadcast -a whs.USE_SYNTHETIC_PROVIDERS com.google.android.wearable.healthservices
-          adb shell am broadcast -a whs.synthetic.user.START_WALKING com.google.android.wearable.healthservices
       - name: Set watch face
         run: |
           # 充電中だと充電画面がウォッチフェイスに重なるため、未接続扱いにする
