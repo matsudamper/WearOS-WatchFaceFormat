@@ -65,6 +65,11 @@ jobs:
           done
       - name: Install watch face
         run: adb install -r app/build/outputs/apk/debug/app-debug.apk
+      - name: Start synthetic health data
+        run: |
+          # 既定のコンプリケーションは歩数のため、エミュレータで歩数データが出るよう Health Services の合成データで歩行させる
+          adb shell am broadcast -a whs.USE_SYNTHETIC_PROVIDERS com.google.android.wearable.healthservices
+          adb shell am broadcast -a whs.synthetic.user.START_WALKING com.google.android.wearable.healthservices
       - name: Set watch face
         run: |
           # 充電中だと充電画面がウォッチフェイスに重なるため、未接続扱いにする
@@ -77,17 +82,26 @@ jobs:
             --es operation set-watchface \
             --es watchFaceId "$APPLICATION_ID"
           adb shell input keyevent KEYCODE_WAKEUP
-          sleep 15
+          sleep 30
       - name: Capture preview
         run: |
           adb shell input keyevent KEYCODE_WAKEUP
           sleep 3
           adb exec-out screencap -p > preview_raw.png
+      - name: Collect diagnostics
+        if: always()
+        run: |
+          adb shell cmd package query-services -a android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST > complication-providers.txt || true
+          adb logcat -d > logcat.txt || true
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: emulator-log
-          path: emulator.log
+          path: |
+            emulator.log
+            complication-providers.txt
+            logcat.txt
+            preview_raw.png
       - name: Resize preview
         run: |
           convert preview_raw.png -resize 384x384 -strip app/src/main/res/drawable/tile_preview.png
