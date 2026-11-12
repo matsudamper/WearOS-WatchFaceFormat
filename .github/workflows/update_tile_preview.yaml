@@ -97,16 +97,14 @@ jobs:
           }
           sysui_provider() { echo "com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.complications.providers.$1"; }
           heart_rate_provider=com.google.android.clockwork.emulator.complication.datasource/.PlaceholderHeartRateProviderService
-          # ComplicationData の type: SHORT_TEXT=3, LONG_TEXT=4, RANGED_VALUE=5
-          # WFF のスロット ID は XML の slotId とランタイム内部の ID が異なる可能性があるため両方に送る
-          for offset in 0 11; do
-            set_complication $((offset + 0)) "$(sysui_provider StepsProviderService)" 5
-            set_complication $((offset + 1)) "$(sysui_provider BatteryProviderService)" 5
-            set_complication $((offset + 2)) "$heart_rate_provider" 3
-            set_complication $((offset + 3)) "$(sysui_provider SunriseSunsetProviderService)" 3
-            set_complication $((offset + 4)) "$(sysui_provider DayAndDateProviderService)" 4
-            set_complication $((offset + 5)) "$(sysui_provider WorldClockProviderService)" 3
-          done
+          # ComplicationData の type: SHORT_TEXT=3, RANGED_VALUE=5。プロバイダが対応していない type だと割り当てが拒否される
+          # slot は XML の slotId ではなく WFF ランタイム内部の ID（slotId 0〜5 が 11〜16 に対応）を指定する
+          set_complication 11 "$(sysui_provider StepsProviderService)" 3
+          set_complication 12 "$(sysui_provider BatteryProviderService)" 5
+          set_complication 13 "$heart_rate_provider" 3
+          set_complication 14 "$(sysui_provider SunriseSunsetProviderService)" 3
+          set_complication 15 "$(sysui_provider DayAndDateProviderService)" 3
+          set_complication 16 "$(sysui_provider WorldClockProviderService)" 3
           adb shell input keyevent KEYCODE_WAKEUP
           sleep 30
       - name: Capture preview
@@ -114,31 +112,17 @@ jobs:
           adb shell input keyevent KEYCODE_WAKEUP
           sleep 3
           adb exec-out screencap -p > preview_raw.png
-      - name: Collect diagnostics
+      - name: Collect logcat
         if: always()
-        run: |
-          adb shell cmd package query-services -a android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST > complication-providers.txt || true
-          adb logcat -d > logcat.txt || true
-          adb shell ps -A > ps.txt || true
-          adb shell cmd package query-receivers -a com.google.android.wearable.app.DEBUG_SURFACE > debug-surface-receivers.txt || true
-          mkdir -p apks
-          for pkg in com.google.wear.services; do
-            adb shell pm path "$pkg" | sed 's/^package://' | while read -r apk; do
-              adb pull "$apk" "apks/${pkg}-$(basename "$apk")" || true
-            done
-          done
+        run: adb logcat -d > logcat.txt || true
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: emulator-log
           path: |
             emulator.log
-            complication-providers.txt
             logcat.txt
             preview_raw.png
-            ps.txt
-            debug-surface-receivers.txt
-            apks
       - name: Resize preview
         run: |
           convert preview_raw.png -resize 384x384 -strip app/src/main/res/drawable/tile_preview.png
