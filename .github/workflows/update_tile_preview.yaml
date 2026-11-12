@@ -18,6 +18,8 @@ jobs:
       PREVIEW_BRANCH: tile-preview/${{ github.ref_name }}
       BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
+      SYSTEM_IMAGE: system-images;android-36;android-wear-signed;x86_64
+      ANDROID_AVD_HOME: ${{ github.workspace }}/.avd
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -30,7 +32,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
       - name: build
-        run: ./gradlew assembleDebug
+        # プレビューはカラーの見た目で撮影したいため、既定のカラーフレーバーを差し替えてビルドする
+        run: ./gradlew assembleDebug -Pwatchface.defaultColorFlavor=Forest
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -38,16 +41,93 @@ jobs:
           sudo udevadm trigger --name-match=kvm
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Install emulator
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install emulator platform-tools "$SYSTEM_IMAGE" > /dev/null
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force -n wear -k "$SYSTEM_IMAGE" -d wearos_large_round
+          "$ANDROID_HOME/emulator/emulator" -list-avds
+          echo "$ANDROID_HOME/emulator" >> "$GITHUB_PATH"
+          echo "$ANDROID_HOME/platform-tools" >> "$GITHUB_PATH"
+      - name: Start emulator
+        run: |
+          nohup emulator -avd wear -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -timezone Asia/Tokyo > emulator.log 2>&1 &
+          echo "EMULATOR_PID=$!" >> "$GITHUB_ENV"
+      - name: Wait for boot
+        timeout-minutes: 10
+        run: |
+          until [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; do
+            if ! kill -0 "$EMULATOR_PID" 2>/dev/null; then
+              cat emulator.log
+              exit 1
+            fi
+            sleep 5
+          done
+      - name: Set system locale
+        run: |
+          # -change-locale は su を使うため signed image では効かない。shell 権限で動く app_process からロケールを変更する
+          build_tools_dir=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          mkdir -p set-locale-classes set-locale-dex
+          javac --release 8 -d set-locale-classes .github/scripts/SetSystemLocale.java
+          "$build_tools_dir/d8" --output set-locale-dex set-locale-classes/SetSystemLocale.class
+          adb push set-locale-dex/classes.dex /data/local/tmp/set-locale.dex
+          adb shell CLASSPATH=/data/local/tmp/set-locale.dex app_process / SetSystemLocale ja-JP
+      - name: Install watch face
+        run: adb install -r app/build/outputs/apk/debug/app-debug.apk
+      - name: Set watch face
+        run: |
+          # 充電中だと充電画面がウォッチフェイスに重なるため、未接続扱いにする
+          adb shell dumpsys battery unplug
+          # 待機中に画面がスリープするとアンビエント表示で撮影されるため、常時点灯にする
+          adb shell svc power stayon true
+          adb shell settings put system screen_off_timeout 1800000
+          adb shell am broadcast \
+            -a com.google.android.wearable.app.DEBUG_SURFACE \
+            --es operation set-watchface \
+            --es watchFaceId "$APPLICATION_ID"
+          sleep 5
+      - name: Set complications
+        run: |
+          # エミュレータでは既定プロバイダが割り当てられずスロットが空になるため、明示的に割り当てる
+          set_complication() {
+            local slot="$1" provider="$2" type="$3"
+            adb shell am broadcast \
+              -a com.google.android.wearable.app.DEBUG_SURFACE \
+              --es operation set-complication \
+              --es watchFaceId "$APPLICATION_ID" \
+              --ecn component "$provider" \
+              --ei slot "$slot" \
+              --ei type "$type"
+          }
+          sysui_provider() { echo "com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.complications.providers.$1"; }
+          heart_rate_provider=com.google.android.clockwork.emulator.complication.datasource/.PlaceholderHeartRateProviderService
+          # ComplicationData の type: SHORT_TEXT=3, RANGED_VALUE=5。プロバイダが対応していない type だと割り当てが拒否される
+          # slot は XML の slotId ではなく WFF ランタイム内部の ID（slotId 0〜5 が 11〜16 に対応）を指定する
+          set_complication 11 "$(sysui_provider StepsProviderService)" 3
+          set_complication 12 "$(sysui_provider BatteryProviderService)" 5
+          set_complication 13 "$heart_rate_provider" 3
+          set_complication 14 "$(sysui_provider SunriseSunsetProviderService)" 3
+          set_complication 15 "$(sysui_provider DayAndDateProviderService)" 3
+          set_complication 16 "$(sysui_provider WorldClockProviderService)" 3
+          adb shell input keyevent KEYCODE_WAKEUP
+          sleep 30
       - name: Capture preview
-        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        run: |
+          adb shell input keyevent KEYCODE_WAKEUP
+          sleep 3
+          adb exec-out screencap -p > preview_raw.png
+      - name: Collect logcat
+        if: always()
+        run: adb logcat -d > logcat.txt || true
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
         with:
-          api-level: 36
-          target: android-wear
-          arch: x86_64
-          profile: wearos_large_round
-          disable-animations: true
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
-          script: ./.github/scripts/capture_tile_preview.sh
+          name: emulator-log
+          path: |
+            emulator.log
+            logcat.txt
+            preview_raw.png
       - name: Resize preview
         run: |
           convert preview_raw.png -resize 384x384 -strip app/src/main/res/drawable/tile_preview.png
