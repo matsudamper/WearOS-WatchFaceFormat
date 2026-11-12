@@ -94,8 +94,10 @@ jobs:
           adb shell cmd package query-services -a android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST > complication-providers.txt || true
           adb logcat -d > logcat.txt || true
           adb shell ps -A > ps.txt || true
+          adb shell cmd package query-receivers -a com.google.android.wearable.app.DEBUG_SURFACE > debug-surface-receivers.txt || true
           mkdir -p apks
-          for pkg in com.google.android.apps.wearable.systemui com.google.android.wearable.app com.google.android.clockwork.emulator.complication.datasource; do
+          receiver_pkgs=$(grep -oE 'packageName=[^ ]+' debug-surface-receivers.txt | cut -d= -f2 | sort -u)
+          for pkg in $receiver_pkgs; do
             adb shell pm path "$pkg" | sed 's/^package://' | while read -r apk; do
               adb pull "$apk" "apks/${pkg}-$(basename "$apk")" || true
             done
@@ -110,6 +112,7 @@ jobs:
             logcat.txt
             preview_raw.png
             ps.txt
+            debug-surface-receivers.txt
             apks
       - name: Resize preview
         run: |
