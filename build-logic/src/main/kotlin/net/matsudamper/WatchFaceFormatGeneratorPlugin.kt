@@ -8,7 +8,6 @@ import net.matsudamper.watchface.dsl.metadata.ClockType
 import net.matsudamper.watchface.dsl.metadata.ClockTypeValue
 import net.matsudamper.watchface.CenterDigitalClock
 import net.matsudamper.watchface.color.ColorFlavor
-import net.matsudamper.watchface.color.Colors
 import net.matsudamper.watchface.color.UserContentColor
 import net.matsudamper.watchface.HourMinHand
 import net.matsudamper.watchface.PhotoBackground
@@ -29,6 +28,10 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
         with(target) {
             val generateWatchFace = tasks.register("generateWatchFace", GenerateWatchFaceTask::class.java) {
                 outputFile.set(layout.projectDirectory.file("src/main/res/raw/watchface.xml"))
+                defaultColorFlavorId.set(
+                    providers.gradleProperty("watchface.defaultColorFlavor")
+                        .orElse(ColorFlavor.Monochrome.id),
+                )
             }
 
             val watchFaceValidatorDependencies = configurations.dependencyScope("watchFaceValidator")
@@ -60,7 +63,7 @@ class WatchFaceFormatGeneratorPlugin : Plugin<Project> {
     }
 }
 
-internal fun generate(): String {
+internal fun generate(defaultColorFlavor: ColorFlavor): String {
     return createWatchFace(
         width = 450,
         height = 450,
@@ -78,7 +81,7 @@ internal fun generate(): String {
             UserConfigurations(
                 id = UserContentColor.ID,
                 displayName = UserContentColor.displayName,
-                defaultValue = Colors.White.id,
+                defaultValue = defaultColorFlavor.contentColor.id,
             ) {
                 UserContentColor.values().forEach { color ->
                     ColorOption(
@@ -91,7 +94,7 @@ internal fun generate(): String {
             UserConfigurations(
                 id = UserDigitalTimeColor.ID,
                 displayName = UserDigitalTimeColor.displayName,
-                defaultValue = Colors.White.id,
+                defaultValue = defaultColorFlavor.digitalTimeColor.id,
             ) {
                 UserDigitalTimeColor.values().forEach { color ->
                     ColorOption(
@@ -104,7 +107,7 @@ internal fun generate(): String {
             UserConfigurations(
                 id = UserAnalogSecondColor.ID,
                 displayName = UserAnalogSecondColor.displayName,
-                defaultValue = Colors.White.id,
+                defaultValue = defaultColorFlavor.analogSecondColor.id,
             ) {
                 UserAnalogSecondColor.values().forEach { color ->
                     ColorOption(
@@ -117,7 +120,7 @@ internal fun generate(): String {
             UserConfigurations(
                 id = UserAnalogHandColor.ID,
                 displayName = UserAnalogHandColor.displayName,
-                defaultValue = Colors.White.id,
+                defaultValue = defaultColorFlavor.analogHandColor.id,
             ) {
                 UserAnalogHandColor.values().forEach { color ->
                     ColorOption(
@@ -130,7 +133,7 @@ internal fun generate(): String {
             UserConfigurations(
                 id = UserScaleColor.ID,
                 displayName = UserScaleColor.displayName,
-                defaultValue = Colors.White.id,
+                defaultValue = defaultColorFlavor.scaleColor.id,
             ) {
                 UserScaleColor.values().forEach { color ->
                     ColorOption(
@@ -145,7 +148,7 @@ internal fun generate(): String {
                 configType = PhotosConfigType.SINGLE,
             )
             Flavors(
-                defaultValue = ColorFlavor.Monochrome.id,
+                defaultValue = defaultColorFlavor.id,
             ) {
                 ColorFlavor.entries.forEach { flavor ->
                     Flavor(
