@@ -69,6 +69,9 @@ jobs:
         run: |
           # 充電中だと充電画面がウォッチフェイスに重なるため、未接続扱いにする
           adb shell dumpsys battery unplug
+          # 待機中に画面がスリープするとアンビエント表示で撮影されるため、常時点灯にする
+          adb shell svc power stayon true
+          adb shell settings put system screen_off_timeout 1800000
           adb shell am broadcast \
             -a com.google.android.wearable.app.DEBUG_SURFACE \
             --es operation set-watchface \
@@ -76,7 +79,10 @@ jobs:
           adb shell input keyevent KEYCODE_WAKEUP
           sleep 15
       - name: Capture preview
-        run: adb exec-out screencap -p > preview_raw.png
+        run: |
+          adb shell input keyevent KEYCODE_WAKEUP
+          sleep 3
+          adb exec-out screencap -p > preview_raw.png
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
