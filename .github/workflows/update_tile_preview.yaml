@@ -19,6 +19,7 @@ jobs:
       BASE_BRANCH: ${{ github.ref_name }}
       APPLICATION_ID: net.matsudamper.watchface
       SYSTEM_IMAGE: system-images;android-36;android-wear-signed;x86_64
+      WFF_RUNTIME_COMPONENT: com.google.wear.watchface.runtime/com.google.wear.watchface.runtime.DeclarativeWatchFaceRuntime0
       ANDROID_AVD_HOME: ${{ github.workspace }}/.avd
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -81,6 +82,32 @@ jobs:
             -a com.google.android.wearable.app.DEBUG_SURFACE \
             --es operation set-watchface \
             --es watchFaceId "$APPLICATION_ID"
+          sleep 5
+      - name: Set complications
+        run: |
+          # エミュレータでは既定プロバイダが割り当てられずスロットが空になるため、明示的に割り当てる
+          set_complication() {
+            local slot="$1" provider="$2" type="$3"
+            adb shell am broadcast \
+              -a com.google.android.wearable.app.DEBUG_SURFACE \
+              --es operation set-complication \
+              --ecn watchface "$WFF_RUNTIME_COMPONENT" \
+              --ecn component "$provider" \
+              --ei slot "$slot" \
+              --ei type "$type"
+          }
+          sysui_provider() { echo "com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.complications.providers.$1"; }
+          heart_rate_provider=com.google.android.clockwork.emulator.complication.datasource/.PlaceholderHeartRateProviderService
+          # ComplicationData の type: SHORT_TEXT=3, LONG_TEXT=4, RANGED_VALUE=5
+          # WFF のスロット ID は XML の slotId とランタイム内部の ID が異なる可能性があるため両方に送る
+          for offset in 0 11; do
+            set_complication $((offset + 0)) "$(sysui_provider StepsProviderService)" 5
+            set_complication $((offset + 1)) "$(sysui_provider BatteryProviderService)" 5
+            set_complication $((offset + 2)) "$heart_rate_provider" 3
+            set_complication $((offset + 3)) "$(sysui_provider SunriseSunsetProviderService)" 3
+            set_complication $((offset + 4)) "$(sysui_provider DayAndDateProviderService)" 4
+            set_complication $((offset + 5)) "$(sysui_provider WorldClockProviderService)" 3
+          done
           adb shell input keyevent KEYCODE_WAKEUP
           sleep 30
       - name: Capture preview
@@ -96,8 +123,7 @@ jobs:
           adb shell ps -A > ps.txt || true
           adb shell cmd package query-receivers -a com.google.android.wearable.app.DEBUG_SURFACE > debug-surface-receivers.txt || true
           mkdir -p apks
-          receiver_pkgs=$(grep -oE 'packageName=[^ ]+' debug-surface-receivers.txt | cut -d= -f2 | sort -u)
-          for pkg in $receiver_pkgs; do
+          for pkg in com.google.wear.services; do
             adb shell pm path "$pkg" | sed 's/^package://' | while read -r apk; do
               adb pull "$apk" "apks/${pkg}-$(basename "$apk")" || true
             done
